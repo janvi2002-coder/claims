@@ -1,0 +1,1292 @@
+Date: Mon, 20 Jul 2026 12:16:50 +0000 (UTC)
+Message-ID: <1009001917.95.1784549810900@4078da6b622d>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_94_224336523.1784549810899"
+
+------=_Part_94_224336523.1784549810899
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Claims / Grouping Rules</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Claims / Grouping Rules</h1>
+    <div class=3D"Section1">
+        <p local-id=3D"f981fc3e2bea">Coupe=E2=80=99s claims adjudication sy=
+stem operates under a system that ultimately adjudicates a health claim to =
+a single benefit/copay. This is done through several processes to approach =
+the final outcome of the claim.</p>
+<p local-id=3D"5c2c21324a7a">First, each line of a claim is assigned its ow=
+n rule number based on matching the filter criteria of the rule. These rule=
+s are managed via an Excel spreadsheet with a series of AND/OR statements t=
+hat reference the datapoints on the claim. These spreadsheet uploads requir=
+e in depth knowledge of several mapping tables which makes it difficult for=
+ business owners to understand.</p>
+<h1 local-id=3D"965f75838b16" id=3D"Claims/GroupingRules-Common/ValidatedCl=
+aim=E2=86=92MatchedClaims">Common/ValidatedClaim =E2=86=92 MatchedClaims</h=
+1>
+<p local-id=3D"43e556def498" style=3D"margin-left: 30.0px;"><em>Procs run: =
+common.PreventiveRuleRunner, Common.RuleRunner</em></p>
+<ol start=3D"1" local-id=3D"ae947ace-a848-46ca-88a1-d28bbe3d14c8">
+<li local-id=3D"7a736350-d93d-48a2-952e-8fbed097c205">
+<p local-id=3D"37d6d00e24e6">This is what we typically call our =E2=80=9Ccl=
+aim rules=E2=80=9D, where various filters are applied to find claim lines t=
+hat match those filters.</p></li>
+<li local-id=3D"50bd4f57-97b4-4afe-8065-9019c3024ae1">
+<p local-id=3D"918073204346">The claim will go through two sets of rules, p=
+reventive and non-preventive</p></li>
+</ol>
+<h2 local-id=3D"b8602f9d1ce4" id=3D"Claims/GroupingRules-PreventiveRules"><=
+strong>Preventive Rules</strong></h2>
+<ol start=3D"1" local-id=3D"79659e7a-c04f-44ac-bf1a-0abb430ca5db">
+<li local-id=3D"4be77d91-0de9-4cc0-ab6f-0a56d1386762">
+<p local-id=3D"69876e238499">Run before non-preventive rules and are a comp=
+letely separate set of rules</p>
+<ol start=3D"1" local-id=3D"7e387b30-6dad-4fa1-9586-cf66a2b9158b">
+<li local-id=3D"6a741cd1-bfee-4b71-811c-8321b2bb1813">
+<p local-id=3D"4c6b3da52b4f">Depending on plan partner, a claim could have =
+either =E2=80=9Cfull or partial=E2=80=9D preventive</p>
+<ol start=3D"1" local-id=3D"b7e0906b-0e1f-42ae-b41c-86ed4555e104">
+<li local-id=3D"fa5b9f86-3866-4b9b-a80b-5709b82a6c45">
+<p local-id=3D"04faff1ab78d">Full Preventive - If one single line of a clai=
+m matches a preventive rule, then the whole claim is considered preventive<=
+/p>
+<ol start=3D"1" local-id=3D"518a3c66-c7d7-4428-b415-d42e946db93a">
+<li local-id=3D"99c05a15-ed7e-49c1-a7bb-f2be325a4585">
+<p local-id=3D"5d78ee0a0836">Ex: Meritain and BCBSAL</p></li>
+</ol></li>
+<li local-id=3D"4bcb2d8f-c25c-49ca-812b-1baa944dbb2d">
+<p local-id=3D"e0a3c4753c48">Partial Preventive - In order for a claim to b=
+e marked preventive, all services on the claim must be preventive</p>
+<ol start=3D"1" local-id=3D"5d680179-1ab2-41fc-a048-c6c4846f849f">
+<li local-id=3D"4fd82874-b608-498f-867e-9c3b1da41bdb">
+<p local-id=3D"f94382c78d3f">Ex: Ameriben and National Alliance</p></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol>
+<h2 local-id=3D"6540b2e181ee" id=3D"Claims/GroupingRules-Non-PreventiveRule=
+s"><strong>Non-Preventive Rules</strong></h2>
+<ol start=3D"1" local-id=3D"c5d8f7ad-7db0-421b-b587-77c0776b87a9">
+<li local-id=3D"c64c3511-dd99-41ac-8124-c53766c96107">
+<p local-id=3D"50924ef13566">Run after preventive rules</p></li>
+<li local-id=3D"5e2032a1-b3fc-4e03-b9f0-ed81b796e899">
+<p local-id=3D"5365453134da">Each claim line is assigned a rule number and =
+a rule rank</p></li>
+<li local-id=3D"88170e2b-6041-46f8-92c7-a72d4ab99b16">
+<p local-id=3D"b60001e919e5">Each rule has an outcomeBenefitCode associated=
+ with it.</p></li>
+</ol>
+<h2 local-id=3D"2c135244eff3" id=3D"Claims/GroupingRules-KeyfieldsforRuleRu=
+nner">Key fields for Rule Runner</h2>
+<div class=3D"table-wrap">
+<table data-table-width=3D"760" data-layout=3D"default" data-local-id=3D"e6=
+ae8eb5-0c73-4114-829b-caefd2de4252" class=3D"confluenceTable">
+<tbody>
+<tr data-local-id=3D"5f0fcc31-2fe0-4753-aad4-9d622ee38773">
+<th data-local-id=3D"ac6432a8-2499-4ec1-b425-8baa78b809fe" class=3D"conflue=
+nceTh">
+<p local-id=3D"78c02194e1ee"><strong>Field</strong></p></th>
+<th data-local-id=3D"a03a3ff2-c365-40ec-88aa-8d19b25a7e21" class=3D"conflue=
+nceTh">
+<p local-id=3D"546feea6417d"><strong>Definition</strong></p></th>
+<th data-local-id=3D"9e34383c-fd9a-4fe7-a0d8-3dc3af4a0266" class=3D"conflue=
+nceTh">
+<p local-id=3D"4e9bac2c40f9"><strong>Example</strong></p></th>
+</tr>
+<tr data-local-id=3D"3c7983d3-7cdf-44b3-bb82-a947d9eb4715">
+<td data-local-id=3D"46e83013-63dd-46e5-b6ca-84e8bd972bee" class=3D"conflue=
+nceTd">
+<p local-id=3D"eed0f933e850">EmployerID</p></td>
+<td data-local-id=3D"d2426a52-1576-41dd-bb4c-486ebf8a1e3f" class=3D"conflue=
+nceTd">
+<p local-id=3D"38f71cc02075">Coupe=E2=80=99s internal employerID, used for =
+employer-specific rules</p></td>
+<td data-local-id=3D"8dca6b96-44df-48f4-a175-f1ccd8c761f2" class=3D"conflue=
+nceTd">
+<p local-id=3D"a824056eb8ed">&nbsp;</p></td>
+</tr>
+<tr data-local-id=3D"37347bec-d464-4de8-930b-de92be37e3a4">
+<td data-local-id=3D"95436755-8e6b-422a-98b6-a0e98a3b4d3f" class=3D"conflue=
+nceTd">
+<p local-id=3D"402eb3ba4835">Claim Type</p></td>
+<td data-local-id=3D"7ff24819-096a-47f8-ab04-79ac8e40085c" class=3D"conflue=
+nceTd">
+<p local-id=3D"c17bd9e7bd66">single digit, indicates if claim is an institu=
+tional claim or a professional claim</p></td>
+<td data-local-id=3D"4ed22b2c-ecee-48e8-bbb7-cb1851fa674d" class=3D"conflue=
+nceTd">
+<p local-id=3D"0b29f5337478">=E2=80=9CI=E2=80=9D - Institutional</p>
+<p local-id=3D"7203494f01c8">=E2=80=9CP=E2=80=9D - Professional</p></td>
+</tr>
+<tr data-local-id=3D"1565cb2d-a1be-4fb9-b8b1-e9bc4ff854f7">
+<td data-local-id=3D"3c3ae3b3-6b73-41a3-a117-479197b77356" class=3D"conflue=
+nceTd">
+<p local-id=3D"81228867c697">Place of Service</p></td>
+<td data-local-id=3D"4c8e0b5c-e2b4-4e7a-9a23-0024e7a967b5" class=3D"conflue=
+nceTd">
+<p local-id=3D"03d11c896f38">CMS place of service code, where the care took=
+ place</p></td>
+<td data-local-id=3D"a994d37a-da22-48c5-8886-00459929f8bd" class=3D"conflue=
+nceTd">
+<p local-id=3D"9259b354a67c">11 - Office</p>
+<p local-id=3D"1cf0d72bbf48">17 - Retail Health Clinic</p>
+<p local-id=3D"70548191e512">20 - Urgent Care</p></td>
+</tr>
+<tr data-local-id=3D"17d0bc28-ca28-4cc5-82c4-f4e11e6f0ed7">
+<td data-local-id=3D"d22ceb27-623b-4912-9249-32061dddd867" class=3D"conflue=
+nceTd">
+<p local-id=3D"202255dddd49">Bill Type</p></td>
+<td data-local-id=3D"2feeda89-b574-4ea2-8a19-e2cfe4d7be34" class=3D"conflue=
+nceTd">
+<p local-id=3D"9ad2631e2e85">Three digit code used on institutional claims.=
+</p>
+<p local-id=3D"416fbd2fc8ee">First Digit =3D Leading zero, ignored</p>
+<p local-id=3D"b3003ef7d30b">Second Digit =3D Type of Facility</p>
+<p local-id=3D"0c6d587d1a08">Third Digit =3D Type of Care</p>
+<p local-id=3D"debcd7034087">Fourth Digit =3D Sequence of this bill in this=
+ episode of care. Referred to as =E2=80=9Cfrequency=E2=80=9D code</p></td>
+<td data-local-id=3D"320f3cf3-583d-4664-b7b9-5846a0e5623c" class=3D"conflue=
+nceTd">
+<p local-id=3D"ddcc1a5e12be">131 - Hospital, Outpatient, Admit Through Disc=
+harge</p>
+<p local-id=3D"30e3560b0c80">111 - Hospital, Inpatient, Admit Through Disch=
+arge</p></td>
+</tr>
+<tr data-local-id=3D"5be9918d-90ff-464d-b596-2e7e41181402">
+<td data-local-id=3D"899b01c5-34d0-49ff-a4cc-b6efd655633c" class=3D"conflue=
+nceTd">
+<p local-id=3D"55b2b994ddbe">Rendering Provider Taxonomy</p></td>
+<td data-local-id=3D"b810f2c1-513f-402a-be1f-aa12408e0ee9" class=3D"conflue=
+nceTd">
+<p local-id=3D"1f593b783927">What type of physician was seen</p></td>
+<td data-local-id=3D"0077dbcc-a2d5-46a1-9a14-46ef2c7ea3e0" class=3D"conflue=
+nceTd">
+<p local-id=3D"88be1242e194">&nbsp;</p></td>
+</tr>
+<tr data-local-id=3D"cbec8d1a-074b-453e-9769-b6b4f5d6a95b">
+<td data-local-id=3D"5c396038-6c71-4f2e-9e79-5d5ca58a2953" class=3D"conflue=
+nceTd">
+<p local-id=3D"f4e622039ab9">CPT Code/CPT code specialty</p></td>
+<td data-local-id=3D"dcc6bb92-6ee3-49af-b2de-9a1dd14b660b" class=3D"conflue=
+nceTd">
+<p local-id=3D"99c864c9cb64">alpha numeric code indicating what types of se=
+rvices were provided to the patient</p></td>
+<td data-local-id=3D"ed886f0b-588d-45f9-941d-be3fde63d67c" class=3D"conflue=
+nceTd">
+<p local-id=3D"d20d287a39d2">99211 Office Visit</p>
+<p local-id=3D"7a0d876d4fca">97780 Acupuncture</p></td>
+</tr>
+<tr data-local-id=3D"7b956a55-5694-45f3-8b05-9c72956424cd">
+<td data-local-id=3D"0b296715-1533-4066-bbc5-cc86a2809b5d" class=3D"conflue=
+nceTd">
+<p local-id=3D"1b30b7334bc3">CPT Modifier Code</p></td>
+<td data-local-id=3D"cecc7c06-6b83-4d30-a565-ead2ae9f06c0" class=3D"conflue=
+nceTd">
+<p local-id=3D"df5798239dd2">Add additional modifier to the CPT code</p></t=
+d>
+<td data-local-id=3D"ed438f24-70b8-4b63-982c-6831cc4e87a5" class=3D"conflue=
+nceTd">
+<p local-id=3D"8b276b6a0c7a"><strong>RT/LT:</strong> Right/Left side of the=
+ body.</p></td>
+</tr>
+<tr data-local-id=3D"b604cbd3-3679-4bcb-b5b1-3a32f088fc37">
+<td data-local-id=3D"d2036daf-70aa-4daa-9169-38bd3ed462a9" class=3D"conflue=
+nceTd">
+<p local-id=3D"78f321f1dd22">Diagnosis Code</p></td>
+<td data-local-id=3D"82edc808-e1bb-45ba-8970-c5d0bc205264" class=3D"conflue=
+nceTd">
+<p local-id=3D"1a6f9b14ec77">What the patient being seen for</p></td>
+<td data-local-id=3D"4ec0391e-48d8-4ef6-8a64-8360b5493ece" class=3D"conflue=
+nceTd">
+<p local-id=3D"286dc64a02e3">&nbsp;</p></td>
+</tr>
+<tr data-local-id=3D"4b1c2c11-3a18-47ca-8612-ce3da8034466">
+<td data-local-id=3D"976933a5-d57e-4084-b69b-5af5ac9899ee" class=3D"conflue=
+nceTd">
+<p local-id=3D"b507a3a5672a">DRG Code</p></td>
+<td data-local-id=3D"58295f2d-4ff6-43bb-bd15-efdefead94a3" class=3D"conflue=
+nceTd">
+<p local-id=3D"e3f100098376">Used for more complex episodes of care</p></td=
+>
+<td data-local-id=3D"5ea54ed3-9546-46a8-a7fd-2892e6cf1fe2" class=3D"conflue=
+nceTd">
+<p local-id=3D"bb53d9c5cb08">&nbsp;</p></td>
+</tr>
+<tr data-local-id=3D"46691289-b40d-429f-908e-155acdaab44f">
+<td data-local-id=3D"742e31b7-3050-4072-b910-8b2f03cf4cc3" class=3D"conflue=
+nceTd">
+<p local-id=3D"c300f13183b8">Revenue Code</p></td>
+<td data-local-id=3D"c4cbf542-5572-412b-a8c1-8d0bf1cc1dc4" class=3D"conflue=
+nceTd">
+<p local-id=3D"5184f8934730">Indicate what department of an institution/fac=
+ility is billing the line item for</p></td>
+<td data-local-id=3D"6f8b2218-d6cc-49aa-a88c-82fd23ed68ed" class=3D"conflue=
+nceTd">
+<p local-id=3D"f10d102fd350">&nbsp;</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p local-id=3D"5843d85b577d"></p>
+<h2 local-id=3D"b7de00ce567c" id=3D"Claims/GroupingRules-MatchedClaims=E2=
+=86=92MatchedClaimsFinal"><strong>MatchedClaims =E2=86=92 MatchedClaimsFina=
+l</strong></h2>
+<p local-id=3D"2dbfbdc3ee16" style=3D"margin-left: 30.0px;"><em>Procs Run: =
+Common.MatchedClaimCompressor</em></p>
+<ol start=3D"1" local-id=3D"c196da2a5199">
+<li local-id=3D"a518b1765b1c">
+<p local-id=3D"74a6ac32eb06">Figure out final best rule for the claim and t=
+he benefit code associated with it.</p>
+<ol start=3D"1" local-id=3D"0ce06b9ff031">
+<li local-id=3D"98fd4ac80f42">
+<p local-id=3D"b04525b1468f">Whatever rule is lowest =E2=80=9Crank=E2=80=9D=
+ is chosen.</p>
+<ol start=3D"1" local-id=3D"c348f2ed9885">
+<li local-id=3D"d1acc6f3ac03">
+<p local-id=3D"909163706ce9">Example: A facility claim may have multiple li=
+ne items associated with various components related to a surgery.</p>
+<ol start=3D"1" local-id=3D"1a2ecf6dff6a">
+<li local-id=3D"6a1f7a2f1f62">
+<p local-id=3D"1fe40278b1d2">There may be several lines for the surgery ser=
+vices themselves</p></li>
+<li local-id=3D"5dec520754b0">
+<p local-id=3D"3ed150d8066a">There may be several for Labs, imaging, suppli=
+es</p></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol>
+<p local-id=3D"6b9fa58f1c27" style=3D"margin-left: 60.0px;">Given the above=
+, the surgery procedures would have an earlier rule rank than the labs/imag=
+ing and would be the chosen benefit</p>
+<ol start=3D"1" local-id=3D"2d49adc1a292">
+<li local-id=3D"452b1f149391">
+<p local-id=3D"f9422fc35cec">Exceptions:</p>
+<ol start=3D"1" local-id=3D"dea6b2a7d108">
+<li local-id=3D"3c725f183926">
+<p local-id=3D"86158f7da4a1">Any claim line with Allowed Amount of $0 gets =
+its rule rank pushed to the end of the ranks. The reason being that we don=
+=E2=80=99t want to give a benefit code for a service that is denied.</p></l=
+i>
+<li local-id=3D"3b25be76f172">
+<p local-id=3D"2c4bd823625c">For partial preventive logic, preventive lines=
+ are also put to the end of the rule ranks to allow non-preventive benefits=
+ to be chosen.</p></li>
+</ol></li>
+</ol>
+<h2 local-id=3D"496a319413bf" id=3D"Claims/GroupingRules-MatchedClaimsFinal=
+=E2=86=92AdjudicatedClaims">MatchedClaimsFinal =E2=86=92 AdjudicatedClaims<=
+/h2>
+<p local-id=3D"81c0154c9e04" style=3D"margin-left: 30.0px;">Procs Run: Simp=
+lePay.AccumulatorAdjudicator</p>
+<ol start=3D"1" local-id=3D"bbb242bfcec4">
+<li local-id=3D"c1660f8f3bb9">
+<p local-id=3D"5c9fdf9cd7ab">Final patient/member responsibility is calcula=
+ted based on multiple criteria</p>
+<ol start=3D"1" local-id=3D"f7b92d62cf30">
+<li local-id=3D"0e3852e3ec70">
+<p local-id=3D"567ce1802639">If Copay &lt; TotalAllowedAmount, take TotalAl=
+lowedAmount</p></li>
+<li local-id=3D"e8a2c1a99723">
+<p local-id=3D"c0e4930267ad">If the member is at their Out of Pocket Max (O=
+OPM), then put memberResponsibilityAmt to $0</p></li>
+<li local-id=3D"0671118a263d">
+<p local-id=3D"bf114616dec4">If the Copay/TotalAllowedAmount causes the mem=
+ber to hit their OOPM, set MemberResponsibilityAmt tot he difference (EX: M=
+ember has a copay for $500, but they are only $250 from hitting their OOPM,=
+ in this case, MemberResponsibilityAmt is set to $250 up to OOPM)</p></li>
+</ol></li>
+</ol>
+<p local-id=3D"1ab3931eecd9"></p>
+<h2 local-id=3D"593669ad1c99" id=3D"Claims/GroupingRules-NewRuleEngineThrou=
+ghNected">New Rule Engine Through Nected</h2>
+<h3 local-id=3D"0ecf331a8042" id=3D"Claims/GroupingRules-Possiblesolutions"=
+>Possible solutions</h3>
+<p local-id=3D"90ddb5b36497">Break claims processing into smaller batch pro=
+cesses through decision trees</p>
+<p local-id=3D"17157303613f" style=3D"margin-left: 30.0px;">Example: Claims=
+ already come into two types =E2=80=9CInstitutional=E2=80=9D and =E2=80=9CP=
+rofessional=E2=80=9D. This could split the claims processing into smaller w=
+orkflows for each claim type and break up the monolithic current process wh=
+ere every rule is ran to find matches for claims</p>
+<p local-id=3D"9396f0004fea" style=3D"margin-left: 30.0px;">Possible furthe=
+r filtering:</p>
+<p local-id=3D"5c7cbccade8b" style=3D"margin-left: 60.0px;">For Institution=
+al, bill type codes mainly drive whether a claim is Inpatient vs Outpatient=
+.<br></p>
+<p local-id=3D"0fe44dabebd9">The rules naturally cluster into a handful of =
+major domains:</p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"166692e9-cb18-47a0-8bb9-59f=
+47b5a04fc" class=3D"confluenceTable">
+<tbody>
+<tr data-local-id=3D"4897376c-562c-4c49-9360-2f743119632a">
+<th data-local-id=3D"0c7d7697-a2a2-43f3-ba63-f372021bb54c" class=3D"conflue=
+nceTh">
+<p local-id=3D"82e45d7d4e5e">Domain</p></th>
+<th data-local-id=3D"f3add470-1b73-4f86-8360-ec56e99ebe64" class=3D"conflue=
+nceTh">
+<p local-id=3D"fb89f86c1b90">Typical Attributes</p></th>
+</tr>
+<tr data-local-id=3D"c913b9ce-d294-4019-95ba-e16c2a7ca2eb">
+<td data-local-id=3D"338c03ad-991c-413a-8329-bc53a626f681" class=3D"conflue=
+nceTd">
+<p local-id=3D"ebf8f88f43cc">Claim Special Cases</p></td>
+<td data-local-id=3D"2732a7ad-8835-4d5e-a429-29be507f6f4d" class=3D"conflue=
+nceTd">
+<p local-id=3D"091b2ada0d5b">HSBCClaimNumber, EmployerID, DiagnosisCode</p>=
+</td>
+</tr>
+<tr data-local-id=3D"9ef10f5e-fd28-45b4-a225-69d860d201f0">
+<td data-local-id=3D"de20117d-fcaf-4b6d-84fc-748f1e88086f" class=3D"conflue=
+nceTd">
+<p local-id=3D"96581ba9ef54">Inpatient vs Outpatient</p></td>
+<td data-local-id=3D"12538c1f-cfb0-4f76-a53b-0d1cb5628901" class=3D"conflue=
+nceTd">
+<p local-id=3D"68ac40d6320c">PlaceOfService, BillType, ClaimType</p></td>
+</tr>
+<tr data-local-id=3D"7b5b216a-1695-4273-ab10-aafd482d7f4c">
+<td data-local-id=3D"0969a6f1-854b-4ea5-ab3e-f8d5670adbbc" class=3D"conflue=
+nceTd">
+<p local-id=3D"f2ecd19654aa">Facility Classification</p></td>
+<td data-local-id=3D"e71586c3-8e8d-4d62-996f-b03744f93831" class=3D"conflue=
+nceTd">
+<p local-id=3D"92dc9e6fca49">Hospital, ASC, ER, SNF, Behavioral Health Faci=
+lity</p></td>
+</tr>
+<tr data-local-id=3D"0d0d3a09-87e8-4178-a88b-fda49abec5a2">
+<td data-local-id=3D"c272528f-3a26-437a-868b-8fbb954e42ba" class=3D"conflue=
+nceTd">
+<p local-id=3D"e2d4749291bf">Professional Provider Classification</p></td>
+<td data-local-id=3D"390cdf17-78ae-481e-aefe-ece9838ad4af" class=3D"conflue=
+nceTd">
+<p local-id=3D"66c72c6ed9dc">SpecialtyID, TaxonomySpecialty</p></td>
+</tr>
+<tr data-local-id=3D"23fbffe2-6a3b-4d04-8941-6e2b5ea1df49">
+<td data-local-id=3D"915a7357-b53e-4c75-8a54-0ebeb703ceb2" class=3D"conflue=
+nceTd">
+<p local-id=3D"51b3bb3323a1">Service Classification</p></td>
+<td data-local-id=3D"1bb163c3-d0b8-4581-9c2a-32dd37342d5b" class=3D"conflue=
+nceTd">
+<p local-id=3D"8c6b75b035cd">CPT Bucket, DRG, Revenue Code</p></td>
+</tr>
+<tr data-local-id=3D"6ddc6380-77e8-4f7e-9ad2-91d014b9c48f">
+<td data-local-id=3D"2cb8cc17-c588-4364-95c1-ac246b1dee08" class=3D"conflue=
+nceTd">
+<p local-id=3D"52083ba6de29">Mental Health</p></td>
+<td data-local-id=3D"d963482b-dba7-4b08-9058-351f9371d667" class=3D"conflue=
+nceTd">
+<p local-id=3D"9af8931370dd">Specialty + CPT + Facility</p></td>
+</tr>
+<tr data-local-id=3D"fc97509e-0fe1-42b7-8a39-b20dfdc8edd4">
+<td data-local-id=3D"db2e8c30-b888-4159-8e12-9181d47b249d" class=3D"conflue=
+nceTd">
+<p local-id=3D"78ceb1a44ad1">Therapy</p></td>
+<td data-local-id=3D"45e4e655-d5bc-40ba-8247-02a13f9f9d7a" class=3D"conflue=
+nceTd">
+<p local-id=3D"08790ec556f2">PT/OT/ST</p></td>
+</tr>
+<tr data-local-id=3D"33f7ef9d-a014-43f7-996f-71a733db1e2a">
+<td data-local-id=3D"a82d336c-265a-4791-8059-cd1ba6570efc" class=3D"conflue=
+nceTd">
+<p local-id=3D"dfd59f50a4be">Imaging</p></td>
+<td data-local-id=3D"86f27894-31c3-492d-b60a-ba3d72e98314" class=3D"conflue=
+nceTd">
+<p local-id=3D"b5421bb1daec">CPT Buckets</p></td>
+</tr>
+<tr data-local-id=3D"f79e5438-f595-4c3f-9d26-cb2930746551">
+<td data-local-id=3D"7dc24e5e-0076-447d-a10c-06b874b01ef5" class=3D"conflue=
+nceTd">
+<p local-id=3D"b5d573f97ca2">Laboratory</p></td>
+<td data-local-id=3D"a149199e-66bf-4d53-93a2-c69c39f5d3c5" class=3D"conflue=
+nceTd">
+<p local-id=3D"676c4630bd82">CPT Buckets</p></td>
+</tr>
+<tr data-local-id=3D"48d9b450-7c63-40fe-981f-e5136d6f40bb">
+<td data-local-id=3D"fc7ed7db-3e64-4123-9823-e93ad3d5365f" class=3D"conflue=
+nceTd">
+<p local-id=3D"8b6502cf512a">DME</p></td>
+<td data-local-id=3D"10d32698-8173-4221-887e-4ab6a765cc8e" class=3D"conflue=
+nceTd">
+<p local-id=3D"29b37b476cbc">Specialty Buckets</p></td>
+</tr>
+<tr data-local-id=3D"4ccd3d60-58d9-4326-a546-602a4a8d398e">
+<td data-local-id=3D"96ce1493-b0cf-44c1-b783-52de1cd0cd3e" class=3D"conflue=
+nceTd">
+<p local-id=3D"a5f9dc3857a7">Telehealth</p></td>
+<td data-local-id=3D"b2d39ca1-a859-4060-9076-c49be0dceac5" class=3D"conflue=
+nceTd">
+<p local-id=3D"e4a527dce16e">POS + Modifier</p></td>
+</tr>
+<tr data-local-id=3D"5b452aef-9735-44e7-9d35-a392673a7887">
+<td data-local-id=3D"f692c0c0-f08a-46d4-8c98-804178ba784f" class=3D"conflue=
+nceTd">
+<p local-id=3D"5da5f5de2f0d">Maternity</p></td>
+<td data-local-id=3D"d650a317-8a6a-48e4-98e8-54d97e731295" class=3D"conflue=
+nceTd">
+<p local-id=3D"9c2e19b563d1">DRG + CPT Buckets</p></td>
+</tr>
+<tr data-local-id=3D"484bb19e-92cf-4b20-9a7f-93e32f54a34b">
+<td data-local-id=3D"849970f4-f475-4716-8984-fc51973827f1" class=3D"conflue=
+nceTd">
+<p local-id=3D"a7a1b6461b73">Emergency/Urgent Care</p></td>
+<td data-local-id=3D"4880fa91-13e5-4721-9919-f82788553024" class=3D"conflue=
+nceTd">
+<p local-id=3D"328050f2dd69">POS + Revenue Codes</p></td>
+</tr>
+<tr data-local-id=3D"33b043b1-903d-4ab2-901a-d5480963eb58">
+<td data-local-id=3D"8120f932-0cba-4676-8f0c-8c1e3150cd22" class=3D"conflue=
+nceTd">
+<p local-id=3D"064e1d4a0043">Default Catch-all Rules</p></td>
+<td data-local-id=3D"a8f5504d-effb-45ef-86ac-2f2974262bcf" class=3D"conflue=
+nceTd">
+<p local-id=3D"21b505b83c41">PCP, Specialist, General Services</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p local-id=3D"69cb345af80b">Many rules repeat the same filters over and ov=
+er:</p>
+<p local-id=3D"3a6965d5a5bd">Example:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">POS =3D=
+ 131-149...
+BillType =3D Surgery Center|Hospital
+CPT Specialty Bucket =3D Cardiology
+</pre>
+</div>
+</div>
+<p local-id=3D"3e0e29b80b73">then</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">POS =3D=
+ 131-149...
+BillType =3D Surgery Center|Hospital
+CPT Specialty Bucket =3D Colorectal
+</pre>
+</div>
+</div>
+<p local-id=3D"ac39aacbc40c">then</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">POS =3D=
+ 131-149...
+BillType =3D Surgery Center|Hospital
+CPT Specialty Bucket =3D Spine Surgery
+</pre>
+</div>
+</div>
+<p local-id=3D"724edbed6400">Only the specialty bucket changes. <a href=3D"=
+https://linkmn-my.sharepoint.com/personal/gary_sole_bluecrossmn_com/_layout=
+s/15/Doc.aspx?sourcedoc=3D%7B8993138A-3E36-4F82-ACC5-9CFCFE481413%7D&amp;fi=
+le=3DStage_RulesProcess_20260526143200.csv&amp;action=3Ddefault&amp;mobiler=
+edirect=3Dtrue" class=3D"external-link" rel=3D"nofollow">[Stage_Rule...0526=
+143200 | Excel]</a></p>
+<p local-id=3D"d2558bb4d0bb">That is a sign that these should become a <str=
+ong>lookup table</strong>, not individual rules.</p>
+<hr local-id=3D"9085b095-9540-4d11-b870-ae0ca73c8950">
+<h1 local-id=3D"1a9bd054746b" id=3D"Claims/GroupingRules-NectedArchitecture=
+Recommendation">Nected Architecture Recommendation</h1>
+<p local-id=3D"7996cbd15827">Instead of 730 sequential rules, build a Flow =
+that progressively narrows the universe.</p>
+<h2 local-id=3D"e61e6b5ffa59" id=3D"Claims/GroupingRules-Node1-ClaimOverrid=
+es">Node 1 - Claim Overrides</h2>
+<p local-id=3D"58b042fcc194">Evaluate a very small set first.</p>
+<p local-id=3D"dfef6837194c">Examples:</p>
+<ul local-id=3D"109f111b-b816-48a6-b2de-ca7256695790">
+<li local-id=3D"ebea26a7-47e4-4ac1-aa4f-bb10f577c259">
+<p local-id=3D"4666a6c19499">Covid</p></li>
+<li local-id=3D"e4e11b99-1ee4-4a50-a2fc-d4e6116826d7">
+<p local-id=3D"1ed522d31213">Employer-specific rules</p></li>
+<li local-id=3D"6a5164b9-a891-4c7b-a4f9-9e524f310ed0">
+<p local-id=3D"ed39ab8390db">Special HSB claims</p></li>
+<li local-id=3D"1dec143b-37a6-4e6a-9e12-59dd649a5724">
+<p local-id=3D"06b67a5b999e">Autism programs</p></li>
+<li local-id=3D"fd85504c-bdda-4b9b-a60d-9d9428b17ba5">
+<p local-id=3D"a794e8b3f049">Special telehealth employers</p></li>
+</ul>
+<p local-id=3D"a61791247399">These are highest-ranked exceptions already. <=
+a href=3D"https://linkmn-my.sharepoint.com/personal/gary_sole_bluecrossmn_c=
+om/_layouts/15/Doc.aspx?sourcedoc=3D%7B8993138A-3E36-4F82-ACC5-9CFCFE481413=
+%7D&amp;file=3DStage_RulesProcess_20260526143200.csv&amp;action=3Ddefault&a=
+mp;mobileredirect=3Dtrue" class=3D"external-link" rel=3D"nofollow">[Stage_R=
+ule...0526143200 | Excel]</a></p>
+<p local-id=3D"d1e0230e9d24">Result:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">Overrid=
+e Benefit Code found?
+YES -&gt; return
+NO -&gt; continue
+</pre>
+</div>
+</div>
+<p local-id=3D"7cb0e367324b">This node may only contain 20-30 rules.</p>
+<hr local-id=3D"6160b0d9-b18f-4a44-a7a7-f0ddef5287dc">
+<h2 local-id=3D"d500886bbff0" id=3D"Claims/GroupingRules-Node2-DetermineCla=
+imContext">Node 2 - Determine Claim Context</h2>
+<p local-id=3D"7eef311fe2fc">Create a decision table that derives:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "careSetting": "INPATIENT|OUTPATIENT|PROFESSIONAL|FACILITY"
+}</pre>
+</div>
+</div>
+<p local-id=3D"2aacb79bf7e9">using:</p>
+<ul local-id=3D"3b55b6eb-3f16-4f2f-be22-81c24b23d41f">
+<li local-id=3D"cdb67939-fb84-40e3-a6b7-e36add164e19">
+<p local-id=3D"103f4854dc62">POS</p></li>
+<li local-id=3D"28439994-5720-4c43-a1a3-f96cab7330a6">
+<p local-id=3D"fdd7cc13fd2d">BillType</p></li>
+<li local-id=3D"22028901-794e-46f1-b049-7daea9ede174">
+<p local-id=3D"8acd45f9ab2d">ClaimType</p></li>
+</ul>
+<p local-id=3D"8dc89595145a">instead of repeatedly testing those values lat=
+er.</p>
+<p local-id=3D"0305b9040567">Example:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">POS 111=
+-119
+=3D&gt; INPATIENT
+</pre>
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">POS 131=
+-149
+=3D&gt; OUTPATIENT_FACILITY
+</pre>
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">ClaimTy=
+pe=3DP
+=3D&gt; PROFESSIONAL
+</pre>
+</div>
+</div>
+<p local-id=3D"d302b73ec594">This immediately eliminates 70-80% of later ru=
+les.</p>
+<hr local-id=3D"96d107b1-493f-45a5-8f52-5524e9c0d32e">
+<h2 local-id=3D"8b1cee37ce8a" id=3D"Claims/GroupingRules-Node3-DeriveServic=
+eCategories">Node 3 - Derive Service Categories</h2>
+<p local-id=3D"12f826847839">Create reusable enrichment attributes.</p>
+<h3 local-id=3D"ee53c0235353" id=3D"Claims/GroupingRules-FacilityCategory">=
+FacilityCategory</h3>
+<p local-id=3D"c83fd27e5fc4">Examples:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">Hospita=
+l
+ASC
+SNF
+Behavioral Health Facility
+Imaging Center
+Dialysis Center
+</pre>
+</div>
+</div>
+<p local-id=3D"dbde4e82381e">Currently this logic is embedded in hundreds o=
+f rules. <a href=3D"https://linkmn-my.sharepoint.com/personal/gary_sole_blu=
+ecrossmn_com/_layouts/15/Doc.aspx?sourcedoc=3D%7B8993138A-3E36-4F82-ACC5-9C=
+FCFE481413%7D&amp;file=3DStage_RulesProcess_20260526143200.csv&amp;action=
+=3Ddefault&amp;mobileredirect=3Dtrue" class=3D"external-link" rel=3D"nofoll=
+ow">[Stage_Rule...0526143200 | Excel]</a></p>
+<hr local-id=3D"89470d82-b2e2-42d6-a0fa-ec6c2c359a6b">
+<h3 local-id=3D"5217e3434f6f" id=3D"Claims/GroupingRules-ProviderCategory">=
+ProviderCategory</h3>
+<p local-id=3D"f056fdc43951">Examples:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">PCP
+Specialist
+MentalHealth
+Therapist
+Lab
+Radiology
+DME
+</pre>
+</div>
+</div>
+<p local-id=3D"7faa19c1fe58">Derived from:</p>
+<ul local-id=3D"d33ff014-d909-4a3a-aa13-10d18a682702">
+<li local-id=3D"2235a648-129a-4977-ba2c-f483e1d12205">
+<p local-id=3D"2eeddf254e92">SpecialtyID</p></li>
+<li local-id=3D"5fc1794f-0e6d-4a8b-8a43-2a0c770237de">
+<p local-id=3D"7d60119eabbe">TaxonomySpecialty</p></li>
+</ul>
+<hr local-id=3D"14adb3df-d027-48e5-a6ed-9a0ab00f572c">
+<h3 local-id=3D"30592e05490e" id=3D"Claims/GroupingRules-ServiceCategory">S=
+erviceCategory</h3>
+<p local-id=3D"b99867d2437c">Derived from:</p>
+<ul local-id=3D"fb83bb69-362d-4fa7-9a65-495f8438837f">
+<li local-id=3D"2152b6e4-dbf7-4374-b0af-7383c8bc1242">
+<p local-id=3D"b17f7559b7d7">CPT bucket</p></li>
+<li local-id=3D"39b7c588-ad25-4d8a-b9d2-ad21c318ac53">
+<p local-id=3D"50d271dd3f68">Revenue code</p></li>
+<li local-id=3D"445490e5-be84-4e03-b2e4-f8effa7d61c7">
+<p local-id=3D"769fcf44a569">DRG</p></li>
+</ul>
+<p local-id=3D"c7d56deefdc6">Examples:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">Office =
+Visit
+Physical Therapy
+Cardiology
+Radiology
+Routine Lab
+Advanced Lab
+Mental Health
+</pre>
+</div>
+</div>
+<hr local-id=3D"6d48dfde-cc42-47c3-bb8c-a0794840e38e">
+<h1 local-id=3D"5b12c61fd1e1" id=3D"Claims/GroupingRules-Node4-BenefitMappi=
+ngDecisionTables">Node 4 - Benefit Mapping Decision Tables</h1>
+<p local-id=3D"8823bc603108">This becomes the core Nected decision tables.<=
+/p>
+<p local-id=3D"18e672ab7082">Rather than thousands of conditions:</p>
+<h3 local-id=3D"c2ca801f510a" id=3D"Claims/GroupingRules-PCPTable">PCP Tabl=
+e</h3>
+<p local-id=3D"416e5b278811">Input:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">Provide=
+rCategory
+ServiceCategory
+CareSetting
+</pre>
+</div>
+</div>
+<p local-id=3D"78e1b8cad204">Output:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">Outcome=
+BenefitCode
+OutcomeServiceLine
+OutcomePCC
+...
+</pre>
+</div>
+</div>
+<p local-id=3D"ecbcaa0985ef">Examples:</p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"f168086c-0985-4c53-a731-97c=
+a796842a7" class=3D"confluenceTable">
+<tbody>
+<tr data-local-id=3D"b8e35705-09d9-4a1c-92ea-a983a8b02157">
+<th data-local-id=3D"2909d1e9-65ce-41a8-9c87-aa768d0138ed" class=3D"conflue=
+nceTh">
+<p local-id=3D"0d8cab5bb562">Provider</p></th>
+<th data-local-id=3D"91411a57-092e-493f-ac47-500cf2a42d43" class=3D"conflue=
+nceTh">
+<p local-id=3D"d032511397e5">Service</p></th>
+<th data-local-id=3D"3f622401-4d7b-41f9-9709-8603bbe206f8" class=3D"conflue=
+nceTh">
+<p local-id=3D"ffc342fc46e4">Result</p></th>
+</tr>
+<tr data-local-id=3D"d0b6f2d8-7b0b-4a12-8f95-59c55f0b1212">
+<td data-local-id=3D"34d88f5a-cf3a-4d5a-9fd7-b199e6f387b3" class=3D"conflue=
+nceTd">
+<p local-id=3D"5d31880c7bda">PCP</p></td>
+<td data-local-id=3D"f27341fa-38f7-456f-a3d7-9a9d57dbe241" class=3D"conflue=
+nceTd">
+<p local-id=3D"69185617d7da">Office Visit</p></td>
+<td data-local-id=3D"329d07c6-f506-40c6-902a-a5ee600d6d7d" class=3D"conflue=
+nceTd">
+<p local-id=3D"b3ffd60ae2a6">Benefit 1</p></td>
+</tr>
+<tr data-local-id=3D"c2199154-47db-4d58-9f44-25793e17b117">
+<td data-local-id=3D"c83c7c1c-da8f-4631-84ac-cbdb43875bb8" class=3D"conflue=
+nceTd">
+<p local-id=3D"f462ed71159a">PCP</p></td>
+<td data-local-id=3D"ddf6eccc-8cdb-4c36-b541-5035b70e642a" class=3D"conflue=
+nceTd">
+<p local-id=3D"16329385559c">Facility Visit</p></td>
+<td data-local-id=3D"598df7f4-81c6-4f32-909d-965fa158009f" class=3D"conflue=
+nceTd">
+<p local-id=3D"ed77b8d2a180">Benefit 18</p></td>
+</tr>
+<tr data-local-id=3D"cc39f202-8512-4058-87ce-2d11c634ad40">
+<td data-local-id=3D"39ef6d09-26eb-43bf-9705-c7f155c3e27a" class=3D"conflue=
+nceTd">
+<p local-id=3D"21467d850fd8">PCP</p></td>
+<td data-local-id=3D"22b57c47-5019-4840-9161-8490f3d66cf6" class=3D"conflue=
+nceTd">
+<p local-id=3D"f25ee72b0ded">Telehealth</p></td>
+<td data-local-id=3D"9d8b21b5-52f7-424c-b0eb-442bdf73f747" class=3D"conflue=
+nceTd">
+<p local-id=3D"fb7774a09a04">Benefit 19</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr local-id=3D"1d566c39-cc51-4c7c-91ca-c2dade4e7f61">
+<h3 local-id=3D"3d884a5da4ef" id=3D"Claims/GroupingRules-SpecialistTable">S=
+pecialist Table</h3>
+<p local-id=3D"a8300cca0066">Same pattern:</p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"55fe0b72-49f6-466e-9293-cdf=
+7905ff395" class=3D"confluenceTable">
+<tbody>
+<tr data-local-id=3D"ff13823e-b731-404e-ac0e-54d2014b795d">
+<th data-local-id=3D"834b7cbd-7a45-44df-af4b-8645c6b2b7e5" class=3D"conflue=
+nceTh">
+<p local-id=3D"0d20ed9e6532">Provider</p></th>
+<th data-local-id=3D"8b73e43a-2af5-4372-bbe4-52103ac8812b" class=3D"conflue=
+nceTh">
+<p local-id=3D"8e8c97ec5149">Specialty</p></th>
+<th data-local-id=3D"a42dc902-08a9-44e9-b958-23c181213add" class=3D"conflue=
+nceTh">
+<p local-id=3D"136824433575">Result</p></th>
+</tr>
+<tr data-local-id=3D"d42dc35d-516f-4306-8c6c-ddd315848d82">
+<td data-local-id=3D"de9db7f7-812b-4688-921c-b34e239aa10b" class=3D"conflue=
+nceTd">
+<p local-id=3D"3623901374e3">Specialist</p></td>
+<td data-local-id=3D"6a6b4368-5ef3-4c0e-b10a-575b728df3b1" class=3D"conflue=
+nceTd">
+<p local-id=3D"af20cadbceaa">Cardiology</p></td>
+<td data-local-id=3D"04498cb0-8437-412f-9c07-1d89255e87c7" class=3D"conflue=
+nceTd">
+<p local-id=3D"52483435c575">3</p></td>
+</tr>
+<tr data-local-id=3D"a19d1581-0cc7-42bd-be40-2eb975e72dd7">
+<td data-local-id=3D"05108a9a-a73c-4add-afdd-d5e80196dc25" class=3D"conflue=
+nceTd">
+<p local-id=3D"414fad569b43">Specialist</p></td>
+<td data-local-id=3D"8f99a4dd-0d97-463f-97da-e71ad417a42b" class=3D"conflue=
+nceTd">
+<p local-id=3D"1ac64a43d947">Urology</p></td>
+<td data-local-id=3D"0abe46d5-d3b1-4ad9-a9f6-1214487c7b8c" class=3D"conflue=
+nceTd">
+<p local-id=3D"44f4205d3274">3</p></td>
+</tr>
+<tr data-local-id=3D"0a5619a8-cf59-4053-be63-cbf0dc417fcb">
+<td data-local-id=3D"441aa39b-0a72-49b4-8617-364b7ab3b13c" class=3D"conflue=
+nceTd">
+<p local-id=3D"1194a451da7f">Specialist</p></td>
+<td data-local-id=3D"0f671845-3cdd-4017-a4a6-da729cb0095d" class=3D"conflue=
+nceTd">
+<p local-id=3D"af0f00aa6a22">Pulmonology</p></td>
+<td data-local-id=3D"7e447ecc-9709-4c0c-81e5-f0ca32dabd5e" class=3D"conflue=
+nceTd">
+<p local-id=3D"47783639c9d2">3</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p local-id=3D"c7e3089d823c">Many current rules collapse into rows of one t=
+able. <a href=3D"https://linkmn-my.sharepoint.com/personal/gary_sole_bluecr=
+ossmn_com/_layouts/15/Doc.aspx?sourcedoc=3D%7B8993138A-3E36-4F82-ACC5-9CFCF=
+E481413%7D&amp;file=3DStage_RulesProcess_20260526143200.csv&amp;action=3Dde=
+fault&amp;mobileredirect=3Dtrue" class=3D"external-link" rel=3D"nofollow">[=
+Stage_Rule...0526143200 | Excel]</a></p>
+<hr local-id=3D"39d471b7-d6f4-441e-b638-d27c3b674eb0">
+<h3 local-id=3D"3f18c63d60f9" id=3D"Claims/GroupingRules-TherapyTable">Ther=
+apy Table</h3>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"0e023131-764d-475b-96d2-2c7=
+65a8241d5" class=3D"confluenceTable">
+<tbody>
+<tr data-local-id=3D"a459e992-673c-4133-88a8-37688610c525">
+<th data-local-id=3D"e726efb1-543f-4acf-975c-6baed91d431d" class=3D"conflue=
+nceTh">
+<p local-id=3D"7397eb6b4db8">Service</p></th>
+<th data-local-id=3D"d348483a-bf5e-4acc-b26c-04855c436932" class=3D"conflue=
+nceTh">
+<p local-id=3D"f167f59f4889">Benefit</p></th>
+</tr>
+<tr data-local-id=3D"19d569b2-78f9-4128-9f6b-15d3ffc58109">
+<td data-local-id=3D"198e11b1-a8c0-43eb-b8d1-6552a8cce8d5" class=3D"conflue=
+nceTd">
+<p local-id=3D"077950396953">PT</p></td>
+<td data-local-id=3D"cad351cc-96c9-45a7-9ea3-cccdc3a2219a" class=3D"conflue=
+nceTd">
+<p local-id=3D"5a3a2c479d45">27</p></td>
+</tr>
+<tr data-local-id=3D"fc3259af-e495-4091-a148-fe671ed6c543">
+<td data-local-id=3D"4f44d592-715e-4e66-9afc-5c0d53558b15" class=3D"conflue=
+nceTd">
+<p local-id=3D"c6ff59583109">OT</p></td>
+<td data-local-id=3D"d509070b-efc0-4cc5-9e0a-4f1ec10dcd9a" class=3D"conflue=
+nceTd">
+<p local-id=3D"2f7386e2d5f8">27</p></td>
+</tr>
+<tr data-local-id=3D"af5638ec-da45-4fe9-ae92-54f928eb5cb5">
+<td data-local-id=3D"ee817125-8e6f-4cea-8cd6-e1d5a53238ef" class=3D"conflue=
+nceTd">
+<p local-id=3D"c7d9b8d88b12">Speech</p></td>
+<td data-local-id=3D"4207c444-b7d4-4d17-a9c2-0de93ff07060" class=3D"conflue=
+nceTd">
+<p local-id=3D"7faef7e9e7f1">27</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr local-id=3D"fac0d35f-e906-47bc-84c4-2669a84d008d">
+<h3 local-id=3D"60153afb92db" id=3D"Claims/GroupingRules-ImagingTable">Imag=
+ing Table</h3>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"0c01b75a-a121-4d70-bf6c-088=
+a5ac2a3cd" class=3D"confluenceTable">
+<tbody>
+<tr data-local-id=3D"b3d1fddb-e007-4a59-850b-12c80668b6d8">
+<th data-local-id=3D"8c90cb44-fd98-4db5-a3d0-4fd00f18aa40" class=3D"conflue=
+nceTh">
+<p local-id=3D"235416a4fca3">Imaging Type</p></th>
+<th data-local-id=3D"223379de-8fdb-4309-a289-3a3d723c5a1c" class=3D"conflue=
+nceTh">
+<p local-id=3D"bf8123e1e44b">Benefit</p></th>
+</tr>
+<tr data-local-id=3D"2c9cbede-ab05-4346-a3fa-f2a584c1907e">
+<td data-local-id=3D"2c646e8f-4b8e-4d3f-8df2-7b8d124c9c44" class=3D"conflue=
+nceTd">
+<p local-id=3D"e0624ad58742">Routine</p></td>
+<td data-local-id=3D"dfd966f8-6de7-44bb-bece-8729c891123b" class=3D"conflue=
+nceTd">
+<p local-id=3D"a8897b13d22b">15</p></td>
+</tr>
+<tr data-local-id=3D"0608a7a9-32b2-4d0e-b2ef-232ab55a5a78">
+<td data-local-id=3D"d2201f1b-60f3-404a-a06a-8837014713e0" class=3D"conflue=
+nceTd">
+<p local-id=3D"18071ddbe505">Advanced</p></td>
+<td data-local-id=3D"ea467119-a1d0-4050-9289-e7eb18590404" class=3D"conflue=
+nceTd">
+<p local-id=3D"cb9746c85c66">13</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p local-id=3D"1c33dfefc0c7">These exist repeatedly throughout the file. <a=
+ href=3D"https://linkmn-my.sharepoint.com/personal/gary_sole_bluecrossmn_co=
+m/_layouts/15/Doc.aspx?sourcedoc=3D%7B8993138A-3E36-4F82-ACC5-9CFCFE481413%=
+7D&amp;file=3DStage_RulesProcess_20260526143200.csv&amp;action=3Ddefault&am=
+p;mobileredirect=3Dtrue" class=3D"external-link" rel=3D"nofollow">[Stage_Ru=
+le...0526143200 | Excel]</a></p>
+<hr local-id=3D"edd5954b-33df-46ca-8851-7519f48a9438">
+<h3 local-id=3D"c7a4a14987c8" id=3D"Claims/GroupingRules-MentalHealthTable"=
+>Mental Health Table</h3>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"d61586d7-b346-4b23-b350-bf0=
+20253d3fb" class=3D"confluenceTable">
+<tbody>
+<tr data-local-id=3D"3df50005-9617-490c-9bca-1f25f032c314">
+<th data-local-id=3D"a030d11a-e533-466c-9489-9264f19744cd" class=3D"conflue=
+nceTh">
+<p local-id=3D"b5e7c154dc3e">Mental Health Category</p></th>
+<th data-local-id=3D"809b0b02-c45b-4bbb-aff9-010d18ffcab5" class=3D"conflue=
+nceTh">
+<p local-id=3D"0d65b5e62b64">Benefit</p></th>
+</tr>
+<tr data-local-id=3D"3f5d82ac-96d0-476e-9ed9-bfe8213f322d">
+<td data-local-id=3D"b3415e79-5d35-400a-9846-b7a8c29e511e" class=3D"conflue=
+nceTd">
+<p local-id=3D"2be246d9ee0b">Specialist</p></td>
+<td data-local-id=3D"3512a9e0-2b8f-4b83-be90-386061a8d02e" class=3D"conflue=
+nceTd">
+<p local-id=3D"bab6f3009905">16</p></td>
+</tr>
+<tr data-local-id=3D"eda416a7-3e2d-4f4e-878d-300bb729109c">
+<td data-local-id=3D"9d29e09c-7645-4f66-a309-f6325f33e7e0" class=3D"conflue=
+nceTd">
+<p local-id=3D"fb06c995341f">Outpatient Facility</p></td>
+<td data-local-id=3D"6d8da7b6-e486-4ac2-99ce-2a5cca053100" class=3D"conflue=
+nceTd">
+<p local-id=3D"351fa62976fe">17</p></td>
+</tr>
+<tr data-local-id=3D"f21b01d2-2de2-4a2b-b715-98329580ae55">
+<td data-local-id=3D"14fd5224-b8d9-4695-9329-2125e3e6049e" class=3D"conflue=
+nceTd">
+<p local-id=3D"c3cd19006153">Inpatient</p></td>
+<td data-local-id=3D"2da8114d-b643-46d8-87b8-3daba3f606d0" class=3D"conflue=
+nceTd">
+<p local-id=3D"b6f9de29dd65">33</p></td>
+</tr>
+<tr data-local-id=3D"686ebc5f-2f29-4ae1-884a-3b1d5d1efa02">
+<td data-local-id=3D"458d6c41-a111-4603-b749-114b91a00291" class=3D"conflue=
+nceTd">
+<p local-id=3D"5e60177ff6aa">Day Treatment</p></td>
+<td data-local-id=3D"5265f9e1-3e24-4399-87c7-83fe13d72624" class=3D"conflue=
+nceTd">
+<p local-id=3D"45fce33d4fef">16</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr local-id=3D"4920eae9-2dd0-4fcc-86bd-b6daa0339e34">
+<h1 local-id=3D"1d70c6686a60" id=3D"Claims/GroupingRules-Node5-ClaimRollupL=
+ogic">Node 5 - Claim Rollup Logic</h1>
+<p local-id=3D"47ad8e495f79">This is where Nected's Flow is valuable.</p>
+<p local-id=3D"bcda3f4a6fcd">Current process:</p>
+<p local-id=3D"fbed04395767">For each line:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">find fi=
+rst matching rule
+</pre>
+</div>
+</div>
+<p local-id=3D"f0425c9663dd">Then:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">claimRe=
+sult =3D
+line with lowest RuleRank
+</pre>
+</div>
+</div>
+<p local-id=3D"f5a48f34a5e2">Instead create two outputs:</p>
+<h3 local-id=3D"9212b8a19558" id=3D"Claims/GroupingRules-LineEvaluation">Li=
+ne Evaluation</h3>
+<p local-id=3D"b4108714be65">For each line:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  "matchedBenefitCode": 16,
+  "matchedPriority": 37
+}</pre>
+</div>
+</div>
+<h3 local-id=3D"2b705f8364db" id=3D"Claims/GroupingRules-Aggregation">Aggre=
+gation</h3>
+<p local-id=3D"f7a52b34b0aa">Then Flow performs:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: sql; gutter: false; theme: Confluence" data-theme=3D"Confluence">MIN(matc=
+hedPriority)</pre>
+</div>
+</div>
+<p local-id=3D"8a51e9a76fe8"></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">{
+  claimBenefitCode,
+  triggeringLine,
+  triggeringRule
+}</pre>
+</div>
+</div>
+<hr local-id=3D"a379b0d3-b532-46d1-8594-630f9237023d">
+<h1 local-id=3D"f39279284160" id=3D"Claims/GroupingRules-BiggestOpportunity=
+">Biggest Opportunity</h1>
+<p local-id=3D"ebd0b54f3309">The spreadsheet is really mixing <strong>three=
+ concerns</strong>:</p>
+<h3 local-id=3D"ba7dba49e8bb" id=3D"Claims/GroupingRules-Concern1">Concern =
+1</h3>
+<p local-id=3D"836d834bbc71">Classification</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">Is this=
+ inpatient?
+Is this telehealth?
+Is this radiology?</pre>
+</div>
+</div>
+<h3 local-id=3D"d8bd11ca3783" id=3D"Claims/GroupingRules-Concern2">Concern =
+2</h3>
+<p local-id=3D"287a0de0f045">Provider mapping</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">PCP
+Specialist
+Mental Health
+Therapy</pre>
+</div>
+</div>
+<h3 local-id=3D"2f35237e16c0" id=3D"Claims/GroupingRules-Concern3">Concern =
+3</h3>
+<p local-id=3D"3df329ee30db">Benefit mapping</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">Categor=
+y -&gt; BenefitCode</pre>
+</div>
+</div>
+<p local-id=3D"f655ca1919ec">Those three concerns are repeated hundreds of =
+times. <a href=3D"https://linkmn-my.sharepoint.com/personal/gary_sole_bluec=
+rossmn_com/_layouts/15/Doc.aspx?sourcedoc=3D%7B8993138A-3E36-4F82-ACC5-9CFC=
+FE481413%7D&amp;file=3DStage_RulesProcess_20260526143200.csv&amp;action=3Dd=
+efault&amp;mobileredirect=3Dtrue" class=3D"external-link" rel=3D"nofollow">=
+[Stage_Rule...0526143200 | Excel]</a></p>
+<p local-id=3D"adb529b38abc">A Nected design should separate them into:</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">Raw Cla=
+im Line
+    =E2=86=93
+Classification Tables
+    =E2=86=93
+Derived Categories
+    =E2=86=93
+Benefit Mapping Tables
+    =E2=86=93
+Line Result
+    =E2=86=93
+Claim Aggregation</pre>
+</div>
+</div>
+<p local-id=3D"11c090b1bd08">This would likely reduce the effective rule co=
+unt from ~730 ranked evaluations to perhaps:</p>
+<ul local-id=3D"681c76fb-9cf7-415d-8657-73235b2384bf">
+<li local-id=3D"9a72ba3d-6e83-4e5e-bc16-ffbb1fe542cf">
+<p local-id=3D"c68a2fc038c9">10-20 flow decisions</p></li>
+<li local-id=3D"dcdce6bf-250b-4582-960f-47cfafec2d7a">
+<p local-id=3D"2ce8a03a3a00">10-15 decision tables</p></li>
+<li local-id=3D"a78ca011-043f-4724-b06a-89a9cfe36500">
+<p local-id=3D"dfcf11b14bf1">100-200 lookup rows total</p></li>
+</ul>
+<p local-id=3D"ac37634a560f">while producing the exact same OutcomeBenefitC=
+ode results as the current engine.</p>
+<p local-id=3D"231192a2e029"></p>
+    </div>
+</body>
+</html>
+------=_Part_94_224336523.1784549810899--
