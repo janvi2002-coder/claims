@@ -1,0 +1,51 @@
+status,string({{.customInput.Employerid}}),string({{.customInput.PlaceOfService}}),string({{.customInput.CPT_HCPS}}),string({{.customInput.ModifierCode}}),string({{.customInput.TaxonomySpeciality}}),string({{.customInput.DiagnosisCode}}),string({{.customInput.SpecialityID}}),,numeric(BenefitCode),string(ServiceLine),numeric(RuleNumber),numeric(RuleRank)
+true,"in [6991,6882,10491,10496,10497]","in [1,2,3,10,11,12,14,15,17,18,20,49,50,60,81]",-,-,-,"in [""COVID19""]",-,,25,"""Covid-19 Services""",715,1
+true,-,-,-,in [26],-,-,-,,14,"""Radiology - Reading Fee""",168,2
+true,-,-,-,"in [""3P""]",-,"in [""AdminBucket""]",-,,14,"""Admin Fee""",903,9
+true,in [600030],-,-,-,-,-,-,,25,"""Medical Nutrition Therapy""",904,10
+true,-,-,-,-,-,"in [""Maternity""]",-,,31,"""Maternity - Prenatal Care""",861,14
+true,-,in [24],-,"in [""SG""]",-,-,-,,6,"""Ambulatory Surgical Center - Outpatient""",900,17
+true,in [10516],"in [11,2,10,3,6,8,9,15,16,18,49,71,72,81]",-,-,-,-,-,,1,"""Mental Health Special Needs""",888,34
+true,in [10516],"in [11,2,10,3,6,8,9,15,16,18,49,71,72,81]",-,-,-,"in [""F840""]",-,,1,"""Mental Health Autism""",889,35
+true,-,in [25],-,-,"in [""Midwife""]",-,in [253],,32,"""Maternity - Delivery & Postnatal""",880,49
+true,-,in [20],-,-,-,-,-,,22,"""Urgent Care Center - Urgent Care""",534,136
+true,-,"in [11,12,49]",-,-,"in [""HomeInfusionTherapy""]",-,-,,35,"""Home Infusion Therapy""",859,137
+true,in [500090],"in [10,2]",-,"in [""GT"",95,""FQ"",""FR""]",-,-,-,,19,"""Telehealth""",895,138
+true,-,"in [11,2,10,49,50,71,72]",-,-,"in [""FamilyPractice"",""PrimaryCare"",""AdolescentandYoungAdultMedicine"",""OfficeVisit""]",-,"in [1,10037,11003,12603]",,1,"""Family Practice - PCP Visit""",85,139
+true,-,"in [11,2,10,49,50,72]",-,-,"in [""InternalMedicine"",""PrimaryCare"",""OfficeVisit""]",-,"in [21,10037]",,1,"""Internal Medicine - PCP Visit""",190,140
+true,-,"in [11,2,49,50,72]",-,-,"in [""Cardiology"",""OfficeVisit"",""CardiacProcedures""]",-,in [51],,3,"""Cardiology - Specialist Visit""",33,141
+true,-,"in [11,2,49,50,71,72]",-,-,"in [""InfectiousDiseases"",""OfficeVisit""]",-,in [61],,3,"""Infectious Diseases - Specialist Visit""",186,142
+true,-,"in [11,2,49,50,72]",-,-,"in [""Pediatrics"",""InfectiousDisease"",""OfficeVisit""]",-,in [62],,3,"""Pediatrics, Infectious Disease - Specialist Visit""",316,143
+true,-,"in [11,2,49,50,72]",-,-,"in [""Dermatology"",""OfficeVisit""]",-,in [71],,3,"""Dermatology - Specialist Visit""",59,144
+true,-,"in [11,2,49,50,72]",-,-,"in [""Endocrinology"",""OfficeVisit""]",-,in [81],,3,"""Endocrinology - Specialist Visit""",71,145
+true,-,"in [11,2,49,50,72]",-,-,"in [""Rheumatology"",""OfficeVisit""]",-,in [91],,3,"""Rheumatology - Specialist Visit""",352,146
+true,-,"in [11,2,49,50,72]",-,-,"in [""PediatricRheumatology"",""OfficeVisit""]",-,in [92],,3,"""Pediatric Rheumatology - Specialist Visit""",307,147
+true,-,"in [11,2,49,50,72]",-,-,"in [""Geriatrics"",""OfficeVisit""]",-,in [101],,1,"""Geriatrics - Specialist Visit""",111,148
+true,-,"in [11,2,49,50,72]",-,-,"in [""Hematology"",""OfficeVisit""]",-,in [111],,3,"""Hematology - Specialist Visit""",118,149
+true,-,"in [11,2,49,50,72]",-,-,"in [""GeneralOncology"",""OfficeVisit""]",-,in [112],,3,"""General Oncology - Specialist Visit""",94,150
+true,-,"in [11,2,49,50,72]",-,-,"in [""DiagnosticRadiology"",""OfficeVisit""]",-,in [121],,3,"""Diagnostic Radiology - Specialist Visit""",63,151
+true,-,"in [11,2,49,50,72]",-,-,"in [""Radiation"",""Oncology"",""OfficeVisit""]",-,in [129],,3,"""Radiation, Oncology - Specialist Visit""",428,152
+true,-,"in [10,11,2,49,50,72]",-,-,"in [""Urology"",""OfficeVisit""]",-,in [141],,3,"""Urology - Specialist Visit""",406,153
+true,-,"in [11,2,49,50,72]",-,-,"in [""Nephrology"",""OfficeVisit""]",-,in [161],,3,"""Nephrology - Specialist Visit""",220,154
+true,-,"in [11,2,49,50,72]",-,-,"in [""Neurology"",""OfficeVisit""]",-,in [171],,3,"""Neurology - Specialist Visit""",222,155
+true,-,"in [11,2,49,50,72]",-,-,"in [""Gastroenterology"",""OfficeVisit""]",-,in [181],,3,"""Gastroenterology - Specialist Visit""",89,156
+true,-,"in [11,2,49,50,72]",-,-,"in [""PediatricGastroenterology"",""OfficeVisit""]",-,in [182],,3,"""Pediatric Gastroenterology - Specialist Visit""",298,157
+true,-,"in [11,2,49,50,72]",-,-,"in [""Ophthalmology"",""Optometry"",""OfficeVisit""]",-,"in [211,212]",,3,"""Ophthalmology/Optometry - Specialist Visit""",261,158
+true,-,"in [11,2,49,50,72]",-,-,"in [""ENT"",""OfficeVisit""]",-,in [216],,3,"""ENT - Specialist Visit""",425,159
+true,-,"in [11,2,49,50,72]",-,-,"in [""Audiology"",""OfficeVisit""]",-,in [217],,3,"""Audiology - Specialist Visit""",419,160
+true,-,"in [11,2,10,49,50,72]",-,-,"in [""Pediatrics"",""PrimaryCare"",""AdolescentMedicineandPediatric"",""AdolescentMedicine"",""OfficeVisit""]",-,"in [231,10037,11006,11005]",,1,"""Pediatrics - PCP Visit""",315,161
+true,-,"in [11,2,49,50,72]",-,-,"in [""PediatricCardiology"",""OfficeVisit"",""CardiacProcedures""]",-,in [233],,3,"""Pediatric Cardiology - Specialist Visit""",295,162
+true,-,"in [11,2,49,50,72]",-,-,"in [""PediatricEndocrinology"",""OfficeVisit""]",-,in [234],,3,"""Pediatric Endocrinology - Specialist Visit""",296,163
+true,-,"in [11,2,49,50,72]",-,-,"in [""PediatricHema/Oncology"",""OfficeVisit""]",-,in [235],,3,"""Pediatric Hema/Oncology - Specialist Visit""",300,164
+true,-,"in [11,2,49,50,72]",-,-,"in [""PediatricNephrology"",""OfficeVisit""]",-,in [236],,3,"""Pediatric Nephrology - Specialist Visit""",302,165
+true,-,"in [11,2,49,50,72]",-,-,"in [""PediatricPulmonology"",""OfficeVisit""]",-,in [242],,3,"""Pediatric Pulmonology - Specialist Visit""",305,166
+true,-,"in [11,2,49,50,72]",-,-,"in [""ReproductiveEndocrinology"",""OfficeVisit""]",-,in [255],,3,"""Reproductive Endocrinology - Specialist Visit""",348,167
+true,-,"in [11,2,10,27,49,50,71,72]",-,-,"in [""PhysicianAssistant"",""PrimaryCare"",""OfficeVisit""]",-,"in [7,10037]",,1,"""Physician Assistant - PCP Visit""",491,168
+true,-,"in [11,2,10,49,50,72]",-,-,"in [""Obstetrics/Gynecology"",""OfficeVisit""]",-,in [256],,1,"""Obstetrics/Gynecology - PCP Visit""",248,169
+true,-,"in [11,2,49,50,72]",-,-,"in [""Anesthesiology"",""OfficeVisit""]",-,in [271],,3,"""Anesthesiology - Specialist Visit""",10,170
+true,-,"in [11,2,49,50,72]",-,-,"in [""GeneralSurgery"",""OfficeVisit""]",-,in [281],,3,"""General Surgery - Specialist Visit""",108,171
+true,-,"in [11,2,49,50,72]",-,-,"in [""PediatricSurgery"",""OfficeVisit""]",-,in [283],,3,"""Pediatric Surgery - Specialist Visit""",311,172
+true,-,"in [11,2,49,50,72]",-,-,"in [""PlasticSurgery"",""OfficeVisit""]",-,in [284],,3,"""Plastic Surgery - Specialist Visit""",330,173
+true,-,"in [11,2,49,50,72]",-,-,"in [""CardiothoracicSurgery"",""OfficeVisit""]",-,in [288],,3,"""Cardiothoracic Surgery - Specialist Visit""",34,174
+true,-,"in [11,2,49,50,72]",-,-,"in [""ColorectalSurgery"",""OfficeVisit""]",-,in [290],,3,"""Colorectal Surgery - Specialist Visit""",45,175
+true,-,"in [11,2,49,50,72]",-,-,"in [""Neurosurgery"",""OfficeVisit""]",-,in [293],,3,"""Neurosurgery - Specialist Visit""",229,176
