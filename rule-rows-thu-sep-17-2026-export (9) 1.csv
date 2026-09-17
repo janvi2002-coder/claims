@@ -1,0 +1,80 @@
+status,string({{.customInput.Employerid}}),string({{.customInput.PlaceOfService}}),string({{.customInput.ModifierCode}}),string({{.customInput.TaxonomySpeciality}}),string({{.customInput.DiagnosisCode}}),string({{.customInput.SpecialityID}}),,numeric(BenefitCode),string(ServiceLine),numeric(RuleNumber),numeric(RuleRank)
+true,"in [6991,6882,10491,10496,10497]","in [1,2,3,10,11,12,14,15,17,18,20,49,50,60,81]",-,-,"in [""COVID19""]",-,,25,"""Covid-19 Services""",715,1
+true,-,-,-,-,-,-,,14,"""Radiology - Reading Fee""",168,2
+true,-,-,-,-,-,-,,14,"""Admin Fee""",903,9
+true,-,-,-,-,-,-,,25,"""Medical Nutrition Therapy""",904,10
+true,-,-,-,-,-,-,,31,"""Maternity - Prenatal Care""",861,14
+true,-,-,-,-,-,-,,6,"""Ambulatory Surgical Center - Outpatient""",900,17
+true,-,-,-,-,-,-,,1,"""Mental Health Special Needs""",888,34
+true,-,-,-,-,-,-,,1,"""Mental Health Autism""",889,35
+true,-,-,-,-,-,-,,32,"""Maternity - Delivery & Postnatal""",880,49
+true,-,-,-,-,-,-,,22,"""Urgent Care Center - Urgent Care""",534,136
+true,-,-,-,-,-,-,,35,"""Home Infusion Therapy""",859,137
+true,-,-,-,-,-,-,,19,"""Telehealth""",895,138
+true,-,-,-,-,-,-,,1,"""Family Practice - PCP Visit""",85,139
+true,-,-,-,-,-,-,,1,"""Internal Medicine - PCP Visit""",190,140
+true,-,-,-,-,-,-,,3,"""Cardiology - Specialist Visit""",33,141
+true,-,-,-,-,-,-,,3,"""Infectious Diseases - Specialist Visit""",186,142
+true,-,-,-,-,-,-,,3,"""Pediatrics, Infectious Disease - Specialist Visit""",316,143
+true,-,-,-,-,-,-,,3,"""Dermatology - Specialist Visit""",59,144
+true,-,-,-,-,-,-,,3,"""Endocrinology - Specialist Visit""",71,145
+true,-,-,-,-,-,-,,3,"""Rheumatology - Specialist Visit""",352,146
+true,-,-,-,-,-,-,,3,"""Pediatric Rheumatology - Specialist Visit""",307,147
+true,-,-,-,-,-,-,,1,"""Geriatrics - Specialist Visit""",111,148
+true,-,-,-,-,-,-,,3,"""Hematology - Specialist Visit""",118,149
+true,-,-,-,-,-,-,,3,"""General Oncology - Specialist Visit""",94,150
+true,-,-,-,-,-,-,,3,"""Diagnostic Radiology - Specialist Visit""",63,151
+true,-,-,-,-,-,-,,3,"""Radiation, Oncology - Specialist Visit""",428,152
+true,-,-,-,-,-,-,,3,"""Urology - Specialist Visit""",406,153
+true,-,-,-,-,-,-,,3,"""Nephrology - Specialist Visit""",220,154
+true,-,-,-,-,-,-,,3,"""Neurology - Specialist Visit""",222,155
+true,-,-,-,-,-,-,,3,"""Gastroenterology - Specialist Visit""",89,156
+true,-,-,-,-,-,-,,3,"""Pediatric Gastroenterology - Specialist Visit""",298,157
+true,-,-,-,-,-,-,,3,"""Ophthalmology/Optometry - Specialist Visit""",261,158
+true,-,-,-,-,-,-,,3,"""ENT - Specialist Visit""",425,159
+true,-,-,-,-,-,-,,3,"""Audiology - Specialist Visit""",419,160
+true,-,-,-,-,-,-,,1,"""Pediatrics - PCP Visit""",315,161
+true,-,-,-,-,-,-,,3,"""Pediatric Cardiology - Specialist Visit""",295,162
+true,-,-,-,-,-,-,,3,"""Pediatric Endocrinology - Specialist Visit""",296,163
+true,-,-,-,-,-,-,,3,"""Pediatric Hema/Oncology - Specialist Visit""",300,164
+true,-,-,-,-,-,-,,3,"""Pediatric Nephrology - Specialist Visit""",302,165
+true,-,-,-,-,-,-,,3,"""Pediatric Pulmonology - Specialist Visit""",305,166
+true,-,-,-,-,-,-,,3,"""Reproductive Endocrinology - Specialist Visit""",348,167
+true,-,-,-,-,-,-,,1,"""Physician Assistant - PCP Visit""",491,168
+true,-,-,-,-,-,-,,1,"""Obstetrics/Gynecology - PCP Visit""",248,169
+true,-,-,-,-,-,-,,3,"""Anesthesiology - Specialist Visit""",10,170
+true,-,-,-,-,-,-,,3,"""General Surgery - Specialist Visit""",108,171
+true,-,-,-,-,-,-,,3,"""Pediatric Surgery - Specialist Visit""",311,172
+true,-,-,-,-,-,-,,3,"""Plastic Surgery - Specialist Visit""",330,173
+true,-,-,-,-,-,-,,3,"""Cardiothoracic Surgery - Specialist Visit""",34,174
+true,-,-,-,-,-,-,,3,"""Colorectal Surgery - Specialist Visit""",45,175
+true,-,-,-,-,-,-,,3,"""Neurosurgery - Specialist Visit""",229,176
+true,-,-,-,-,-,-,,3,"""Orthopedic Surgery - Specialist Visit""",277,177
+true,-,-,-,-,-,-,,3,"""Vascular Surgery - Specialist Visit""",408,178
+true,-,-,-,-,-,-,,3,"""Oral and Maxillofacial Surgery - Specialist Visit""",263,179
+true,-,-,-,-,-,-,,3,"""Podiatry - Specialist Visit""",335,180
+true,-,-,-,-,-,-,,24,"""Chiropractor Visit""",867,181
+true,-,-,-,-,-,-,,3,"""Chiropractor - Specialist Visit""",38,182
+true,-,-,-,-,-,-,,27,"""Physical Therapy - Therapy""",424,183
+true,-,-,-,-,-,-,,3,"""Physical Medicine & Rehab - Specialist Visit""",321,184
+true,-,-,-,-,-,-,,16,"""Psychiatry - Mental Health Specialist Visit""",341,185
+true,-,-,-,-,-,-,,16,"""Psychology - Mental Health Specialist Visit""",342,186
+true,-,-,-,-,-,-,,27,"""Occupational Therapy - Therapy""",422,187
+true,-,-,-,-,-,-,,3,"""Occupational Medicine - Specialist Visit""",250,188
+true,-,-,-,-,-,-,,3,"""Nutrition - Specialist Visit""",239,189
+true,-,-,-,-,-,-,,2,"""Acupuncture""",2,190
+true,-,-,-,-,-,-,,3,"""Hepatology - Specialist Visit""",120,191
+true,-,-,-,-,-,-,,16,"""Licensed Professional Counselor (LPC) - Mental Health Specialist Visit""",199,192
+true,-,-,-,-,-,-,,16,"""Licensed Marriage & Family Therapist (LMFT) - Mental Health Specialist Visit""",198,193
+true,-,-,-,-,-,-,,3,"""Sports Medicine - Specialist Visit""",368,194
+true,-,-,-,-,-,-,,3,"""Pain Management - Specialist Visit""",284,195
+true,-,-,-,-,-,-,,3,"""Anaplastology - Specialist Visit""",6,196
+true,-,-,-,-,-,-,,3,"""Andrology - Specialist Visit""",7,197
+true,-,-,-,-,-,-,,16,"""Anxiety Disorders - Mental Health Specialist Visit""",11,198
+true,-,-,-,-,-,-,,25,"""Applied Behavioral Analysis - Therapy""",899,199
+true,-,-,-,-,-,-,,16,"""Applied Behavioral Analysis - Mental Health""",911,200
+true,-,-,-,-,-,-,,27,"""Applied Behavioral Analysis - Therapy""",12,201
+true,-,-,-,-,-,-,,3,"""Athletic Trainer - Specialist Visit""",14,202
+true,-,-,-,-,-,-,,3,"""Biofeedback - Specialist Visit""",18,203
+true,-,-,-,-,-,-,,3,"""Brain Center - Specialist Visit""",20,204
+true,-,-,-,-,-,-,,3,"""Cardiology - Specialist Visit""",22,205
