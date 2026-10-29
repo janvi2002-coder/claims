@@ -1,0 +1,1394 @@
+{
+  "entity": "rule",
+  "version": "draft",
+  "rootId": "87fda385-2765-4023-b1c0-e2e4ab095ae1",
+  "ref": {
+    "12c4857b-cd04-437b-a8b2-ce97f1dd6acf": {
+      "entity": "module",
+      "name": "CoupeClaims",
+      "data": {
+        "WorkspaceID": 2136,
+        "Name": "CoupeClaims",
+        "description": ""
+      }
+    },
+    "baa5ac5d-5a50-484a-96c9-2f627839b0d5": {
+      "entity": "module_schema",
+      "version": "CoupeClaims",
+      "category": "string",
+      "name": "partnerName",
+      "dependencies": [
+        "12c4857b-cd04-437b-a8b2-ce97f1dd6acf"
+      ],
+      "data": {
+        "WorkspaceID": 2136,
+        "Name": "partnerName",
+        "moduleId": "12c4857b-cd04-437b-a8b2-ce97f1dd6acf",
+        "dataType": "string",
+        "usageType": "optional",
+        "options": [
+          {
+            "value": "bcbsal"
+          },
+          {
+            "value": "meritain"
+          },
+          {
+            "value": "ameriben"
+          },
+          {
+            "value": "luminare"
+          },
+          {
+            "value": "national alliance"
+          },
+          {
+            "value": "ibx"
+          },
+          {
+            "value": "wgs"
+          }
+        ]
+      }
+    },
+    "0da81929-2ba9-42a2-b22d-f510cbf23fc3": {
+      "entity": "module_schema",
+      "version": "CoupeClaims",
+      "category": "string",
+      "name": "planType",
+      "dependencies": [
+        "12c4857b-cd04-437b-a8b2-ce97f1dd6acf"
+      ],
+      "data": {
+        "WorkspaceID": 2136,
+        "Name": "planType",
+        "moduleId": "12c4857b-cd04-437b-a8b2-ce97f1dd6acf",
+        "dataType": "string",
+        "usageType": "optional",
+        "options": [
+          {
+            "value": "F"
+          },
+          {
+            "value": "NF"
+          },
+          {
+            "value": "NF_TIER"
+          },
+          {
+            "value": "NF_NON_TIER"
+          }
+        ]
+      }
+    },
+    "87fda385-2765-4023-b1c0-e2e4ab095ae1": {
+      "entity": "rule",
+      "version": "draft",
+      "category": "decisionTable",
+      "name": "Preventive_Rule_Master",
+      "dependencies": [
+        "baa5ac5d-5a50-484a-96c9-2f627839b0d5",
+        "0da81929-2ba9-42a2-b22d-f510cbf23fc3"
+      ],
+      "data": {
+        "name": "Preventive_Rule_Master",
+        "customInput": {
+          "partnerName": {
+            "name": "partnerName",
+            "dataType": "string",
+            "executedValue": "ibx",
+            "query": "",
+            "next": "planType",
+            "schemaId": "baa5ac5d-5a50-484a-96c9-2f627839b0d5"
+          },
+          "planType": {
+            "name": "planType",
+            "dataType": "string",
+            "executedValue": "NF",
+            "query": "",
+            "previous": "partnerName",
+            "schemaId": "0da81929-2ba9-42a2-b22d-f510cbf23fc3"
+          }
+        },
+        "decisionTable": {
+          "rows": {
+            "group_1_0": {
+              "firstOutputData": "output_1_1",
+              "isEnabled": true,
+              "nextId": "group_2_0"
+            },
+            "group_2_0": {
+              "firstOutputData": "output_2_1",
+              "isEnabled": true,
+              "nextId": "group_3_0",
+              "prevId": "group_1_0"
+            },
+            "group_3_0": {
+              "firstOutputData": "output_3_1",
+              "isEnabled": true,
+              "nextId": "group_4_0",
+              "prevId": "group_2_0"
+            },
+            "group_4_0": {
+              "firstOutputData": "output_4_1",
+              "isEnabled": true,
+              "nextId": "group_5_0",
+              "prevId": "group_3_0"
+            },
+            "group_5_0": {
+              "firstOutputData": "output_5_1",
+              "isEnabled": true,
+              "nextId": "group_6_0",
+              "prevId": "group_4_0"
+            },
+            "group_6_0": {
+              "firstOutputData": "output_6_1",
+              "isEnabled": true,
+              "nextId": "group_7_0",
+              "prevId": "group_5_0"
+            },
+            "group_7_0": {
+              "firstOutputData": "output_7_1",
+              "isEnabled": true,
+              "nextId": "group_8_0",
+              "prevId": "group_6_0"
+            },
+            "group_8_0": {
+              "firstOutputData": "output_8_1",
+              "isEnabled": true,
+              "nextId": "group_9_0",
+              "prevId": "group_7_0"
+            },
+            "group_9_0": {
+              "firstOutputData": "output_9_1",
+              "isEnabled": true,
+              "nextId": "group_10_0",
+              "prevId": "group_8_0"
+            },
+            "group_10_0": {
+              "firstOutputData": "output_10_1",
+              "isEnabled": true,
+              "nextId": "group_11_0",
+              "prevId": "group_9_0"
+            },
+            "group_11_0": {
+              "firstOutputData": "output_11_1",
+              "isEnabled": true,
+              "nextId": "group_12_0",
+              "prevId": "group_10_0"
+            },
+            "group_12_0": {
+              "firstOutputData": "output_12_1",
+              "isEnabled": true,
+              "prevId": "group_11_0"
+            }
+          },
+          "properties": {
+            "param_partner": {
+              "nextId": "param_plan",
+              "type": "simpleCondition"
+            },
+            "param_plan": {
+              "prevId": "param_partner",
+              "type": "simpleCondition"
+            }
+          },
+          "results": {
+            "res_1": {
+              "dataType": "string",
+              "keyName": "integrationModel",
+              "nextId": "res_2"
+            },
+            "res_2": {
+              "dataType": "string",
+              "keyName": "preventiveRuleProcessing",
+              "nextId": "res_3",
+              "prevId": "res_1"
+            },
+            "res_3": {
+              "dataType": "string",
+              "keyName": "preventiveBenefitCodeLookup",
+              "nextId": "res_4",
+              "prevId": "res_2"
+            },
+            "res_4": {
+              "dataType": "string",
+              "keyName": "preventiveIndicator",
+              "nextId": "res_5",
+              "prevId": "res_3"
+            },
+            "res_5": {
+              "dataType": "string",
+              "keyName": "claimRuleLogic",
+              "nextId": "res_6",
+              "prevId": "res_4"
+            },
+            "res_6": {
+              "dataType": "string",
+              "keyName": "sourceField",
+              "prevId": "res_5"
+            }
+          },
+          "firstRow": "group_1_0",
+          "firstProperty": "param_partner",
+          "firstResult": "res_1"
+        },
+        "action": {
+          "then": {
+            "outputData": {
+              "output_1_1": {
+                "name": "integrationModel",
+                "dataType": "string",
+                "value": "MODEL_1",
+                "next": "output_1_2",
+                "executedValue": "MODEL_1"
+              },
+              "output_1_2": {
+                "name": "preventiveRuleProcessing",
+                "dataType": "string",
+                "value": "true",
+                "next": "output_1_3",
+                "executedValue": "true"
+              },
+              "output_1_3": {
+                "name": "preventiveBenefitCodeLookup",
+                "dataType": "string",
+                "value": "false",
+                "next": "output_1_4",
+                "executedValue": "false"
+              },
+              "output_1_4": {
+                "name": "preventiveIndicator",
+                "dataType": "string",
+                "value": "false",
+                "next": "output_1_5",
+                "executedValue": "false"
+              },
+              "output_1_5": {
+                "name": "claimRuleLogic",
+                "dataType": "string",
+                "value": "Evaluate item.productOrService.code against Coupe Preventive Code Master",
+                "next": "output_1_6",
+                "executedValue": "Evaluate item.productOrService.code against Coupe Preventive Code Master"
+              },
+              "output_1_6": {
+                "name": "sourceField",
+                "dataType": "string",
+                "value": "item.productOrService.code",
+                "executedValue": "item.productOrService.code"
+              },
+              "output_2_1": {
+                "name": "integrationModel",
+                "dataType": "string",
+                "value": "MODEL_3",
+                "next": "output_2_2",
+                "executedValue": "MODEL_3"
+              },
+              "output_2_2": {
+                "name": "preventiveRuleProcessing",
+                "dataType": "string",
+                "value": "false",
+                "next": "output_2_3",
+                "executedValue": "false"
+              },
+              "output_2_3": {
+                "name": "preventiveBenefitCodeLookup",
+                "dataType": "string",
+                "value": "false",
+                "next": "output_2_4",
+                "executedValue": "false"
+              },
+              "output_2_4": {
+                "name": "preventiveIndicator",
+                "dataType": "string",
+                "value": "false",
+                "next": "output_2_5",
+                "executedValue": "false"
+              },
+              "output_2_5": {
+                "name": "claimRuleLogic",
+                "dataType": "string",
+                "value": "NA - Only finalized claims received.",
+                "next": "output_2_6",
+                "executedValue": "NA - Only finalized claims received."
+              },
+              "output_2_6": {
+                "name": "sourceField",
+                "dataType": "string",
+                "value": "NA - Only finalized claims received.",
+                "executedValue": "NA - Only finalized claims received."
+              },
+              "output_3_1": {
+                "name": "integrationModel",
+                "dataType": "string",
+                "value": "MODEL_1",
+                "next": "output_3_2",
+                "executedValue": "MODEL_1"
+              },
+              "output_3_2": {
+                "name": "preventiveRuleProcessing",
+                "dataType": "string",
+                "value": "false",
+                "next": "output_3_3",
+                "executedValue": "false"
+              },
+              "output_3_3": {
+                "name": "preventiveBenefitCodeLookup",
+                "dataType": "string",
+                "value": "true",
+                "next": "output_3_4",
+                "executedValue": "true"
+              },
+              "output_3_4": {
+                "name": "preventiveIndicator",
+                "dataType": "string",
+                "value": "false",
+                "next": "output_3_5",
+                "executedValue": "false"
+              },
+              "output_3_5": {
+                "name": "claimRuleLogic",
+                "dataType": "string",
+                "value": "Lookup TPA benefit code in AETNA_MERITAIN_PREVENTIVE_BENEFIT_CODES",
+                "next": "output_3_6",
+                "executedValue": "Lookup TPA benefit code in AETNA_MERITAIN_PREVENTIVE_BENEFIT_CODES"
+              },
+              "output_3_6": {
+                "name": "sourceField",
+                "dataType": "string",
+                "value": "TPA benefit code field",
+                "executedValue": "TPA benefit code field"
+              },
+              "output_4_1": {
+                "name": "integrationModel",
+                "dataType": "string",
+                "value": "MODEL_1",
+                "next": "output_4_2",
+                "executedValue": "MODEL_1"
+              },
+              "output_4_2": {
+                "name": "preventiveRuleProcessing",
+                "dataType": "string",
+                "value": "false",
+                "next": "output_4_3",
+                "executedValue": "false"
+              },
+              "output_4_3": {
+                "name": "preventiveBenefitCodeLookup",
+                "dataType": "string",
+                "value": "true",
+                "next": "output_4_4",
+                "executedValue": "true"
+              },
+              "output_4_4": {
+                "name": "preventiveIndicator",
+                "dataType": "string",
+                "value": "false",
+                "next": "output_4_5",
+                "executedValue": "false"
+              },
+              "output_4_5": {
+                "name": "claimRuleLogic",
+                "dataType": "string",
+                "value": "Lookup TPA benefit code in AETNA_MERITAIN_PREVENTIVE_BENEFIT_CODES",
+                "next": "output_4_6",
+                "executedValue": "Lookup TPA benefit code in AETNA_MERITAIN_PREVENTIVE_BENEFIT_CODES"
+              },
+              "output_4_6": {
+                "name": "sourceField",
+                "dataType": "string",
+                "value": "TPA benefit code field",
+                "executedValue": "TPA benefit code field"
+              },
+              "output_5_1": {
+                "name": "integrationModel",
+                "dataType": "string",
+                "value": "MODEL_3",
+                "next": "output_5_2",
+                "executedValue": "MODEL_3"
+              },
+              "output_5_2": {
+                "name": "preventiveRuleProcessing",
+                "dataType": "string",
+                "value": "false",
+                "next": "output_5_3",
+                "executedValue": "false"
+              },
+              "output_5_3": {
+                "name": "preventiveBenefitCodeLookup",
+                "dataType": "string",
+                "value": "true",
+                "next": "output_5_4",
+                "executedValue": "true"
+              },
+              "output_5_4": {
+                "name": "preventiveIndicator",
+                "dataType": "string",
+                "value": "false",
+                "next": "output_5_5",
+                "executedValue": "false"
+              },
+              "output_5_5": {
+                "name": "claimRuleLogic",
+                "dataType": "string",
+                "value": "Lookup TPA benefit code in AETNA_MERITAIN_PREVENTIVE_BENEFIT_CODES",
+                "next": "output_5_6",
+                "executedValue": "Lookup TPA benefit code in AETNA_MERITAIN_PREVENTIVE_BENEFIT_CODES"
+              },
+              "output_5_6": {
+                "name": "sourceField",
+                "dataType": "string",
+                "value": "TPA benefit code field",
+                "executedValue": "TPA benefit code field"
+              },
+              "output_6_1": {
+                "name": "integrationModel",
+                "dataType": "string",
+                "value": "MODEL_2",
+                "next": "output_6_2",
+                "executedValue": "MODEL_2"
+              },
+              "output_6_2": {
+                "name": "preventiveRuleProcessing",
+                "dataType": "string",
+                "value": "true",
+                "next": "output_6_3",
+                "executedValue": "true"
+              },
+              "output_6_3": {
+                "name": "preventiveBenefitCodeLookup",
+                "dataType": "string",
+                "value": "false",
+                "next": "output_6_4",
+                "executedValue": "false"
+              },
+              "output_6_4": {
+                "name": "preventiveIndicator",
+                "dataType": "string",
+                "value": "false",
+                "next": "output_6_5",
+                "executedValue": "false"
+              },
+              "output_6_5": {
+                "name": "claimRuleLogic",
+                "dataType": "string",
+                "value": "Evaluate item.productOrService.code against Coupe Preventive Code Master",
+                "next": "output_6_6",
+                "executedValue": "Evaluate item.productOrService.code against Coupe Preventive Code Master"
+              },
+              "output_6_6": {
+                "name": "sourceField",
+                "dataType": "string",
+                "value": "item.productOrService.code",
+                "executedValue": "item.productOrService.code"
+              },
+              "output_7_1": {
+                "name": "integrationModel",
+                "dataType": "string",
+                "value": "MODEL_2",
+                "next": "output_7_2",
+                "executedValue": "MODEL_2"
+              },
+              "output_7_2": {
+                "name": "preventiveRuleProcessing",
+                "dataType": "string",
+                "value": "true",
+                "next": "output_7_3",
+                "executedValue": "true"
+              },
+              "output_7_3": {
+                "name": "preventiveBenefitCodeLookup",
+                "dataType": "string",
+                "value": "false",
+                "next": "output_7_4",
+                "executedValue": "false"
+              },
+              "output_7_4": {
+                "name": "preventiveIndicator",
+                "dataType": "string",
+                "value": "false",
+                "next": "output_7_5",
+                "executedValue": "false"
+              },
+              "output_7_5": {
+                "name": "claimRuleLogic",
+                "dataType": "string",
+                "value": "Evaluate item.productOrService.code against Coupe Preventive Code Master",
+                "next": "output_7_6",
+                "executedValue": "Evaluate item.productOrService.code against Coupe Preventive Code Master"
+              },
+              "output_7_6": {
+                "name": "sourceField",
+                "dataType": "string",
+                "value": "item.productOrService.code",
+                "executedValue": "item.productOrService.code"
+              },
+              "output_8_1": {
+                "name": "integrationModel",
+                "dataType": "string",
+                "value": "MODEL_2",
+                "next": "output_8_2",
+                "executedValue": "MODEL_2"
+              },
+              "output_8_2": {
+                "name": "preventiveRuleProcessing",
+                "dataType": "string",
+                "value": "false",
+                "next": "output_8_3",
+                "executedValue": "false"
+              },
+              "output_8_3": {
+                "name": "preventiveBenefitCodeLookup",
+                "dataType": "string",
+                "value": "true",
+                "next": "output_8_4",
+                "executedValue": "true"
+              },
+              "output_8_4": {
+                "name": "preventiveIndicator",
+                "dataType": "string",
+                "value": "false",
+                "next": "output_8_5",
+                "executedValue": "false"
+              },
+              "output_8_5": {
+                "name": "claimRuleLogic",
+                "dataType": "string",
+                "value": "Lookup TPA benefit code in HCSC_UMINARE_PREVENTIVE_BENEFIT_CODES",
+                "next": "output_8_6",
+                "executedValue": "Lookup TPA benefit code in HCSC_UMINARE_PREVENTIVE_BENEFIT_CODES"
+              },
+              "output_8_6": {
+                "name": "sourceField",
+                "dataType": "string",
+                "value": "TPA benefit code field",
+                "executedValue": "TPA benefit code field"
+              },
+              "output_9_1": {
+                "name": "integrationModel",
+                "dataType": "string",
+                "value": "MODEL_2",
+                "next": "output_9_2",
+                "executedValue": "MODEL_2"
+              },
+              "output_9_2": {
+                "name": "preventiveRuleProcessing",
+                "dataType": "string",
+                "value": "false",
+                "next": "output_9_3",
+                "executedValue": "false"
+              },
+              "output_9_3": {
+                "name": "preventiveBenefitCodeLookup",
+                "dataType": "string",
+                "value": "true",
+                "next": "output_9_4",
+                "executedValue": "true"
+              },
+              "output_9_4": {
+                "name": "preventiveIndicator",
+                "dataType": "string",
+                "value": "false",
+                "next": "output_9_5",
+                "executedValue": "false"
+              },
+              "output_9_5": {
+                "name": "claimRuleLogic",
+                "dataType": "string",
+                "value": "Lookup TPA benefit code in HCSC_UMINARE_PREVENTIVE_BENEFIT_CODES",
+                "next": "output_9_6",
+                "executedValue": "Lookup TPA benefit code in HCSC_UMINARE_PREVENTIVE_BENEFIT_CODES"
+              },
+              "output_9_6": {
+                "name": "sourceField",
+                "dataType": "string",
+                "value": "TPA benefit code field",
+                "executedValue": "TPA benefit code field"
+              },
+              "output_10_1": {
+                "name": "integrationModel",
+                "dataType": "string",
+                "value": "MODEL_2",
+                "next": "output_10_2",
+                "executedValue": "MODEL_2"
+              },
+              "output_10_2": {
+                "name": "preventiveRuleProcessing",
+                "dataType": "string",
+                "value": "false",
+                "next": "output_10_3",
+                "executedValue": "false"
+              },
+              "output_10_3": {
+                "name": "preventiveBenefitCodeLookup",
+                "dataType": "string",
+                "value": "true",
+                "next": "output_10_4",
+                "executedValue": "true"
+              },
+              "output_10_4": {
+                "name": "preventiveIndicator",
+                "dataType": "string",
+                "value": "false",
+                "next": "output_10_5",
+                "executedValue": "false"
+              },
+              "output_10_5": {
+                "name": "claimRuleLogic",
+                "dataType": "string",
+                "value": "Lookup TPA benefit code in BCBSSC_NA_PREVENTIVE_BENEFIT_CODES",
+                "next": "output_10_6",
+                "executedValue": "Lookup TPA benefit code in BCBSSC_NA_PREVENTIVE_BENEFIT_CODES"
+              },
+              "output_10_6": {
+                "name": "sourceField",
+                "dataType": "string",
+                "value": "TPA benefit code field",
+                "executedValue": "TPA benefit code field"
+              },
+              "output_11_1": {
+                "name": "integrationModel",
+                "dataType": "string",
+                "value": "MODEL_2",
+                "next": "output_11_2",
+                "executedValue": "MODEL_2"
+              },
+              "output_11_2": {
+                "name": "preventiveRuleProcessing",
+                "dataType": "string",
+                "value": "false",
+                "next": "output_11_3",
+                "executedValue": "false"
+              },
+              "output_11_3": {
+                "name": "preventiveBenefitCodeLookup",
+                "dataType": "string",
+                "value": "false",
+                "next": "output_11_4",
+                "executedValue": "false"
+              },
+              "output_11_4": {
+                "name": "preventiveIndicator",
+                "dataType": "string",
+                "value": "true",
+                "next": "output_11_5",
+                "executedValue": "true"
+              },
+              "output_11_5": {
+                "name": "claimRuleLogic",
+                "dataType": "string",
+                "value": "Read IBX preventive indicator field and map to true/false",
+                "next": "output_11_6",
+                "executedValue": "Read IBX preventive indicator field and map to true/false"
+              },
+              "output_11_6": {
+                "name": "sourceField",
+                "dataType": "string",
+                "value": "item.extension[preventativeIndicator]",
+                "executedValue": "item.extension[preventativeIndicator]"
+              },
+              "output_12_1": {
+                "name": "integrationModel",
+                "dataType": "string",
+                "value": "MODEL_3",
+                "next": "output_12_2",
+                "executedValue": "MODEL_3"
+              },
+              "output_12_2": {
+                "name": "preventiveRuleProcessing",
+                "dataType": "string",
+                "value": "false",
+                "next": "output_12_3",
+                "executedValue": "false"
+              },
+              "output_12_3": {
+                "name": "preventiveBenefitCodeLookup",
+                "dataType": "string",
+                "value": "false",
+                "next": "output_12_4",
+                "executedValue": "false"
+              },
+              "output_12_4": {
+                "name": "preventiveIndicator",
+                "dataType": "string",
+                "value": "false",
+                "next": "output_12_5",
+                "executedValue": "false"
+              },
+              "output_12_5": {
+                "name": "claimRuleLogic",
+                "dataType": "string",
+                "value": "NA - Only finalized claims received.",
+                "next": "output_12_6",
+                "executedValue": "NA - Only finalized claims received."
+              },
+              "output_12_6": {
+                "name": "sourceField",
+                "dataType": "string",
+                "value": "NA - Only finalized claims received.",
+                "executedValue": "NA - Only finalized claims received."
+              }
+            }
+          },
+          "else": {}
+        },
+        "conditions": {
+          "nodes": {
+            "param_partner": {
+              "sourceType": "customInput",
+              "dataType": "string",
+              "nodeType": "params",
+              "attribute": "partnerName",
+              "siblingIndex": 1
+            },
+            "param_plan": {
+              "sourceType": "customInput",
+              "dataType": "string",
+              "nodeType": "params",
+              "attribute": "planType",
+              "siblingIndex": 1
+            },
+            "c_1_1": {
+              "value": "",
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_1_0",
+              "leftNode": [
+                "param_partner"
+              ],
+              "rightNode": [
+                "rhs_1_1"
+              ],
+              "siblingIndex": -1
+            },
+            "rhs_1_1": {
+              "value": "bcbsal",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "c_1_1",
+              "siblingIndex": 1
+            },
+            "c_1_2": {
+              "value": "",
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_1_0",
+              "leftNode": [
+                "param_plan"
+              ],
+              "rightNode": [
+                "rhs_1_2"
+              ],
+              "siblingIndex": -1
+            },
+            "rhs_1_2": {
+              "value": "F",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "c_1_2",
+              "siblingIndex": 1
+            },
+            "group_1_0": {
+              "operator": "and",
+              "nodeType": "group",
+              "children": [
+                "c_1_1",
+                "c_1_2"
+              ],
+              "siblingIndex": 1
+            },
+            "c_2_1": {
+              "value": "",
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_2_0",
+              "leftNode": [
+                "param_partner"
+              ],
+              "rightNode": [
+                "rhs_2_1"
+              ],
+              "siblingIndex": -1
+            },
+            "rhs_2_1": {
+              "value": "bcbsal",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "c_2_1",
+              "siblingIndex": 1
+            },
+            "c_2_2": {
+              "value": "",
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_2_0",
+              "leftNode": [
+                "param_plan"
+              ],
+              "rightNode": [
+                "rhs_2_2"
+              ],
+              "siblingIndex": -1
+            },
+            "rhs_2_2": {
+              "value": "NF",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "c_2_2",
+              "siblingIndex": 1
+            },
+            "group_2_0": {
+              "operator": "and",
+              "nodeType": "group",
+              "children": [
+                "c_2_1",
+                "c_2_2"
+              ],
+              "siblingIndex": 1
+            },
+            "c_3_1": {
+              "value": "",
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_3_0",
+              "leftNode": [
+                "param_partner"
+              ],
+              "rightNode": [
+                "rhs_3_1"
+              ],
+              "siblingIndex": -1
+            },
+            "rhs_3_1": {
+              "value": "meritain",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "c_3_1",
+              "siblingIndex": 1
+            },
+            "c_3_2": {
+              "value": "",
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_3_0",
+              "leftNode": [
+                "param_plan"
+              ],
+              "rightNode": [
+                "rhs_3_2"
+              ],
+              "siblingIndex": -1
+            },
+            "rhs_3_2": {
+              "value": "F",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "c_3_2",
+              "siblingIndex": 1
+            },
+            "group_3_0": {
+              "operator": "and",
+              "nodeType": "group",
+              "children": [
+                "c_3_1",
+                "c_3_2"
+              ],
+              "siblingIndex": 1
+            },
+            "c_4_1": {
+              "value": "",
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_4_0",
+              "leftNode": [
+                "param_partner"
+              ],
+              "rightNode": [
+                "rhs_4_1"
+              ],
+              "siblingIndex": -1
+            },
+            "rhs_4_1": {
+              "value": "meritain",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "c_4_1",
+              "siblingIndex": 1
+            },
+            "c_4_2": {
+              "value": "",
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_4_0",
+              "leftNode": [
+                "param_plan"
+              ],
+              "rightNode": [
+                "rhs_4_2"
+              ],
+              "siblingIndex": -1
+            },
+            "rhs_4_2": {
+              "value": "NF_TIER",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "c_4_2",
+              "siblingIndex": 1
+            },
+            "group_4_0": {
+              "operator": "and",
+              "nodeType": "group",
+              "children": [
+                "c_4_1",
+                "c_4_2"
+              ],
+              "siblingIndex": 1
+            },
+            "c_5_1": {
+              "value": "",
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_5_0",
+              "leftNode": [
+                "param_partner"
+              ],
+              "rightNode": [
+                "rhs_5_1"
+              ],
+              "siblingIndex": -1
+            },
+            "rhs_5_1": {
+              "value": "meritain",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "c_5_1",
+              "siblingIndex": 1
+            },
+            "c_5_2": {
+              "value": "",
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_5_0",
+              "leftNode": [
+                "param_plan"
+              ],
+              "rightNode": [
+                "rhs_5_2"
+              ],
+              "siblingIndex": -1
+            },
+            "rhs_5_2": {
+              "value": "NF_NON_TIER",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "c_5_2",
+              "siblingIndex": 1
+            },
+            "group_5_0": {
+              "operator": "and",
+              "nodeType": "group",
+              "children": [
+                "c_5_1",
+                "c_5_2"
+              ],
+              "siblingIndex": 1
+            },
+            "c_6_1": {
+              "value": "",
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_6_0",
+              "leftNode": [
+                "param_partner"
+              ],
+              "rightNode": [
+                "rhs_6_1"
+              ],
+              "siblingIndex": -1
+            },
+            "rhs_6_1": {
+              "value": "ameriben",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "c_6_1",
+              "siblingIndex": 1
+            },
+            "c_6_2": {
+              "value": "",
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_6_0",
+              "leftNode": [
+                "param_plan"
+              ],
+              "rightNode": [
+                "rhs_6_2"
+              ],
+              "siblingIndex": -1
+            },
+            "rhs_6_2": {
+              "value": "F",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "c_6_2",
+              "siblingIndex": 1
+            },
+            "group_6_0": {
+              "operator": "and",
+              "nodeType": "group",
+              "children": [
+                "c_6_1",
+                "c_6_2"
+              ],
+              "siblingIndex": 1
+            },
+            "c_7_1": {
+              "value": "",
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_7_0",
+              "leftNode": [
+                "param_partner"
+              ],
+              "rightNode": [
+                "rhs_7_1"
+              ],
+              "siblingIndex": -1
+            },
+            "rhs_7_1": {
+              "value": "ameriben",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "c_7_1",
+              "siblingIndex": 1
+            },
+            "c_7_2": {
+              "value": "",
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_7_0",
+              "leftNode": [
+                "param_plan"
+              ],
+              "rightNode": [
+                "rhs_7_2"
+              ],
+              "siblingIndex": -1
+            },
+            "rhs_7_2": {
+              "value": "NF",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "c_7_2",
+              "siblingIndex": 1
+            },
+            "group_7_0": {
+              "operator": "and",
+              "nodeType": "group",
+              "children": [
+                "c_7_1",
+                "c_7_2"
+              ],
+              "siblingIndex": 1
+            },
+            "c_8_1": {
+              "value": "",
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_8_0",
+              "leftNode": [
+                "param_partner"
+              ],
+              "rightNode": [
+                "rhs_8_1"
+              ],
+              "siblingIndex": -1
+            },
+            "rhs_8_1": {
+              "value": "luminare",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "c_8_1",
+              "siblingIndex": 1
+            },
+            "c_8_2": {
+              "value": "",
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_8_0",
+              "leftNode": [
+                "param_plan"
+              ],
+              "rightNode": [
+                "rhs_8_2"
+              ],
+              "siblingIndex": -1
+            },
+            "rhs_8_2": {
+              "value": "F",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "c_8_2",
+              "siblingIndex": 1
+            },
+            "group_8_0": {
+              "operator": "and",
+              "nodeType": "group",
+              "children": [
+                "c_8_1",
+                "c_8_2"
+              ],
+              "siblingIndex": 1
+            },
+            "c_9_1": {
+              "value": "",
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_9_0",
+              "leftNode": [
+                "param_partner"
+              ],
+              "rightNode": [
+                "rhs_9_1"
+              ],
+              "siblingIndex": -1
+            },
+            "rhs_9_1": {
+              "value": "luminare",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "c_9_1",
+              "siblingIndex": 1
+            },
+            "c_9_2": {
+              "value": "",
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_9_0",
+              "leftNode": [
+                "param_plan"
+              ],
+              "rightNode": [
+                "rhs_9_2"
+              ],
+              "siblingIndex": -1
+            },
+            "rhs_9_2": {
+              "value": "NF",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "c_9_2",
+              "siblingIndex": 1
+            },
+            "group_9_0": {
+              "operator": "and",
+              "nodeType": "group",
+              "children": [
+                "c_9_1",
+                "c_9_2"
+              ],
+              "siblingIndex": 1
+            },
+            "c_10_1": {
+              "value": "",
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_10_0",
+              "leftNode": [
+                "param_partner"
+              ],
+              "rightNode": [
+                "rhs_10_1"
+              ],
+              "siblingIndex": -1
+            },
+            "rhs_10_1": {
+              "value": "national alliance",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "c_10_1",
+              "siblingIndex": 1
+            },
+            "c_10_2": {
+              "value": "",
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_10_0",
+              "leftNode": [
+                "param_plan"
+              ],
+              "rightNode": [
+                "rhs_10_2"
+              ],
+              "siblingIndex": -1
+            },
+            "rhs_10_2": {
+              "value": "NF",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "c_10_2",
+              "siblingIndex": 1
+            },
+            "group_10_0": {
+              "operator": "and",
+              "nodeType": "group",
+              "children": [
+                "c_10_1",
+                "c_10_2"
+              ],
+              "siblingIndex": 1
+            },
+            "c_11_1": {
+              "value": "",
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_11_0",
+              "leftNode": [
+                "param_partner"
+              ],
+              "rightNode": [
+                "rhs_11_1"
+              ],
+              "siblingIndex": -1
+            },
+            "rhs_11_1": {
+              "value": "ibx",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "c_11_1",
+              "siblingIndex": 1
+            },
+            "c_11_2": {
+              "value": "",
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_11_0",
+              "leftNode": [
+                "param_plan"
+              ],
+              "rightNode": [
+                "rhs_11_2"
+              ],
+              "siblingIndex": -1
+            },
+            "rhs_11_2": {
+              "value": "NF",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "c_11_2",
+              "siblingIndex": 1
+            },
+            "group_11_0": {
+              "operator": "and",
+              "nodeType": "group",
+              "children": [
+                "c_11_1",
+                "c_11_2"
+              ],
+              "siblingIndex": 1
+            },
+            "c_12_1": {
+              "value": "",
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_12_0",
+              "leftNode": [
+                "param_partner"
+              ],
+              "rightNode": [
+                "rhs_12_1"
+              ],
+              "siblingIndex": -1
+            },
+            "rhs_12_1": {
+              "value": "wgs",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "c_12_1",
+              "siblingIndex": 1
+            },
+            "c_12_2": {
+              "value": "",
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_12_0",
+              "leftNode": [
+                "param_plan"
+              ],
+              "rightNode": [
+                "rhs_12_2"
+              ],
+              "siblingIndex": -1
+            },
+            "rhs_12_2": {
+              "value": "NF",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "c_12_2",
+              "siblingIndex": 1
+            },
+            "group_12_0": {
+              "operator": "and",
+              "nodeType": "group",
+              "children": [
+                "c_12_1",
+                "c_12_2"
+              ],
+              "siblingIndex": 1
+            }
+          }
+        },
+        "firstCustomInput": "partnerName",
+        "description": "Preventive Rule Master per TPA x planType (Confluence #2)",
+        "policy": "evaluteAll",
+        "type": "decisionTable",
+        "dataSetId": "",
+        "settings": {
+          "startAt": "0001-01-01T00:00:00Z",
+          "endAt": "0001-01-01T00:00:00Z",
+          "api": {
+            "isEnabled": true,
+            "isPrivate": true
+          },
+          "isEnabled": true,
+          "cachingInfo": {
+            "Enabled": false,
+            "Duration": {
+              "Value": 0,
+              "Unit": "d"
+            },
+            "CacheKeys": ""
+          },
+          "timezone": "Asia/Calcutta",
+          "dateFormat": "in"
+        },
+        "schemaVersion": "0.1.1"
+      }
+    }
+  },
+  "timestamp": "2026-10-29T12:09:07.684091+00:00"
+}
