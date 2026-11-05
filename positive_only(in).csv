@@ -1,0 +1,771 @@
+﻿name,group,,Age,CPT_CODE,DiagCodes,,rowId,defaultOutputData,PreventiveRuleID,PreventiveRuleNumber,PreventiveRuleRank,OutcomeServiceLine
+Test 1,,,6,G0117,REXRTN,,1,TRUE,A1a.1,100001,1,"Vision Screening - Glaucoma, Acuity, Refraction"
+Test 2,,,7,G0118,REXRTN,,1,TRUE,A1a.1,100001,1,"Vision Screening - Glaucoma, Acuity, Refraction"
+Test 3,,,52,S0620,REXRTN,,1,TRUE,A1a.1,100001,1,"Vision Screening - Glaucoma, Acuity, Refraction"
+Test 4,,,98,S0621,REXRTN,,1,TRUE,A1a.1,100001,1,"Vision Screening - Glaucoma, Acuity, Refraction"
+Test 5,,,99,92002,REXRTN,,1,TRUE,A1a.1,100001,1,"Vision Screening - Glaucoma, Acuity, Refraction"
+Test 6,,,6,99201,REX,,2,TRUE,A1a.2,100002,2,"Vision Screening - Glaucoma, Acuity, Refraction"
+Test 7,,,7,99202,REX,,2,TRUE,A1a.2,100002,2,"Vision Screening - Glaucoma, Acuity, Refraction"
+Test 8,,,52,99203,REX,,2,TRUE,A1a.2,100002,2,"Vision Screening - Glaucoma, Acuity, Refraction"
+Test 9,,,98,99204,REX,,2,TRUE,A1a.2,100002,2,"Vision Screening - Glaucoma, Acuity, Refraction"
+Test 10,,,99,99205,REX,,2,TRUE,A1a.2,100002,2,"Vision Screening - Glaucoma, Acuity, Refraction"
+Test 11,,,6,V5008,RTN,,3,TRUE,A2a.1,100003,3,Hearing Screening
+Test 12,,,7,92551,RTN,,3,TRUE,A2a.1,100003,3,Hearing Screening
+Test 13,,,52,92552,RTN,,3,TRUE,A2a.1,100003,3,Hearing Screening
+Test 14,,,98,92552,RTN,,3,TRUE,A2a.1,100003,3,Hearing Screening
+Test 15,,,99,92552,RTN,,3,TRUE,A2a.1,100003,3,Hearing Screening
+Test 16,,,18,G0008,RTNZ23,,4,TRUE,A3a.1,100004,4,Immunization
+Test 17,,,19,G0009,RTNZ23,,4,TRUE,A3a.1,100004,4,Immunization
+Test 18,,,58,G0010,RTNZ23,,4,TRUE,A3a.1,100004,4,Immunization
+Test 19,,,98,J3530,RTNZ23,,4,TRUE,A3a.1,100004,4,Immunization
+Test 20,,,99,S0195,RTNZ23,,4,TRUE,A3a.1,100004,4,Immunization
+Test 21,,,2,90672,RTNZ23,,5,TRUE,A3a.2,100005,5,Immunization
+Test 22,,,3,90672,RTNZ23,,5,TRUE,A3a.2,100005,5,Immunization
+Test 23,,,25,90672,RTNZ23,,5,TRUE,A3a.2,100005,5,Immunization
+Test 24,,,48,90672,RTNZ23,,5,TRUE,A3a.2,100005,5,Immunization
+Test 25,,,49,90672,RTNZ23,,5,TRUE,A3a.2,100005,5,Immunization
+Test 26,,,19,90736,RTNZ23,,6,TRUE,A3a.3,100006,6,Immunization
+Test 27,,,20,90750,RTNZ23,,6,TRUE,A3a.3,100006,6,Immunization
+Test 28,,,59,90750,RTNZ23,,6,TRUE,A3a.3,100006,6,Immunization
+Test 29,,,98,90750,RTNZ23,,6,TRUE,A3a.3,100006,6,Immunization
+Test 30,,,99,90750,RTNZ23,,6,TRUE,A3a.3,100006,6,Immunization
+Test 31,,,2,90660,RTNZ3,,7,TRUE,A3a.4,100007,7,Immunization
+Test 32,,,3,90660,RTNZ3,,7,TRUE,A3a.4,100007,7,Immunization
+Test 33,,,25,90660,RTNZ3,,7,TRUE,A3a.4,100007,7,Immunization
+Test 34,,,48,90660,RTNZ3,,7,TRUE,A3a.4,100007,7,Immunization
+Test 35,,,49,90660,RTNZ3,,7,TRUE,A3a.4,100007,7,Immunization
+Test 36,,,9,90649,RTNZ3,,8,TRUE,A3a.5,100008,8,Immunization
+Test 37,,,10,90650,RTNZ3,,8,TRUE,A3a.5,100008,8,Immunization
+Test 38,,,27,90651,RTNZ3,,8,TRUE,A3a.5,100008,8,Immunization
+Test 39,,,44,90651,RTNZ3,,8,TRUE,A3a.5,100008,8,Immunization
+Test 40,,,45,90651,RTNZ3,,8,TRUE,A3a.5,100008,8,Immunization
+Test 41,,,18,M0201,RTNZ3,,9,TRUE,A3a.6,100009,9,Immunization
+Test 42,,,19,Q2034,RTNZ3,,9,TRUE,A3a.6,100009,9,Immunization
+Test 43,,,58,Q2035,RTNZ3,,9,TRUE,A3a.6,100009,9,Immunization
+Test 44,,,98,Q2036,RTNZ3,,9,TRUE,A3a.6,100009,9,Immunization
+Test 45,,,99,Q2037,RTNZ3,,9,TRUE,A3a.6,100009,9,Immunization
+Test 46,,,18,90471,RTNZ4,,10,TRUE,A3a.7,100010,10,Immunization
+Test 47,,,19,90472,RTNZ4,,10,TRUE,A3a.7,100010,10,Immunization
+Test 48,,,58,90473,RTNZ4,,10,TRUE,A3a.7,100010,10,Immunization
+Test 49,,,98,90474,RTNZ4,,10,TRUE,A3a.7,100010,10,Immunization
+Test 50,,,99,90474,RTNZ4,,10,TRUE,A3a.7,100010,10,Immunization
+Test 51,,,18,90480,RTNZ5,,11,TRUE,A3a.8,100148,11,Immunization
+Test 52,,,19,90480,RTNZ5,,11,TRUE,A3a.8,100148,11,Immunization
+Test 53,,,58,90480,RTNZ5,,11,TRUE,A3a.8,100148,11,Immunization
+Test 54,,,98,90480,RTNZ5,,11,TRUE,A3a.8,100148,11,Immunization
+Test 55,,,99,90480,RTNZ5,,11,TRUE,A3a.8,100148,11,Immunization
+Test 56,,,12,M0224,RTNZ3,,12,TRUE,A3a.9,100152,12,Immunization
+Test 57,,,13,Q0224,RTNZ3,,12,TRUE,A3a.9,100152,12,Immunization
+Test 58,,,56,Q0224,RTNZ3,,12,TRUE,A3a.9,100152,12,Immunization
+Test 59,,,99,Q0224,RTNZ3,,12,TRUE,A3a.9,100152,12,Immunization
+Test 60,,,100,Q0224,RTNZ3,,12,TRUE,A3a.9,100152,12,Immunization
+Test 61,,,6,77081,Z13820,,13,TRUE,A4a.1,100011,13,Osteoporosis Screening
+Test 62,,,7,76977,Z13820,,13,TRUE,A4a.1,100011,13,Osteoporosis Screening
+Test 63,,,52,0508T,Z13820,,13,TRUE,A4a.1,100011,13,Osteoporosis Screening
+Test 64,,,98,0508T,Z13820,,13,TRUE,A4a.1,100011,13,Osteoporosis Screening
+Test 65,,,99,0508T,Z13820,,13,TRUE,A4a.1,100011,13,Osteoporosis Screening
+Test 66,,,6,77080,RTNZ5,,14,TRUE,A4a.2,100012,14,Osteoporosis Screening
+Test 67,,,7,77080,RTNZ5,,14,TRUE,A4a.2,100012,14,Osteoporosis Screening
+Test 68,,,52,77080,RTNZ5,,14,TRUE,A4a.2,100012,14,Osteoporosis Screening
+Test 69,,,98,77080,RTNZ5,,14,TRUE,A4a.2,100012,14,Osteoporosis Screening
+Test 70,,,99,77080,RTNZ5,,14,TRUE,A4a.2,100012,14,Osteoporosis Screening
+Test 71,,,6,G0389,RTN,,15,TRUE,A4b.1,100013,15,Abdominal Aortic Aneurysm AAA Screening
+Test 72,,,7,G0389,RTN,,15,TRUE,A4b.1,100013,15,Abdominal Aortic Aneurysm AAA Screening
+Test 73,,,52,G0389,RTN,,15,TRUE,A4b.1,100013,15,Abdominal Aortic Aneurysm AAA Screening
+Test 74,,,98,G0389,RTN,,15,TRUE,A4b.1,100013,15,Abdominal Aortic Aneurysm AAA Screening
+Test 75,,,99,G0389,RTN,,15,TRUE,A4b.1,100013,15,Abdominal Aortic Aneurysm AAA Screening
+Test 76,,,6,76706,RTNZ6,,16,TRUE,A4b.2,100014,16,Abdominal Aortic Aneurysm AAA Screening
+Test 77,,,7,76775,RTNZ6,,16,TRUE,A4b.2,100014,16,Abdominal Aortic Aneurysm AAA Screening
+Test 78,,,52,76775,RTNZ6,,16,TRUE,A4b.2,100014,16,Abdominal Aortic Aneurysm AAA Screening
+Test 79,,,98,76775,RTNZ6,,16,TRUE,A4b.2,100014,16,Abdominal Aortic Aneurysm AAA Screening
+Test 80,,,99,76775,RTNZ6,,16,TRUE,A4b.2,100014,16,Abdominal Aortic Aneurysm AAA Screening
+Test 81,,,6,80061,RTN,,17,TRUE,A5a.1,100015,17,Cholesterol/Lipid Profile
+Test 82,,,7,82465,RTN,,17,TRUE,A5a.1,100015,17,Cholesterol/Lipid Profile
+Test 83,,,52,83718,RTN,,17,TRUE,A5a.1,100015,17,Cholesterol/Lipid Profile
+Test 84,,,98,83721,RTN,,17,TRUE,A5a.1,100015,17,Cholesterol/Lipid Profile
+Test 85,,,99,83722,RTN,,17,TRUE,A5a.1,100015,17,Cholesterol/Lipid Profile
+Test 86,,,6,82947,RTN,,18,TRUE,A5b.1,100016,18,Diabetes Screening
+Test 87,,,7,83036,RTN,,18,TRUE,A5b.1,100016,18,Diabetes Screening
+Test 88,,,52,83036,RTN,,18,TRUE,A5b.1,100016,18,Diabetes Screening
+Test 89,,,98,83036,RTN,,18,TRUE,A5b.1,100016,18,Diabetes Screening
+Test 90,,,99,83036,RTN,,18,TRUE,A5b.1,100016,18,Diabetes Screening
+Test 91,,,6,G0432,RTNZ7,,19,TRUE,A5c.1,100017,19,"STD Screening - HIV, Chlamydia, Gonorrhea"
+Test 92,,,7,G0433,RTNZ7,,19,TRUE,A5c.1,100017,19,"STD Screening - HIV, Chlamydia, Gonorrhea"
+Test 93,,,52,G0435,RTNZ7,,19,TRUE,A5c.1,100017,19,"STD Screening - HIV, Chlamydia, Gonorrhea"
+Test 94,,,98,S3645,RTNZ7,,19,TRUE,A5c.1,100017,19,"STD Screening - HIV, Chlamydia, Gonorrhea"
+Test 95,,,99,0210U,RTNZ7,,19,TRUE,A5c.1,100017,19,"STD Screening - HIV, Chlamydia, Gonorrhea"
+Test 96,,,6,87490,RTNZ8,,20,TRUE,A5c.2,100018,20,"STD Screening - HIV, Chlamydia, Gonorrhea"
+Test 97,,,7,87590,RTNZ8,,20,TRUE,A5c.2,100018,20,"STD Screening - HIV, Chlamydia, Gonorrhea"
+Test 98,,,52,87810,RTNZ8,,20,TRUE,A5c.2,100018,20,"STD Screening - HIV, Chlamydia, Gonorrhea"
+Test 99,,,98,87491,RTNZ8,,20,TRUE,A5c.2,100018,20,"STD Screening - HIV, Chlamydia, Gonorrhea"
+Test 100,,,99,87591,RTNZ8,,20,TRUE,A5c.2,100018,20,"STD Screening - HIV, Chlamydia, Gonorrhea"
+Test 101,,,6,G0472,RTNZ7,,21,TRUE,A5d.1,100019,21,Hepatitis C Virus
+Test 102,,,7,86803,RTNZ7,,21,TRUE,A5d.1,100019,21,Hepatitis C Virus
+Test 103,,,52,86803,RTNZ7,,21,TRUE,A5d.1,100019,21,Hepatitis C Virus
+Test 104,,,98,86803,RTNZ7,,21,TRUE,A5d.1,100019,21,Hepatitis C Virus
+Test 105,,,99,86803,RTNZ7,,21,TRUE,A5d.1,100019,21,Hepatitis C Virus
+Test 106,,,6,G0402,RTNZ7,,22,TRUE,A6a.1,100020,22,Preventive Care
+Test 107,,,7,G0438,RTNZ7,,22,TRUE,A6a.1,100020,22,Preventive Care
+Test 108,,,52,G0439,RTNZ7,,22,TRUE,A6a.1,100020,22,Preventive Care
+Test 109,,,98,S0622,RTNZ7,,22,TRUE,A6a.1,100020,22,Preventive Care
+Test 110,,,99,99381,RTNZ7,,22,TRUE,A6a.1,100020,22,Preventive Care
+Test 111,,,6,99392,RTNZ8,,23,TRUE,A6a.2,100021,23,Preventive Care
+Test 112,,,7,99393,RTNZ8,,23,TRUE,A6a.2,100021,23,Preventive Care
+Test 113,,,52,99394,RTNZ8,,23,TRUE,A6a.2,100021,23,Preventive Care
+Test 114,,,98,99394,RTNZ8,,23,TRUE,A6a.2,100021,23,Preventive Care
+Test 115,,,99,99394,RTNZ8,,23,TRUE,A6a.2,100021,23,Preventive Care
+Test 116,,,6,99201,RTN,,24,TRUE,A6a.3,100022,24,Preventive Care
+Test 117,,,7,99202,RTN,,24,TRUE,A6a.3,100022,24,Preventive Care
+Test 118,,,52,99203,RTN,,24,TRUE,A6a.3,100022,24,Preventive Care
+Test 119,,,98,99204,RTN,,24,TRUE,A6a.3,100022,24,Preventive Care
+Test 120,,,99,99205,RTN,,24,TRUE,A6a.3,100022,24,Preventive Care
+Test 121,,,6,99381,RTN,,25,TRUE,A6a.4,100023,25,Preventive Care
+Test 122,,,7,99382,RTN,,25,TRUE,A6a.4,100023,25,Preventive Care
+Test 123,,,52,99383,RTN,,25,TRUE,A6a.4,100023,25,Preventive Care
+Test 124,,,98,99384,RTN,,25,TRUE,A6a.4,100023,25,Preventive Care
+Test 125,,,99,99385,RTN,,25,TRUE,A6a.4,100023,25,Preventive Care
+Test 126,,,6,99401,RTNZ9,,26,TRUE,A7a.1,100024,26,Preventive Medicine Counseling
+Test 127,,,7,99402,RTNZ9,,26,TRUE,A7a.1,100024,26,Preventive Medicine Counseling
+Test 128,,,52,99403,RTNZ9,,26,TRUE,A7a.1,100024,26,Preventive Medicine Counseling
+Test 129,,,98,99404,RTNZ9,,26,TRUE,A7a.1,100024,26,Preventive Medicine Counseling
+Test 130,,,99,99411,RTNZ9,,26,TRUE,A7a.1,100024,26,Preventive Medicine Counseling
+Test 131,,,6,36410,RTN,,27,TRUE,A8a.1,100025,27,Related Services of a Preventive Care Procedure 
+Test 132,,,7,36415,RTN,,27,TRUE,A8a.1,100025,27,Related Services of a Preventive Care Procedure 
+Test 133,,,52,36416,RTN,,27,TRUE,A8a.1,100025,27,Related Services of a Preventive Care Procedure 
+Test 134,,,98,36416,RTN,,27,TRUE,A8a.1,100025,27,Related Services of a Preventive Care Procedure 
+Test 135,,,99,36416,RTN,,27,TRUE,A8a.1,100025,27,Related Services of a Preventive Care Procedure 
+Test 136,,,6,G0327,RTN,,28,TRUE,B1a.1,100026,28,Colon Cancer Screening - Occult Blood
+Test 137,,,7,G0328,RTN,,28,TRUE,B1a.1,100026,28,Colon Cancer Screening - Occult Blood
+Test 138,,,52,82270,RTN,,28,TRUE,B1a.1,100026,28,Colon Cancer Screening - Occult Blood
+Test 139,,,98,82271,RTN,,28,TRUE,B1a.1,100026,28,Colon Cancer Screening - Occult Blood
+Test 140,,,99,82272,RTN,,28,TRUE,B1a.1,100026,28,Colon Cancer Screening - Occult Blood
+Test 141,,,6,G0122,RTN,,29,TRUE,B1b.1,100027,29,Colon Cancer Screening - Air Contrast Barium Enema
+Test 142,,,7,74280,RTN,,29,TRUE,B1b.1,100027,29,Colon Cancer Screening - Air Contrast Barium Enema
+Test 143,,,52,74280,RTN,,29,TRUE,B1b.1,100027,29,Colon Cancer Screening - Air Contrast Barium Enema
+Test 144,,,98,74280,RTN,,29,TRUE,B1b.1,100027,29,Colon Cancer Screening - Air Contrast Barium Enema
+Test 145,,,99,74280,RTN,,29,TRUE,B1b.1,100027,29,Colon Cancer Screening - Air Contrast Barium Enema
+Test 146,,,6,G0104,RTN,,30,TRUE,B1c.1,100028,30,"Colon Cancer Screening - Sigmoidoscopy, Proctosigmoidoscopy"
+Test 147,,,7,G0106,RTN,,30,TRUE,B1c.1,100028,30,"Colon Cancer Screening - Sigmoidoscopy, Proctosigmoidoscopy"
+Test 148,,,52,G6022,RTN,,30,TRUE,B1c.1,100028,30,"Colon Cancer Screening - Sigmoidoscopy, Proctosigmoidoscopy"
+Test 149,,,98,S0601,RTN,,30,TRUE,B1c.1,100028,30,"Colon Cancer Screening - Sigmoidoscopy, Proctosigmoidoscopy"
+Test 150,,,99,45300,RTN,,30,TRUE,B1c.1,100028,30,"Colon Cancer Screening - Sigmoidoscopy, Proctosigmoidoscopy"
+Test 151,,,6,G0105,RTN,,31,TRUE,B1d.1,100029,31,Colon Cancer Screening - Colonoscopy
+Test 152,,,7,G0120,RTN,,31,TRUE,B1d.1,100029,31,Colon Cancer Screening - Colonoscopy
+Test 153,,,52,G0121,RTN,,31,TRUE,B1d.1,100029,31,Colon Cancer Screening - Colonoscopy
+Test 154,,,98,G0122,RTN,,31,TRUE,B1d.1,100029,31,Colon Cancer Screening - Colonoscopy
+Test 155,,,99,G6019,RTN,,31,TRUE,B1d.1,100029,31,Colon Cancer Screening - Colonoscopy
+Test 156,,,6,45378,NA,,32,TRUE,B1d.2,100030,32,Colon Cancer Screening - Colonoscopy
+Test 157,,,7,45385,NA,,32,TRUE,B1d.2,100030,32,Colon Cancer Screening - Colonoscopy
+Test 158,,,52,45385,NA,,32,TRUE,B1d.2,100030,32,Colon Cancer Screening - Colonoscopy
+Test 159,,,98,45385,NA,,32,TRUE,B1d.2,100030,32,Colon Cancer Screening - Colonoscopy
+Test 160,,,99,45385,NA,,32,TRUE,B1d.2,100030,32,Colon Cancer Screening - Colonoscopy
+Test 161,,,6,0163U,RTN,,33,TRUE,B1e.1,100031,33,Colon Cancer Screening - Pathology
+Test 162,,,7,81528,RTN,,33,TRUE,B1e.1,100031,33,Colon Cancer Screening - Pathology
+Test 163,,,52,81528,RTN,,33,TRUE,B1e.1,100031,33,Colon Cancer Screening - Pathology
+Test 164,,,98,81528,RTN,,33,TRUE,B1e.1,100031,33,Colon Cancer Screening - Pathology
+Test 165,,,99,81528,RTN,,33,TRUE,B1e.1,100031,33,Colon Cancer Screening - Pathology
+Test 166,,,6,88300,RTN,,34,TRUE,B1e.2,100032,34,Colon Cancer Screening - Pathology
+Test 167,,,7,88302,RTN,,34,TRUE,B1e.2,100032,34,Colon Cancer Screening - Pathology
+Test 168,,,52,88304,RTN,,34,TRUE,B1e.2,100032,34,Colon Cancer Screening - Pathology
+Test 169,,,98,88305,RTN,,34,TRUE,B1e.2,100032,34,Colon Cancer Screening - Pathology
+Test 170,,,99,88307,RTN,,34,TRUE,B1e.2,100032,34,Colon Cancer Screening - Pathology
+Test 171,,,6,G0123,RTNZ10,,35,TRUE,B2a.1,100033,35,Cervical Cancer Screening - Pap Smear
+Test 172,,,7,G0124,RTNZ10,,35,TRUE,B2a.1,100033,35,Cervical Cancer Screening - Pap Smear
+Test 173,,,52,G0141,RTNZ10,,35,TRUE,B2a.1,100033,35,Cervical Cancer Screening - Pap Smear
+Test 174,,,98,G0143,RTNZ10,,35,TRUE,B2a.1,100033,35,Cervical Cancer Screening - Pap Smear
+Test 175,,,99,G0144,RTNZ10,,35,TRUE,B2a.1,100033,35,Cervical Cancer Screening - Pap Smear
+Test 176,,,6,G0123,RTN,,36,TRUE,B2a.2,100034,36,Cervical Cancer Screening - Pap Smear
+Test 177,,,7,G0124,RTN,,36,TRUE,B2a.2,100034,36,Cervical Cancer Screening - Pap Smear
+Test 178,,,52,G0141,RTN,,36,TRUE,B2a.2,100034,36,Cervical Cancer Screening - Pap Smear
+Test 179,,,98,G0143,RTN,,36,TRUE,B2a.2,100034,36,Cervical Cancer Screening - Pap Smear
+Test 180,,,99,G0144,RTN,,36,TRUE,B2a.2,100034,36,Cervical Cancer Screening - Pap Smear
+Test 181,,,6,0,RTN,,37,TRUE,B2a.3,100035,37,Cervical Cancer Screening - Pap Smear
+Test 182,,,7,0,RTN,,37,TRUE,B2a.3,100035,37,Cervical Cancer Screening - Pap Smear
+Test 183,,,52,0,RTN,,37,TRUE,B2a.3,100035,37,Cervical Cancer Screening - Pap Smear
+Test 184,,,98,0,RTN,,37,TRUE,B2a.3,100035,37,Cervical Cancer Screening - Pap Smear
+Test 185,,,99,0,RTN,,37,TRUE,B2a.3,100035,37,Cervical Cancer Screening - Pap Smear
+Test 186,,,6,77051,RTN,,38,TRUE,B3a.1,100036,38,Breast Cancer Screening
+Test 187,,,7,77052,RTN,,38,TRUE,B3a.1,100036,38,Breast Cancer Screening
+Test 188,,,52,77055,RTN,,38,TRUE,B3a.1,100036,38,Breast Cancer Screening
+Test 189,,,98,77056,RTN,,38,TRUE,B3a.1,100036,38,Breast Cancer Screening
+Test 190,,,99,G0202,RTN,,38,TRUE,B3a.1,100036,38,Breast Cancer Screening
+Test 191,,,6,G0279,RTNZ11,,39,TRUE,B3a.2,100037,39,Breast Cancer Screening
+Test 192,,,7,G9899,RTNZ11,,39,TRUE,B3a.2,100037,39,Breast Cancer Screening
+Test 193,,,52,77061,RTNZ11,,39,TRUE,B3a.2,100037,39,Breast Cancer Screening
+Test 194,,,98,77062,RTNZ11,,39,TRUE,B3a.2,100037,39,Breast Cancer Screening
+Test 195,,,99,77063,RTNZ11,,39,TRUE,B3a.2,100037,39,Breast Cancer Screening
+Test 196,,,6,G0103,RTN,,40,TRUE,B4a.1,100038,40,Prostate Cancer Screening - PSA
+Test 197,,,7,84152,RTN,,40,TRUE,B4a.1,100038,40,Prostate Cancer Screening - PSA
+Test 198,,,52,84153,RTN,,40,TRUE,B4a.1,100038,40,Prostate Cancer Screening - PSA
+Test 199,,,98,84154,RTN,,40,TRUE,B4a.1,100038,40,Prostate Cancer Screening - PSA
+Test 200,,,99,84154,RTN,,40,TRUE,B4a.1,100038,40,Prostate Cancer Screening - PSA
+Test 201,,,6,86304,RTN,,41,TRUE,85a.1,100039,41,Ovarian Cancer Screening - CA125
+Test 202,,,7,86304,RTN,,41,TRUE,85a.1,100039,41,Ovarian Cancer Screening - CA125
+Test 203,,,52,86304,RTN,,41,TRUE,85a.1,100039,41,Ovarian Cancer Screening - CA125
+Test 204,,,98,86304,RTN,,41,TRUE,85a.1,100039,41,Ovarian Cancer Screening - CA125
+Test 205,,,99,86304,RTN,,41,TRUE,85a.1,100039,41,Ovarian Cancer Screening - CA125
+Test 206,,,6,76830,RTN,,42,TRUE,85b.1,100040,42,Ovarian Cancer Screening - Transvaginal Ultrasound
+Test 207,,,7,76830,RTN,,42,TRUE,85b.1,100040,42,Ovarian Cancer Screening - Transvaginal Ultrasound
+Test 208,,,52,76830,RTN,,42,TRUE,85b.1,100040,42,Ovarian Cancer Screening - Transvaginal Ultrasound
+Test 209,,,98,76830,RTN,,42,TRUE,85b.1,100040,42,Ovarian Cancer Screening - Transvaginal Ultrasound
+Test 210,,,99,76830,RTN,,42,TRUE,85b.1,100040,42,Ovarian Cancer Screening - Transvaginal Ultrasound
+Test 211,,,6,G0101,RTN,,43,TRUE,B6a.1,100041,43,Cancer Screening Exam
+Test 212,,,7,G0102,RTN,,43,TRUE,B6a.1,100041,43,Cancer Screening Exam
+Test 213,,,52,S0610,RTN,,43,TRUE,B6a.1,100041,43,Cancer Screening Exam
+Test 214,,,98,S0612,RTN,,43,TRUE,B6a.1,100041,43,Cancer Screening Exam
+Test 215,,,99,S0613,RTN,,43,TRUE,B6a.1,100041,43,Cancer Screening Exam
+Test 216,,,6,G0101,RTN,,44,TRUE,B6a.2,100042,44,Cancer Screening Exam
+Test 217,,,7,G0101,RTN,,44,TRUE,B6a.2,100042,44,Cancer Screening Exam
+Test 218,,,52,G0101,RTN,,44,TRUE,B6a.2,100042,44,Cancer Screening Exam
+Test 219,,,98,G0101,RTN,,44,TRUE,B6a.2,100042,44,Cancer Screening Exam
+Test 220,,,99,G0101,RTN,,44,TRUE,B6a.2,100042,44,Cancer Screening Exam
+Test 221,,,6,G0500,RTN,,45,TRUE,B7a.1,100043,45,Cancer Screening Services
+Test 222,,,7,99144,RTN,,45,TRUE,B7a.1,100043,45,Cancer Screening Services
+Test 223,,,52,99145,RTN,,45,TRUE,B7a.1,100043,45,Cancer Screening Services
+Test 224,,,98,99149,RTN,,45,TRUE,B7a.1,100043,45,Cancer Screening Services
+Test 225,,,99,99150,RTN,,45,TRUE,B7a.1,100043,45,Cancer Screening Services
+Test 226,,,6,810,RTN,,46,TRUE,B7a.2,100044,46,Cancer Screening Services
+Test 227,,,7,811,RTN,,46,TRUE,B7a.2,100044,46,Cancer Screening Services
+Test 228,,,52,812,RTN,,46,TRUE,B7a.2,100044,46,Cancer Screening Services
+Test 229,,,98,813,RTN,,46,TRUE,B7a.2,100044,46,Cancer Screening Services
+Test 230,,,99,J2250,RTN,,46,TRUE,B7a.2,100044,46,Cancer Screening Services
+Test 231,,,0,90476,RTNZ23,,47,TRUE,HCR1.1,100045,47,Non-Standard Immunizations for HCR
+Test 232,,,1,90585,RTNZ23,,47,TRUE,HCR1.1,100045,47,Non-Standard Immunizations for HCR
+Test 233,,,49,90587,RTNZ23,,47,TRUE,HCR1.1,100045,47,Non-Standard Immunizations for HCR
+Test 234,,,98,90625,RTNZ23,,47,TRUE,HCR1.1,100045,47,Non-Standard Immunizations for HCR
+Test 235,,,99,90626,RTNZ23,,47,TRUE,HCR1.1,100045,47,Non-Standard Immunizations for HCR
+Test 236,,,0,90581,RTNZ12,,48,TRUE,HCR1.2,100046,48,Non-Standard Immunizations for HCR
+Test 237,,,1,90581,RTNZ12,,48,TRUE,HCR1.2,100046,48,Non-Standard Immunizations for HCR
+Test 238,,,49,90581,RTNZ12,,48,TRUE,HCR1.2,100046,48,Non-Standard Immunizations for HCR
+Test 239,,,98,90581,RTNZ12,,48,TRUE,HCR1.2,100046,48,Non-Standard Immunizations for HCR
+Test 240,,,99,90581,RTNZ12,,48,TRUE,HCR1.2,100046,48,Non-Standard Immunizations for HCR
+Test 241,,,0,90675,RTNZ13,,49,TRUE,HCR1.3,100047,49,Non-Standard Immunizations for HCR
+Test 242,,,1,90676,RTNZ13,,49,TRUE,HCR1.3,100047,49,Non-Standard Immunizations for HCR
+Test 243,,,49,90676,RTNZ13,,49,TRUE,HCR1.3,100047,49,Non-Standard Immunizations for HCR
+Test 244,,,98,90676,RTNZ13,,49,TRUE,HCR1.3,100047,49,Non-Standard Immunizations for HCR
+Test 245,,,99,90676,RTNZ13,,49,TRUE,HCR1.3,100047,49,Non-Standard Immunizations for HCR
+Test 246,,,12,G0442,HCRZ1,,50,TRUE,HCR2.1,100048,50,Screening and Counseling to Reduce Alcohol Misuse
+Test 247,,,13,G0443,HCRZ1,,50,TRUE,HCR2.1,100048,50,Screening and Counseling to Reduce Alcohol Misuse
+Test 248,,,55,G2011,HCRZ1,,50,TRUE,HCR2.1,100048,50,Screening and Counseling to Reduce Alcohol Misuse
+Test 249,,,98,H0001,HCRZ1,,50,TRUE,HCR2.1,100048,50,Screening and Counseling to Reduce Alcohol Misuse
+Test 250,,,99,H0001,HCRZ1,,50,TRUE,HCR2.1,100048,50,Screening and Counseling to Reduce Alcohol Misuse
+Test 251,,,12,99408,HCRZ2,,51,TRUE,HCR2.2,100049,51,Screening and Counseling to Reduce Alcohol Misuse
+Test 252,,,13,99409,HCRZ2,,51,TRUE,HCR2.2,100049,51,Screening and Counseling to Reduce Alcohol Misuse
+Test 253,,,55,99409,HCRZ2,,51,TRUE,HCR2.2,100049,51,Screening and Counseling to Reduce Alcohol Misuse
+Test 254,,,98,99409,HCRZ2,,51,TRUE,HCR2.2,100049,51,Screening and Counseling to Reduce Alcohol Misuse
+Test 255,,,99,99409,HCRZ2,,51,TRUE,HCR2.2,100049,51,Screening and Counseling to Reduce Alcohol Misuse
+Test 256,,,2,S9452,HCRZ3,,52,TRUE,HCR3.1,100050,52,Behavioral Counseling in Primary Care to Promote a Healthy Diet for Adults with Hyperlipidemia and other risk factors
+Test 257,,,3,S9470,HCRZ3,,52,TRUE,HCR3.1,100050,52,Behavioral Counseling in Primary Care to Promote a Healthy Diet for Adults with Hyperlipidemia and other risk factors
+Test 258,,,50,97802,HCRZ3,,52,TRUE,HCR3.1,100050,52,Behavioral Counseling in Primary Care to Promote a Healthy Diet for Adults with Hyperlipidemia and other risk factors
+Test 259,,,98,97803,HCRZ3,,52,TRUE,HCR3.1,100050,52,Behavioral Counseling in Primary Care to Promote a Healthy Diet for Adults with Hyperlipidemia and other risk factors
+Test 260,,,99,97804,HCRZ3,,52,TRUE,HCR3.1,100050,52,Behavioral Counseling in Primary Care to Promote a Healthy Diet for Adults with Hyperlipidemia and other risk factors
+Test 261,,,0,96127,RTNZ14,,53,TRUE,HCR4.1,100051,53,Behavioral Health Assessment for Children of all Ages
+Test 262,,,1,96127,RTNZ14,,53,TRUE,HCR4.1,100051,53,Behavioral Health Assessment for Children of all Ages
+Test 263,,,10,96127,RTNZ14,,53,TRUE,HCR4.1,100051,53,Behavioral Health Assessment for Children of all Ages
+Test 264,,,19,96127,RTNZ14,,53,TRUE,HCR4.1,100051,53,Behavioral Health Assessment for Children of all Ages
+Test 265,,,20,96127,RTNZ14,,53,TRUE,HCR4.1,100051,53,Behavioral Health Assessment for Children of all Ages
+Test 266,,,0,96160,HCRZ4,,54,TRUE,HCR4.2,100052,54,Behavioral Health Assessment for Children of all Ages
+Test 267,,,1,96161,HCRZ4,,54,TRUE,HCR4.2,100052,54,Behavioral Health Assessment for Children of all Ages
+Test 268,,,10,96161,HCRZ4,,54,TRUE,HCR4.2,100052,54,Behavioral Health Assessment for Children of all Ages
+Test 269,,,19,96161,HCRZ4,,54,TRUE,HCR4.2,100052,54,Behavioral Health Assessment for Children of all Ages
+Test 270,,,20,96161,HCRZ4,,54,TRUE,HCR4.2,100052,54,Behavioral Health Assessment for Children of all Ages
+Test 271,,,0,99420,HCRZ5,,55,TRUE,HCR4.3,100053,55,Behavioral Health Assessment for Children of all Ages
+Test 272,,,1,99420,HCRZ5,,55,TRUE,HCR4.3,100053,55,Behavioral Health Assessment for Children of all Ages
+Test 273,,,10,99420,HCRZ5,,55,TRUE,HCR4.3,100053,55,Behavioral Health Assessment for Children of all Ages
+Test 274,,,19,99420,HCRZ5,,55,TRUE,HCR4.3,100053,55,Behavioral Health Assessment for Children of all Ages
+Test 275,,,20,99420,HCRZ5,,55,TRUE,HCR4.3,100053,55,Behavioral Health Assessment for Children of all Ages
+Test 276,,,0,G0436,HCRZ6,,56,TRUE,HCR5a.1,100054,56,Counseling to Prevent Tobacco Use and Tobacco-Caused Disease
+Test 277,,,1,G0437,HCRZ6,,56,TRUE,HCR5a.1,100054,56,Counseling to Prevent Tobacco Use and Tobacco-Caused Disease
+Test 278,,,49,S9453,HCRZ6,,56,TRUE,HCR5a.1,100054,56,Counseling to Prevent Tobacco Use and Tobacco-Caused Disease
+Test 279,,,98,99401,HCRZ6,,56,TRUE,HCR5a.1,100054,56,Counseling to Prevent Tobacco Use and Tobacco-Caused Disease
+Test 280,,,99,99402,HCRZ6,,56,TRUE,HCR5a.1,100054,56,Counseling to Prevent Tobacco Use and Tobacco-Caused Disease
+Test 281,,,0,S4990,NA,,57,TRUE,HCR5b.1,100055,57,HCR Tobacco Drugs will process through PRIME
+Test 282,,,1,S4991,NA,,57,TRUE,HCR5b.1,100055,57,HCR Tobacco Drugs will process through PRIME
+Test 283,,,49,S4995,NA,,57,TRUE,HCR5b.1,100055,57,HCR Tobacco Drugs will process through PRIME
+Test 284,,,98,S4995,NA,,57,TRUE,HCR5b.1,100055,57,HCR Tobacco Drugs will process through PRIME
+Test 285,,,99,S4995,NA,,57,TRUE,HCR5b.1,100055,57,HCR Tobacco Drugs will process through PRIME
+Test 286,,,0,S0265,HCRZ7,,58,TRUE,HCR6.1,100056,58,Genetic Risk Assessment and BRCA Mutation Testing for Breast and Ovarian Cancer Susceptibility
+Test 287,,,1,81162,HCRZ7,,58,TRUE,HCR6.1,100056,58,Genetic Risk Assessment and BRCA Mutation Testing for Breast and Ovarian Cancer Susceptibility
+Test 288,,,49,81163,HCRZ7,,58,TRUE,HCR6.1,100056,58,Genetic Risk Assessment and BRCA Mutation Testing for Breast and Ovarian Cancer Susceptibility
+Test 289,,,98,81164,HCRZ7,,58,TRUE,HCR6.1,100056,58,Genetic Risk Assessment and BRCA Mutation Testing for Breast and Ovarian Cancer Susceptibility
+Test 290,,,99,81165,HCRZ7,,58,TRUE,HCR6.1,100056,58,Genetic Risk Assessment and BRCA Mutation Testing for Breast and Ovarian Cancer Susceptibility
+Test 291,,,0,D1206,NA,,59,TRUE,HCR7.1,100057,59,Prevention of Dental Caries in Preschool Children 
+Test 292,,,1,99188,NA,,59,TRUE,HCR7.1,100057,59,Prevention of Dental Caries in Preschool Children 
+Test 293,,,3,0792T,NA,,59,TRUE,HCR7.1,100057,59,Prevention of Dental Caries in Preschool Children 
+Test 294,,,5,0792T,NA,,59,TRUE,HCR7.1,100057,59,Prevention of Dental Caries in Preschool Children 
+Test 295,,,6,0792T,NA,,59,TRUE,HCR7.1,100057,59,Prevention of Dental Caries in Preschool Children 
+Test 296,,,6,S9443,HCRZ8,,60,TRUE,HCR8a.1,100058,60,Primary Care Interventions to Promote Breastfeeding
+Test 297,,,7,99401,HCRZ8,,60,TRUE,HCR8a.1,100058,60,Primary Care Interventions to Promote Breastfeeding
+Test 298,,,52,99402,HCRZ8,,60,TRUE,HCR8a.1,100058,60,Primary Care Interventions to Promote Breastfeeding
+Test 299,,,98,99403,HCRZ8,,60,TRUE,HCR8a.1,100058,60,Primary Care Interventions to Promote Breastfeeding
+Test 300,,,99,99404,HCRZ8,,60,TRUE,HCR8a.1,100058,60,Primary Care Interventions to Promote Breastfeeding
+Test 301,,,0,A4281,NA,,61,TRUE,HCR8b.1,100059,61,Breastfeeding Support Supply and Counseling 
+Test 302,,,1,A4282,NA,,61,TRUE,HCR8b.1,100059,61,Breastfeeding Support Supply and Counseling 
+Test 303,,,49,A4283,NA,,61,TRUE,HCR8b.1,100059,61,Breastfeeding Support Supply and Counseling 
+Test 304,,,98,A4284,NA,,61,TRUE,HCR8b.1,100059,61,Breastfeeding Support Supply and Counseling 
+Test 305,,,99,A4285,NA,,61,TRUE,HCR8b.1,100059,61,Breastfeeding Support Supply and Counseling 
+Test 306,,,0,G0438,HCRZ9,,62,TRUE,HCR9.1,100060,62,Screening for Depression in Adults & Adolescents
+Test 307,,,1,96160,HCRZ9,,62,TRUE,HCR9.1,100060,62,Screening for Depression in Adults & Adolescents
+Test 308,,,49,96161,HCRZ9,,62,TRUE,HCR9.1,100060,62,Screening for Depression in Adults & Adolescents
+Test 309,,,98,99201,HCRZ9,,62,TRUE,HCR9.1,100060,62,Screening for Depression in Adults & Adolescents
+Test 310,,,99,99202,HCRZ9,,62,TRUE,HCR9.1,100060,62,Screening for Depression in Adults & Adolescents
+Test 311,,,0,G0444,HCRZ10,,63,TRUE,HCR9.2,100061,63,Screening for Depression in Adults & Adolescents
+Test 312,,,1,G0444,HCRZ10,,63,TRUE,HCR9.2,100061,63,Screening for Depression in Adults & Adolescents
+Test 313,,,49,G0444,HCRZ10,,63,TRUE,HCR9.2,100061,63,Screening for Depression in Adults & Adolescents
+Test 314,,,98,G0444,HCRZ10,,63,TRUE,HCR9.2,100061,63,Screening for Depression in Adults & Adolescents
+Test 315,,,99,G0444,HCRZ10,,63,TRUE,HCR9.2,100061,63,Screening for Depression in Adults & Adolescents
+Test 316,,,0,96127,RTNZ15,,64,TRUE,HCR9.3,100062,64,Screening for Depression in Adults & Adolescents
+Test 317,,,1,96127,RTNZ15,,64,TRUE,HCR9.3,100062,64,Screening for Depression in Adults & Adolescents
+Test 318,,,49,96127,RTNZ15,,64,TRUE,HCR9.3,100062,64,Screening for Depression in Adults & Adolescents
+Test 319,,,98,96127,RTNZ15,,64,TRUE,HCR9.3,100062,64,Screening for Depression in Adults & Adolescents
+Test 320,,,99,96127,RTNZ15,,64,TRUE,HCR9.3,100062,64,Screening for Depression in Adults & Adolescents
+Test 321,,,0,G0447,HCRZ11,,65,TRUE,HCR10a.1,100063,65,Screening for Obesity in Adults and Children
+Test 322,,,1,S9470,HCRZ11,,65,TRUE,HCR10a.1,100063,65,Screening for Obesity in Adults and Children
+Test 323,,,49,97802,HCRZ11,,65,TRUE,HCR10a.1,100063,65,Screening for Obesity in Adults and Children
+Test 324,,,98,97803,HCRZ11,,65,TRUE,HCR10a.1,100063,65,Screening for Obesity in Adults and Children
+Test 325,,,99,97804,HCRZ11,,65,TRUE,HCR10a.1,100063,65,Screening for Obesity in Adults and Children
+Test 326,,,40,82947,HCRZ12,,66,TRUE,HCR10b.1,100064,66,Screening Tests for Abnormal Blood Glucose and Type 2 Diabetes Melitus for Adults who are Over Weight or Obese
+Test 327,,,41,82948,HCRZ12,,66,TRUE,HCR10b.1,100064,66,Screening Tests for Abnormal Blood Glucose and Type 2 Diabetes Melitus for Adults who are Over Weight or Obese
+Test 328,,,55,82950,HCRZ12,,66,TRUE,HCR10b.1,100064,66,Screening Tests for Abnormal Blood Glucose and Type 2 Diabetes Melitus for Adults who are Over Weight or Obese
+Test 329,,,69,82951,HCRZ12,,66,TRUE,HCR10b.1,100064,66,Screening Tests for Abnormal Blood Glucose and Type 2 Diabetes Melitus for Adults who are Over Weight or Obese
+Test 330,,,70,83036,HCRZ12,,66,TRUE,HCR10b.1,100064,66,Screening Tests for Abnormal Blood Glucose and Type 2 Diabetes Melitus for Adults who are Over Weight or Obese
+Test 331,,,0,86580,HCRZ13,,67,TRUE,HCR11a.1,100065,67,Testing for Tuberculosis (TB) for Children
+Test 332,,,1,86580,HCRZ13,,67,TRUE,HCR11a.1,100065,67,Testing for Tuberculosis (TB) for Children
+Test 333,,,10,86580,HCRZ13,,67,TRUE,HCR11a.1,100065,67,Testing for Tuberculosis (TB) for Children
+Test 334,,,19,86580,HCRZ13,,67,TRUE,HCR11a.1,100065,67,Testing for Tuberculosis (TB) for Children
+Test 335,,,20,86580,HCRZ13,,67,TRUE,HCR11a.1,100065,67,Testing for Tuberculosis (TB) for Children
+Test 336,,,18,86480,HCRZ14,,68,TRUE,HCR11b.1,100066,68,Screening for Latent Tuberculosis Infection in Adults
+Test 337,,,19,87555,HCRZ14,,68,TRUE,HCR11b.1,100066,68,Screening for Latent Tuberculosis Infection in Adults
+Test 338,,,58,87556,HCRZ14,,68,TRUE,HCR11b.1,100066,68,Screening for Latent Tuberculosis Infection in Adults
+Test 339,,,98,86481,HCRZ14,,68,TRUE,HCR11b.1,100066,68,Screening for Latent Tuberculosis Infection in Adults
+Test 340,,,99,87557,HCRZ14,,68,TRUE,HCR11b.1,100066,68,Screening for Latent Tuberculosis Infection in Adults
+Test 341,,,21,86580,HCRZ14,,69,TRUE,HCR11b.2,100067,69,Screening for Latent Tuberculosis Infection in Adults
+Test 342,,,22,86580,HCRZ14,,69,TRUE,HCR11b.2,100067,69,Screening for Latent Tuberculosis Infection in Adults
+Test 343,,,60,86580,HCRZ14,,69,TRUE,HCR11b.2,100067,69,Screening for Latent Tuberculosis Infection in Adults
+Test 344,,,98,86580,HCRZ14,,69,TRUE,HCR11b.2,100067,69,Screening for Latent Tuberculosis Infection in Adults
+Test 345,,,99,86580,HCRZ14,,69,TRUE,HCR11b.2,100067,69,Screening for Latent Tuberculosis Infection in Adults
+Test 346,,,0,99401,HCRZ15,,70,TRUE,HCR12.1,100068,70,Counseling and Screening for Interpersonal and Domestic Violence
+Test 347,,,1,99402,HCRZ15,,70,TRUE,HCR12.1,100068,70,Counseling and Screening for Interpersonal and Domestic Violence
+Test 348,,,49,99403,HCRZ15,,70,TRUE,HCR12.1,100068,70,Counseling and Screening for Interpersonal and Domestic Violence
+Test 349,,,98,99404,HCRZ15,,70,TRUE,HCR12.1,100068,70,Counseling and Screening for Interpersonal and Domestic Violence
+Test 350,,,99,99411,HCRZ15,,70,TRUE,HCR12.1,100068,70,Counseling and Screening for Interpersonal and Domestic Violence
+Test 351,,,0,G0445,HCRZ16,,71,TRUE,HCR13.1,100069,71,Sexually Transmitted Infections Behavioral Counseling
+Test 352,,,1,99401,HCRZ16,,71,TRUE,HCR13.1,100069,71,Sexually Transmitted Infections Behavioral Counseling
+Test 353,,,49,99402,HCRZ16,,71,TRUE,HCR13.1,100069,71,Sexually Transmitted Infections Behavioral Counseling
+Test 354,,,98,99403,HCRZ16,,71,TRUE,HCR13.1,100069,71,Sexually Transmitted Infections Behavioral Counseling
+Test 355,,,99,99404,HCRZ16,,71,TRUE,HCR13.1,100069,71,Sexually Transmitted Infections Behavioral Counseling
+Test 356,,,0,G0445,HCRZ17,,72,TRUE,HCR14.1,100070,72,Human Immunodeficiency Virus Behavioral Counseling
+Test 357,,,1,99401,HCRZ17,,72,TRUE,HCR14.1,100070,72,Human Immunodeficiency Virus Behavioral Counseling
+Test 358,,,49,99402,HCRZ17,,72,TRUE,HCR14.1,100070,72,Human Immunodeficiency Virus Behavioral Counseling
+Test 359,,,98,99403,HCRZ17,,72,TRUE,HCR14.1,100070,72,Human Immunodeficiency Virus Behavioral Counseling
+Test 360,,,99,99404,HCRZ17,,72,TRUE,HCR14.1,100070,72,Human Immunodeficiency Virus Behavioral Counseling
+Test 361,,,30,0500T,NA,,73,TRUE,HCR15.1,100071,73,Human Papillomavirus (HPV) Testing
+Test 362,,,31,87623,NA,,73,TRUE,HCR15.1,100071,73,Human Papillomavirus (HPV) Testing
+Test 363,,,64,87624,NA,,73,TRUE,HCR15.1,100071,73,Human Papillomavirus (HPV) Testing
+Test 364,,,98,G0476,NA,,73,TRUE,HCR15.1,100071,73,Human Papillomavirus (HPV) Testing
+Test 365,,,99,G0476,NA,,73,TRUE,HCR15.1,100071,73,Human Papillomavirus (HPV) Testing
+Test 366,,,12,99384,HCRZ18,,74,TRUE,HCR16.1,100072,74,Well Women Visits
+Test 367,,,13,99385,HCRZ18,,74,TRUE,HCR16.1,100072,74,Well Women Visits
+Test 368,,,38,99386,HCRZ18,,74,TRUE,HCR16.1,100072,74,Well Women Visits
+Test 369,,,63,99394,HCRZ18,,74,TRUE,HCR16.1,100072,74,Well Women Visits
+Test 370,,,64,99395,HCRZ18,,74,TRUE,HCR16.1,100072,74,Well Women Visits
+Test 371,,,12,S0610,HCRZ19,,75,TRUE,HCR17a.1,100073,75,Contraceptive Counseling
+Test 372,,,13,S0612,HCRZ19,,75,TRUE,HCR17a.1,100073,75,Contraceptive Counseling
+Test 373,,,38,S0613,HCRZ19,,75,TRUE,HCR17a.1,100073,75,Contraceptive Counseling
+Test 374,,,63,99201,HCRZ19,,75,TRUE,HCR17a.1,100073,75,Contraceptive Counseling
+Test 375,,,64,99202,HCRZ19,,75,TRUE,HCR17a.1,100073,75,Contraceptive Counseling
+Test 376,,,12,A4261,NA,,76,TRUE,HCR17b.1,100074,76,Contraceptive Methods
+Test 377,,,13,A4264,NA,,76,TRUE,HCR17b.1,100074,76,Contraceptive Methods
+Test 378,,,38,A4266,NA,,76,TRUE,HCR17b.1,100074,76,Contraceptive Methods
+Test 379,,,63,J1050,NA,,76,TRUE,HCR17b.1,100074,76,Contraceptive Methods
+Test 380,,,64,J7294,NA,,76,TRUE,HCR17b.1,100074,76,Contraceptive Methods
+Test 381,,,12,A9279,HCRZ20,,77,TRUE,HCR17c.1,100075,77,Contraceptive Related Services
+Test 382,,,13,A9279,HCRZ20,,77,TRUE,HCR17c.1,100075,77,Contraceptive Related Services
+Test 383,,,38,A9279,HCRZ20,,77,TRUE,HCR17c.1,100075,77,Contraceptive Related Services
+Test 384,,,63,A9279,HCRZ20,,77,TRUE,HCR17c.1,100075,77,Contraceptive Related Services
+Test 385,,,64,A9279,HCRZ20,,77,TRUE,HCR17c.1,100075,77,Contraceptive Related Services
+Test 386,,,12,851,NA,,78,TRUE,HCR17c.2,100076,78,Contraceptive Related Services
+Test 387,,,13,58562,NA,,78,TRUE,HCR17c.2,100076,78,Contraceptive Related Services
+Test 388,,,38,57415,NA,,78,TRUE,HCR17c.2,100076,78,Contraceptive Related Services
+Test 389,,,63,58565,NA,,78,TRUE,HCR17c.2,100076,78,Contraceptive Related Services
+Test 390,,,64,58565,NA,,78,TRUE,HCR17c.2,100076,78,Contraceptive Related Services
+Test 391,,,12,58340,HCRZ21,,79,TRUE,HCR17c.3,100077,79,Contraceptive Related Services
+Test 392,,,13,74740,HCRZ21,,79,TRUE,HCR17c.3,100077,79,Contraceptive Related Services
+Test 393,,,38,74740,HCRZ21,,79,TRUE,HCR17c.3,100077,79,Contraceptive Related Services
+Test 394,,,63,74740,HCRZ21,,79,TRUE,HCR17c.3,100077,79,Contraceptive Related Services
+Test 395,,,64,74740,HCRZ21,,79,TRUE,HCR17c.3,100077,79,Contraceptive Related Services
+Test 396,,,12,76830,NA,,80,TRUE,HCR17c.4,100078,80,Contraceptive Related Services
+Test 397,,,13,76856,NA,,80,TRUE,HCR17c.4,100078,80,Contraceptive Related Services
+Test 398,,,38,76857,NA,,80,TRUE,HCR17c.4,100078,80,Contraceptive Related Services
+Test 399,,,63,76857,NA,,80,TRUE,HCR17c.4,100078,80,Contraceptive Related Services
+Test 400,,,64,76857,NA,,80,TRUE,HCR17c.4,100078,80,Contraceptive Related Services
+Test 401,,,12,96372,NA,,81,TRUE,HCR17c.5,100079,81,Contraceptive Related Services
+Test 402,,,13,96372,NA,,81,TRUE,HCR17c.5,100079,81,Contraceptive Related Services
+Test 403,,,38,96372,NA,,81,TRUE,HCR17c.5,100079,81,Contraceptive Related Services
+Test 404,,,63,96372,NA,,81,TRUE,HCR17c.5,100079,81,Contraceptive Related Services
+Test 405,,,64,96372,NA,,81,TRUE,HCR17c.5,100079,81,Contraceptive Related Services
+Test 406,,,12,A4267,NA,,82,TRUE,HCR17d.1,100080,82,HCR Contraceptives will process through PRIME
+Test 407,,,13,A4268,NA,,82,TRUE,HCR17d.1,100080,82,HCR Contraceptives will process through PRIME
+Test 408,,,38,A4269,NA,,82,TRUE,HCR17d.1,100080,82,HCR Contraceptives will process through PRIME
+Test 409,,,63,J7295,NA,,82,TRUE,HCR17d.1,100080,82,HCR Contraceptives will process through PRIME
+Test 410,,,64,J7303,NA,,82,TRUE,HCR17d.1,100080,82,HCR Contraceptives will process through PRIME
+Test 411,,,50,71250,HCRZ22,,83,TRUE,HCR18.1,100081,83,Lung Cancer Screening
+Test 412,,,51,71260,HCRZ22,,83,TRUE,HCR18.1,100081,83,Lung Cancer Screening
+Test 413,,,65,71270,HCRZ22,,83,TRUE,HCR18.1,100081,83,Lung Cancer Screening
+Test 414,,,79,71271,HCRZ22,,83,TRUE,HCR18.1,100081,83,Lung Cancer Screening
+Test 415,,,80,G0296,HCRZ22,,83,TRUE,HCR18.1,100081,83,Lung Cancer Screening
+Test 416,,,0,86704,RTN,,84,TRUE,HCR19.1,100082,84,Hepatitis B Virus
+Test 417,,,1,86705,RTN,,84,TRUE,HCR19.1,100082,84,Hepatitis B Virus
+Test 418,,,49,86706,RTN,,84,TRUE,HCR19.1,100082,84,Hepatitis B Virus
+Test 419,,,98,87340,RTN,,84,TRUE,HCR19.1,100082,84,Hepatitis B Virus
+Test 420,,,99,87341,RTN,,84,TRUE,HCR19.1,100082,84,Hepatitis B Virus
+Test 421,,,18,93784,NA,,85,TRUE,HCR20.1,100083,85,Blood Pressure Screening In Adults
+Test 422,,,19,93786,NA,,85,TRUE,HCR20.1,100083,85,Blood Pressure Screening In Adults
+Test 423,,,58,93788,NA,,85,TRUE,HCR20.1,100083,85,Blood Pressure Screening In Adults
+Test 424,,,98,93790,NA,,85,TRUE,HCR20.1,100083,85,Blood Pressure Screening In Adults
+Test 425,,,99,93790,NA,,85,TRUE,HCR20.1,100083,85,Blood Pressure Screening In Adults
+Test 426,,,0,81329,HCRZ23,,86,TRUE,HCR21.1,100084,86,Screening of Spinal Muscular Atrophy (SMA) in Newborn
+Test 427,,,1,81329,HCRZ23,,86,TRUE,HCR21.1,100084,86,Screening of Spinal Muscular Atrophy (SMA) in Newborn
+Test 428,,,50,81329,HCRZ23,,86,TRUE,HCR21.1,100084,86,Screening of Spinal Muscular Atrophy (SMA) in Newborn
+Test 429,,,99,81329,HCRZ23,,86,TRUE,HCR21.1,100084,86,Screening of Spinal Muscular Atrophy (SMA) in Newborn
+Test 430,,,100,81329,HCRZ23,,86,TRUE,HCR21.1,100084,86,Screening of Spinal Muscular Atrophy (SMA) in Newborn
+Test 431,,,65,99401,HCRZ24,,87,TRUE,HCR22.1,100085,87,Exercise Interventions To Prevent Falls in a Community Dwelling in Adults 65 or Older
+Test 432,,,66,99402,HCRZ24,,87,TRUE,HCR22.1,100085,87,Exercise Interventions To Prevent Falls in a Community Dwelling in Adults 65 or Older
+Test 433,,,82,99402,HCRZ24,,87,TRUE,HCR22.1,100085,87,Exercise Interventions To Prevent Falls in a Community Dwelling in Adults 65 or Older
+Test 434,,,98,99402,HCRZ24,,87,TRUE,HCR22.1,100085,87,Exercise Interventions To Prevent Falls in a Community Dwelling in Adults 65 or Older
+Test 435,,,99,99402,HCRZ24,,87,TRUE,HCR22.1,100085,87,Exercise Interventions To Prevent Falls in a Community Dwelling in Adults 65 or Older
+Test 436,,,6,G0475,HCRZ25,,88,TRUE,HCR23.1,100086,88,Pre-Exposure Prophylaxis (PrEP) for HIV Prevention
+Test 437,,,7,G0499,HCRZ25,,88,TRUE,HCR23.1,100086,88,Pre-Exposure Prophylaxis (PrEP) for HIV Prevention
+Test 438,,,52,J0739,HCRZ25,,88,TRUE,HCR23.1,100086,88,Pre-Exposure Prophylaxis (PrEP) for HIV Prevention
+Test 439,,,98,J0741,HCRZ25,,88,TRUE,HCR23.1,100086,88,Pre-Exposure Prophylaxis (PrEP) for HIV Prevention
+Test 440,,,99,J0799,HCRZ25,,88,TRUE,HCR23.1,100086,88,Pre-Exposure Prophylaxis (PrEP) for HIV Prevention
+Test 441,,,0,G0011,HCRZ46,,89,TRUE,HCR23.2,100149,89,Pre-Exposure Prophylaxis (PrEP) for HIV Prevention
+Test 442,,,1,G0012,HCRZ46,,89,TRUE,HCR23.2,100149,89,Pre-Exposure Prophylaxis (PrEP) for HIV Prevention
+Test 443,,,50,G0013,HCRZ46,,89,TRUE,HCR23.2,100149,89,Pre-Exposure Prophylaxis (PrEP) for HIV Prevention
+Test 444,,,99,G0445,HCRZ46,,89,TRUE,HCR23.2,100149,89,Pre-Exposure Prophylaxis (PrEP) for HIV Prevention
+Test 445,,,100,99202,HCRZ46,,89,TRUE,HCR23.2,100149,89,Pre-Exposure Prophylaxis (PrEP) for HIV Prevention
+Test 446,,,0,99281,HCRZ47,,90,TRUE,HCR23.3,100150,90,Pre-Exposure Prophylaxis (PrEP) for HIV Prevention
+Test 447,,,1,99282,HCRZ47,,90,TRUE,HCR23.3,100150,90,Pre-Exposure Prophylaxis (PrEP) for HIV Prevention
+Test 448,,,50,99283,HCRZ47,,90,TRUE,HCR23.3,100150,90,Pre-Exposure Prophylaxis (PrEP) for HIV Prevention
+Test 449,,,99,99284,HCRZ47,,90,TRUE,HCR23.3,100150,90,Pre-Exposure Prophylaxis (PrEP) for HIV Prevention
+Test 450,,,100,99285,HCRZ47,,90,TRUE,HCR23.3,100150,90,Pre-Exposure Prophylaxis (PrEP) for HIV Prevention
+Test 451,,,0,G0432,HCRZ48,,91,TRUE,HCR23.4,100151,91,Pre-Exposure Prophylaxis (PrEP) for HIV Prevention
+Test 452,,,1,G0433,HCRZ48,,91,TRUE,HCR23.4,100151,91,Pre-Exposure Prophylaxis (PrEP) for HIV Prevention
+Test 453,,,50,G0435,HCRZ48,,91,TRUE,HCR23.4,100151,91,Pre-Exposure Prophylaxis (PrEP) for HIV Prevention
+Test 454,,,99,G0472,HCRZ48,,91,TRUE,HCR23.4,100151,91,Pre-Exposure Prophylaxis (PrEP) for HIV Prevention
+Test 455,,,100,86592,HCRZ48,,91,TRUE,HCR23.4,100151,91,Pre-Exposure Prophylaxis (PrEP) for HIV Prevention
+Test 456,,,0,D0145,HCRZ26,,92,TRUE,BFHCR.1,100087,92,Bright Futures HCR Additional Services
+Test 457,,,1,D0120,HCRZ26,,92,TRUE,BFHCR.1,100087,92,Bright Futures HCR Additional Services
+Test 458,,,1,D0120,HCRZ26,,92,TRUE,BFHCR.1,100087,92,Bright Futures HCR Additional Services
+Test 459,,,2,D0120,HCRZ26,,92,TRUE,BFHCR.1,100087,92,Bright Futures HCR Additional Services
+Test 460,,,3,D0120,HCRZ26,,92,TRUE,BFHCR.1,100087,92,Bright Futures HCR Additional Services
+Test 461,,,6,D1208,HCRZ27,,93,TRUE,BFHCR.2,100088,93,Bright Futures HCR Additional Services
+Test 462,,,6,D1208,HCRZ27,,93,TRUE,BFHCR.2,100088,93,Bright Futures HCR Additional Services
+Test 463,,,6,D1208,HCRZ27,,93,TRUE,BFHCR.2,100088,93,Bright Futures HCR Additional Services
+Test 464,,,6,D1208,HCRZ27,,93,TRUE,BFHCR.2,100088,93,Bright Futures HCR Additional Services
+Test 465,,,6,D1208,HCRZ27,,93,TRUE,BFHCR.2,100088,93,Bright Futures HCR Additional Services
+Test 466,,,0,D9999,HCRZ26,,94,TRUE,BFHCR.3,100089,94,Bright Futures HCR Additional Services
+Test 467,,,1,D9999,HCRZ26,,94,TRUE,BFHCR.3,100089,94,Bright Futures HCR Additional Services
+Test 468,,,1,D9999,HCRZ26,,94,TRUE,BFHCR.3,100089,94,Bright Futures HCR Additional Services
+Test 469,,,2,D9999,HCRZ26,,94,TRUE,BFHCR.3,100089,94,Bright Futures HCR Additional Services
+Test 470,,,3,D9999,HCRZ26,,94,TRUE,BFHCR.3,100089,94,Bright Futures HCR Additional Services
+Test 471,,,0,S3620,HCRZ28,,95,TRUE,BFHCR.4,100090,95,Bright Futures HCR Additional Services
+Test 472,,,1,S3620,HCRZ28,,95,TRUE,BFHCR.4,100090,95,Bright Futures HCR Additional Services
+Test 473,,,50,S3620,HCRZ28,,95,TRUE,BFHCR.4,100090,95,Bright Futures HCR Additional Services
+Test 474,,,99,S3620,HCRZ28,,95,TRUE,BFHCR.4,100090,95,Bright Futures HCR Additional Services
+Test 475,,,100,S3620,HCRZ28,,95,TRUE,BFHCR.4,100090,95,Bright Futures HCR Additional Services
+Test 476,,,11,36415,HCRZ29,,96,TRUE,BFHCR.5,100091,96,Bright Futures HCR Additional Services
+Test 477,,,12,36415,HCRZ29,,96,TRUE,BFHCR.5,100091,96,Bright Futures HCR Additional Services
+Test 478,,,16,36415,HCRZ29,,96,TRUE,BFHCR.5,100091,96,Bright Futures HCR Additional Services
+Test 479,,,20,36415,HCRZ29,,96,TRUE,BFHCR.5,100091,96,Bright Futures HCR Additional Services
+Test 480,,,21,36415,HCRZ29,,96,TRUE,BFHCR.5,100091,96,Bright Futures HCR Additional Services
+Test 481,,,2,80061,HCRZ30,,97,TRUE,BFHCR.6,100092,97,Bright Futures HCR Additional Services
+Test 482,,,3,80061,HCRZ30,,97,TRUE,BFHCR.6,100092,97,Bright Futures HCR Additional Services
+Test 483,,,11,80061,HCRZ30,,97,TRUE,BFHCR.6,100092,97,Bright Futures HCR Additional Services
+Test 484,,,20,80061,HCRZ30,,97,TRUE,BFHCR.6,100092,97,Bright Futures HCR Additional Services
+Test 485,,,21,80061,HCRZ30,,97,TRUE,BFHCR.6,100092,97,Bright Futures HCR Additional Services
+Test 486,,,2,82465,HCRZ31,,98,TRUE,BFHCR.7,100093,98,Bright Futures HCR Additional Services
+Test 487,,,3,82465,HCRZ31,,98,TRUE,BFHCR.7,100093,98,Bright Futures HCR Additional Services
+Test 488,,,11,82465,HCRZ31,,98,TRUE,BFHCR.7,100093,98,Bright Futures HCR Additional Services
+Test 489,,,20,82465,HCRZ31,,98,TRUE,BFHCR.7,100093,98,Bright Futures HCR Additional Services
+Test 490,,,21,82465,HCRZ31,,98,TRUE,BFHCR.7,100093,98,Bright Futures HCR Additional Services
+Test 491,,,0,83655,HCRZ32,,99,TRUE,BFHCR.8,100094,99,Bright Futures HCR Additional Services
+Test 492,,,1,83655,HCRZ32,,99,TRUE,BFHCR.8,100094,99,Bright Futures HCR Additional Services
+Test 493,,,3,83655,HCRZ32,,99,TRUE,BFHCR.8,100094,99,Bright Futures HCR Additional Services
+Test 494,,,5,83655,HCRZ32,,99,TRUE,BFHCR.8,100094,99,Bright Futures HCR Additional Services
+Test 495,,,6,83655,HCRZ32,,99,TRUE,BFHCR.8,100094,99,Bright Futures HCR Additional Services
+Test 496,,,2,83718,HCRZ30,,100,TRUE,BFHCR.9,100095,100,Bright Futures HCR Additional Services
+Test 497,,,3,84478,HCRZ30,,100,TRUE,BFHCR.9,100095,100,Bright Futures HCR Additional Services
+Test 498,,,11,84478,HCRZ30,,100,TRUE,BFHCR.9,100095,100,Bright Futures HCR Additional Services
+Test 499,,,20,84478,HCRZ30,,100,TRUE,BFHCR.9,100095,100,Bright Futures HCR Additional Services
+Test 500,,,21,84478,HCRZ30,,100,TRUE,BFHCR.9,100095,100,Bright Futures HCR Additional Services
+Test 501,,,6,84478,HCRZ33,,101,TRUE,BFHCR.10,100096,101,Bright Futures HCR Additional Services
+Test 502,,,7,84478,HCRZ33,,101,TRUE,BFHCR.10,100096,101,Bright Futures HCR Additional Services
+Test 503,,,13,84478,HCRZ33,,101,TRUE,BFHCR.10,100096,101,Bright Futures HCR Additional Services
+Test 504,,,20,84478,HCRZ33,,101,TRUE,BFHCR.10,100096,101,Bright Futures HCR Additional Services
+Test 505,,,21,84478,HCRZ33,,101,TRUE,BFHCR.10,100096,101,Bright Futures HCR Additional Services
+Test 506,,,0,85018,HCRZ30,,102,TRUE,BFHCR.11,100097,102,Bright Futures HCR Additional Services
+Test 507,,,1,85014,HCRZ30,,102,TRUE,BFHCR.11,100097,102,Bright Futures HCR Additional Services
+Test 508,,,10,85014,HCRZ30,,102,TRUE,BFHCR.11,100097,102,Bright Futures HCR Additional Services
+Test 509,,,20,85014,HCRZ30,,102,TRUE,BFHCR.11,100097,102,Bright Futures HCR Additional Services
+Test 510,,,21,85014,HCRZ30,,102,TRUE,BFHCR.11,100097,102,Bright Futures HCR Additional Services
+Test 511,,,11,87850,HCRZ34,,103,TRUE,BFHCR.12,100098,103,Bright Futures HCR Additional Services
+Test 512,,,12,87081,HCRZ34,,103,TRUE,BFHCR.12,100098,103,Bright Futures HCR Additional Services
+Test 513,,,16,87110,HCRZ34,,103,TRUE,BFHCR.12,100098,103,Bright Futures HCR Additional Services
+Test 514,,,20,87210,HCRZ34,,103,TRUE,BFHCR.12,100098,103,Bright Futures HCR Additional Services
+Test 515,,,21,87270,HCRZ34,,103,TRUE,BFHCR.12,100098,103,Bright Futures HCR Additional Services
+Test 516,,,6,92567,HCRZ26,,104,TRUE,BFHCR.13,100099,104,Bright Futures HCR Additional Services
+Test 517,,,7,92567,HCRZ26,,104,TRUE,BFHCR.13,100099,104,Bright Futures HCR Additional Services
+Test 518,,,13,92567,HCRZ26,,104,TRUE,BFHCR.13,100099,104,Bright Futures HCR Additional Services
+Test 519,,,20,92567,HCRZ26,,104,TRUE,BFHCR.13,100099,104,Bright Futures HCR Additional Services
+Test 520,,,21,92567,HCRZ26,,104,TRUE,BFHCR.13,100099,104,Bright Futures HCR Additional Services
+Test 521,,,0,92588,HCRZ35,,105,TRUE,BFHCR.14,100100,105,Bright Futures HCR Additional Services
+Test 522,,,1,92558,HCRZ35,,105,TRUE,BFHCR.14,100100,105,Bright Futures HCR Additional Services
+Test 523,,,0,92587,HCRZ35,,105,TRUE,BFHCR.14,100100,105,Bright Futures HCR Additional Services
+Test 524,,,0,92587,HCRZ35,,105,TRUE,BFHCR.14,100100,105,Bright Futures HCR Additional Services
+Test 525,,,1,92587,HCRZ35,,105,TRUE,BFHCR.14,100100,105,Bright Futures HCR Additional Services
+Test 526,,,0,96110,HCRZ36,,106,TRUE,BFHCR.15,100101,106,Bright Futures HCR Additional Services
+Test 527,,,1,96110,HCRZ36,,106,TRUE,BFHCR.15,100101,106,Bright Futures HCR Additional Services
+Test 528,,,10,96110,HCRZ36,,106,TRUE,BFHCR.15,100101,106,Bright Futures HCR Additional Services
+Test 529,,,20,96110,HCRZ36,,106,TRUE,BFHCR.15,100101,106,Bright Futures HCR Additional Services
+Test 530,,,21,96110,HCRZ36,,106,TRUE,BFHCR.15,100101,106,Bright Futures HCR Additional Services
+Test 531,,,0,96160,HCRZ26,,107,TRUE,BFHCR.16,100102,107,Bright Futures HCR Additional Services
+Test 532,,,1,96161,HCRZ26,,107,TRUE,BFHCR.16,100102,107,Bright Futures HCR Additional Services
+Test 533,,,3,99420,HCRZ26,,107,TRUE,BFHCR.16,100102,107,Bright Futures HCR Additional Services
+Test 534,,,5,99420,HCRZ26,,107,TRUE,BFHCR.16,100102,107,Bright Futures HCR Additional Services
+Test 535,,,6,99420,HCRZ26,,107,TRUE,BFHCR.16,100102,107,Bright Futures HCR Additional Services
+Test 536,,,0,96160,HCRZ37,,108,TRUE,BFHCR.17,100103,108,Bright Futures HCR Additional Services
+Test 537,,,1,96161,HCRZ37,,108,TRUE,BFHCR.17,100103,108,Bright Futures HCR Additional Services
+Test 538,,,10,96161,HCRZ37,,108,TRUE,BFHCR.17,100103,108,Bright Futures HCR Additional Services
+Test 539,,,20,96161,HCRZ37,,108,TRUE,BFHCR.17,100103,108,Bright Futures HCR Additional Services
+Test 540,,,21,96161,HCRZ37,,108,TRUE,BFHCR.17,100103,108,Bright Futures HCR Additional Services
+Test 541,,,18,99000,HCRZ38,,109,TRUE,BFHCR.18,100104,109,Bright Futures HCR Additional Services
+Test 542,,,19,99000,HCRZ38,,109,TRUE,BFHCR.18,100104,109,Bright Futures HCR Additional Services
+Test 543,,,19,99000,HCRZ38,,109,TRUE,BFHCR.18,100104,109,Bright Futures HCR Additional Services
+Test 544,,,20,99000,HCRZ38,,109,TRUE,BFHCR.18,100104,109,Bright Futures HCR Additional Services
+Test 545,,,21,99000,HCRZ38,,109,TRUE,BFHCR.18,100104,109,Bright Futures HCR Additional Services
+Test 546,,,6,99174,HCRZ26,,110,TRUE,BFHCR.19,100105,110,Bright Futures HCR Additional Services
+Test 547,,,7,99174,HCRZ26,,110,TRUE,BFHCR.19,100105,110,Bright Futures HCR Additional Services
+Test 548,,,13,99174,HCRZ26,,110,TRUE,BFHCR.19,100105,110,Bright Futures HCR Additional Services
+Test 549,,,20,99174,HCRZ26,,110,TRUE,BFHCR.19,100105,110,Bright Futures HCR Additional Services
+Test 550,,,21,99174,HCRZ26,,110,TRUE,BFHCR.19,100105,110,Bright Futures HCR Additional Services
+Test 551,,,6,99211,HCRZ13,,111,TRUE,BFHCR.20,100106,111,Bright Futures HCR Additional Services
+Test 552,,,7,99211,HCRZ13,,111,TRUE,BFHCR.20,100106,111,Bright Futures HCR Additional Services
+Test 553,,,13,99211,HCRZ13,,111,TRUE,BFHCR.20,100106,111,Bright Futures HCR Additional Services
+Test 554,,,20,99211,HCRZ13,,111,TRUE,BFHCR.20,100106,111,Bright Futures HCR Additional Services
+Test 555,,,21,99211,HCRZ13,,111,TRUE,BFHCR.20,100106,111,Bright Futures HCR Additional Services
+Test 556,,,0,99215,HCRZ39,,112,TRUE,BFHCR.21,100107,112,Bright Futures HCR Additional Services
+Test 557,,,1,99211,HCRZ39,,112,TRUE,BFHCR.21,100107,112,Bright Futures HCR Additional Services
+Test 558,,,10,99212,HCRZ39,,112,TRUE,BFHCR.21,100107,112,Bright Futures HCR Additional Services
+Test 559,,,20,99213,HCRZ39,,112,TRUE,BFHCR.21,100107,112,Bright Futures HCR Additional Services
+Test 560,,,21,99214,HCRZ39,,112,TRUE,BFHCR.21,100107,112,Bright Futures HCR Additional Services
+Test 561,,,0,99238,HCRZ40,,113,TRUE,BFHCR.22,100108,113,Bright Futures HCR Additional Services
+Test 562,,,1,99238,HCRZ40,,113,TRUE,BFHCR.22,100108,113,Bright Futures HCR Additional Services
+Test 563,,,50,99238,HCRZ40,,113,TRUE,BFHCR.22,100108,113,Bright Futures HCR Additional Services
+Test 564,,,99,99238,HCRZ40,,113,TRUE,BFHCR.22,100108,113,Bright Futures HCR Additional Services
+Test 565,,,100,99238,HCRZ40,,113,TRUE,BFHCR.22,100108,113,Bright Futures HCR Additional Services
+Test 566,,,11,99409,HCRZ41,,114,TRUE,BFHCR.23,100109,114,Bright Futures HCR Additional Services
+Test 567,,,12,99408,HCRZ41,,114,TRUE,BFHCR.23,100109,114,Bright Futures HCR Additional Services
+Test 568,,,16,99408,HCRZ41,,114,TRUE,BFHCR.23,100109,114,Bright Futures HCR Additional Services
+Test 569,,,20,99408,HCRZ41,,114,TRUE,BFHCR.23,100109,114,Bright Futures HCR Additional Services
+Test 570,,,21,99408,HCRZ41,,114,TRUE,BFHCR.23,100109,114,Bright Futures HCR Additional Services
+Test 571,,,0,99420,HCRZ37,,115,TRUE,BFHCR.24,100110,115,Bright Futures HCR Additional Services
+Test 572,,,1,99420,HCRZ37,,115,TRUE,BFHCR.24,100110,115,Bright Futures HCR Additional Services
+Test 573,,,3,99420,HCRZ37,,115,TRUE,BFHCR.24,100110,115,Bright Futures HCR Additional Services
+Test 574,,,5,99420,HCRZ37,,115,TRUE,BFHCR.24,100110,115,Bright Futures HCR Additional Services
+Test 575,,,6,99420,HCRZ37,,115,TRUE,BFHCR.24,100110,115,Bright Futures HCR Additional Services
+Test 576,,,0,99429,HCRZ42,,116,TRUE,BFHCR.25,100111,116,Bright Futures HCR Additional Services
+Test 577,,,1,99429,HCRZ42,,116,TRUE,BFHCR.25,100111,116,Bright Futures HCR Additional Services
+Test 578,,,1,99429,HCRZ42,,116,TRUE,BFHCR.25,100111,116,Bright Futures HCR Additional Services
+Test 579,,,2,99429,HCRZ42,,116,TRUE,BFHCR.25,100111,116,Bright Futures HCR Additional Services
+Test 580,,,3,99429,HCRZ42,,116,TRUE,BFHCR.25,100111,116,Bright Futures HCR Additional Services
+Test 581,,,6,99429,HCRZ27,,117,TRUE,BFHCR.26,100112,117,Bright Futures HCR Additional Services
+Test 582,,,6,99429,HCRZ27,,117,TRUE,BFHCR.26,100112,117,Bright Futures HCR Additional Services
+Test 583,,,6,99429,HCRZ27,,117,TRUE,BFHCR.26,100112,117,Bright Futures HCR Additional Services
+Test 584,,,6,99429,HCRZ27,,117,TRUE,BFHCR.26,100112,117,Bright Futures HCR Additional Services
+Test 585,,,6,99429,HCRZ27,,117,TRUE,BFHCR.26,100112,117,Bright Futures HCR Additional Services
+Test 586,,,0,G2011,HCRZ43,,118,TRUE,HCRP1.1,100113,118,Screening and Counseling to Reduce Alcohol Misuse
+Test 587,,,1,H0001,HCRZ43,,118,TRUE,HCRP1.1,100113,118,Screening and Counseling to Reduce Alcohol Misuse
+Test 588,,,49,99408,HCRZ43,,118,TRUE,HCRP1.1,100113,118,Screening and Counseling to Reduce Alcohol Misuse
+Test 589,,,98,99409,HCRZ43,,118,TRUE,HCRP1.1,100113,118,Screening and Counseling to Reduce Alcohol Misuse
+Test 590,,,99,99409,HCRZ43,,118,TRUE,HCRP1.1,100113,118,Screening and Counseling to Reduce Alcohol Misuse
+Test 591,,,0,S9443,HCRZ43,,119,TRUE,HCRP2a.1,100114,119,Counseling to Support Breastfeeding
+Test 592,,,1,S9443,HCRZ43,,119,TRUE,HCRP2a.1,100114,119,Counseling to Support Breastfeeding
+Test 593,,,49,S9443,HCRZ43,,119,TRUE,HCRP2a.1,100114,119,Counseling to Support Breastfeeding
+Test 594,,,98,S9443,HCRZ43,,119,TRUE,HCRP2a.1,100114,119,Counseling to Support Breastfeeding
+Test 595,,,99,S9443,HCRZ43,,119,TRUE,HCRP2a.1,100114,119,Counseling to Support Breastfeeding
+Test 596,,,0,A4281,NA,,120,TRUE,HCRP2b.1,100115,120,Breastfeeding Support Supply and Counseling 
+Test 597,,,1,A4282,NA,,120,TRUE,HCRP2b.1,100115,120,Breastfeeding Support Supply and Counseling 
+Test 598,,,49,A4283,NA,,120,TRUE,HCRP2b.1,100115,120,Breastfeeding Support Supply and Counseling 
+Test 599,,,98,A4284,NA,,120,TRUE,HCRP2b.1,100115,120,Breastfeeding Support Supply and Counseling 
+Test 600,,,99,A4285,NA,,120,TRUE,HCRP2b.1,100115,120,Breastfeeding Support Supply and Counseling 
+Test 601,,,0,G0436,HCRZ43,,121,TRUE,HCRP4.1,100116,121,Counseling for Tobacco Use; Pregnant Women
+Test 602,,,1,G0437,HCRZ43,,121,TRUE,HCRP4.1,100116,121,Counseling for Tobacco Use; Pregnant Women
+Test 603,,,49,S9453,HCRZ43,,121,TRUE,HCRP4.1,100116,121,Counseling for Tobacco Use; Pregnant Women
+Test 604,,,98,99406,HCRZ43,,121,TRUE,HCRP4.1,100116,121,Counseling for Tobacco Use; Pregnant Women
+Test 605,,,99,99407,HCRZ43,,121,TRUE,HCRP4.1,100116,121,Counseling for Tobacco Use; Pregnant Women
+Test 606,,,0,87086,HCRZ43,,122,TRUE,HCRP5.1,100117,122,Screening for the Presence of Bacteria in the Urine; Pregnant Women
+Test 607,,,1,87088,HCRZ43,,122,TRUE,HCRP5.1,100117,122,Screening for the Presence of Bacteria in the Urine; Pregnant Women
+Test 608,,,49,87088,HCRZ43,,122,TRUE,HCRP5.1,100117,122,Screening for the Presence of Bacteria in the Urine; Pregnant Women
+Test 609,,,98,87088,HCRZ43,,122,TRUE,HCRP5.1,100117,122,Screening for the Presence of Bacteria in the Urine; Pregnant Women
+Test 610,,,99,87088,HCRZ43,,122,TRUE,HCRP5.1,100117,122,Screening for the Presence of Bacteria in the Urine; Pregnant Women
+Test 611,,,0,87270,HCRZ43,,123,TRUE,HCRP6.1,100118,123,Screening for Chlamydia Infection
+Test 612,,,1,87320,HCRZ43,,123,TRUE,HCRP6.1,100118,123,Screening for Chlamydia Infection
+Test 613,,,49,87320,HCRZ43,,123,TRUE,HCRP6.1,100118,123,Screening for Chlamydia Infection
+Test 614,,,98,87320,HCRZ43,,123,TRUE,HCRP6.1,100118,123,Screening for Chlamydia Infection
+Test 615,,,99,87320,HCRZ43,,123,TRUE,HCRP6.1,100118,123,Screening for Chlamydia Infection
+Test 616,,,0,87590,HCRZ43,,124,TRUE,HCRP7.1,100119,124,Screening for Gonorrhea
+Test 617,,,1,87591,HCRZ43,,124,TRUE,HCRP7.1,100119,124,Screening for Gonorrhea
+Test 618,,,49,87592,HCRZ43,,124,TRUE,HCRP7.1,100119,124,Screening for Gonorrhea
+Test 619,,,98,87850,HCRZ43,,124,TRUE,HCRP7.1,100119,124,Screening for Gonorrhea
+Test 620,,,99,87850,HCRZ43,,124,TRUE,HCRP7.1,100119,124,Screening for Gonorrhea
+Test 621,,,0,87390,HCRZ43,,125,TRUE,HCRP8.1,100120,125,Screening for HIV
+Test 622,,,1,87391,HCRZ43,,125,TRUE,HCRP8.1,100120,125,Screening for HIV
+Test 623,,,49,87391,HCRZ43,,125,TRUE,HCRP8.1,100120,125,Screening for HIV
+Test 624,,,98,87391,HCRZ43,,125,TRUE,HCRP8.1,100120,125,Screening for HIV
+Test 625,,,99,87391,HCRZ43,,125,TRUE,HCRP8.1,100120,125,Screening for HIV
+Test 626,,,0,80055,HCRZ44,,126,TRUE,HCRP9.1,100121,126,Screening for Syphilis; Pregnant Women
+Test 627,,,1,86780,HCRZ44,,126,TRUE,HCRP9.1,100121,126,Screening for Syphilis; Pregnant Women
+Test 628,,,49,86780,HCRZ44,,126,TRUE,HCRP9.1,100121,126,Screening for Syphilis; Pregnant Women
+Test 629,,,98,86780,HCRZ44,,126,TRUE,HCRP9.1,100121,126,Screening for Syphilis; Pregnant Women
+Test 630,,,99,86780,HCRZ44,,126,TRUE,HCRP9.1,100121,126,Screening for Syphilis; Pregnant Women
+Test 631,,,0,86592,HCRZ43,,127,TRUE,HCRP9.2,100122,127,Screening for Syphilis; Pregnant Women
+Test 632,,,1,86592,HCRZ43,,127,TRUE,HCRP9.2,100122,127,Screening for Syphilis; Pregnant Women
+Test 633,,,49,86592,HCRZ43,,127,TRUE,HCRP9.2,100122,127,Screening for Syphilis; Pregnant Women
+Test 634,,,98,86592,HCRZ43,,127,TRUE,HCRP9.2,100122,127,Screening for Syphilis; Pregnant Women
+Test 635,,,99,86592,HCRZ43,,127,TRUE,HCRP9.2,100122,127,Screening for Syphilis; Pregnant Women
+Test 636,,,0,87467,HCRZ43,,128,TRUE,HCRP10.1,100123,128,Screening for Hepatitis B
+Test 637,,,1,86704,HCRZ43,,128,TRUE,HCRP10.1,100123,128,Screening for Hepatitis B
+Test 638,,,49,86705,HCRZ43,,128,TRUE,HCRP10.1,100123,128,Screening for Hepatitis B
+Test 639,,,98,86706,HCRZ43,,128,TRUE,HCRP10.1,100123,128,Screening for Hepatitis B
+Test 640,,,99,87340,HCRZ43,,128,TRUE,HCRP10.1,100123,128,Screening for Hepatitis B
+Test 641,,,0,99217,RTNROU,,129,TRUE,WC1.1,100124,129,Newborn Care
+Test 642,,,1,99218,RTNROU,,129,TRUE,WC1.1,100124,129,Newborn Care
+Test 643,,,0,99219,RTNROU,,129,TRUE,WC1.1,100124,129,Newborn Care
+Test 644,,,0,99220,RTNROU,,129,TRUE,WC1.1,100124,129,Newborn Care
+Test 645,,,1,99238,RTNROU,,129,TRUE,WC1.1,100124,129,Newborn Care
+Test 646,,,0,85018,HCRZ43,,130,TRUE,HCRP11.1,100125,130,Screening for Iron Deficiency Anemia
+Test 647,,,1,82728,HCRZ43,,130,TRUE,HCRP11.1,100125,130,Screening for Iron Deficiency Anemia
+Test 648,,,49,82728,HCRZ43,,130,TRUE,HCRP11.1,100125,130,Screening for Iron Deficiency Anemia
+Test 649,,,98,82728,HCRZ43,,130,TRUE,HCRP11.1,100125,130,Screening for Iron Deficiency Anemia
+Test 650,,,99,82728,HCRZ43,,130,TRUE,HCRP11.1,100125,130,Screening for Iron Deficiency Anemia
+Test 651,,,0,G0117,REXRTN,,131,TRUE,WC2.1,100126,131,Vision Screening
+Test 652,,,1,G0118,REXRTN,,131,TRUE,WC2.1,100126,131,Vision Screening
+Test 653,,,2,S0620,REXRTN,,131,TRUE,WC2.1,100126,131,Vision Screening
+Test 654,,,4,S0621,REXRTN,,131,TRUE,WC2.1,100126,131,Vision Screening
+Test 655,,,5,92002,REXRTN,,131,TRUE,WC2.1,100126,131,Vision Screening
+Test 656,,,0,86906,HCRZ43,,132,TRUE,HCRP12.1,100127,132,Screening for RH Incompatibility First Pregnancy Visit 24 - 48 Weeks Gestation
+Test 657,,,1,86901,HCRZ43,,132,TRUE,HCRP12.1,100127,132,Screening for RH Incompatibility First Pregnancy Visit 24 - 48 Weeks Gestation
+Test 658,,,49,86901,HCRZ43,,132,TRUE,HCRP12.1,100127,132,Screening for RH Incompatibility First Pregnancy Visit 24 - 48 Weeks Gestation
+Test 659,,,98,86901,HCRZ43,,132,TRUE,HCRP12.1,100127,132,Screening for RH Incompatibility First Pregnancy Visit 24 - 48 Weeks Gestation
+Test 660,,,99,86901,HCRZ43,,132,TRUE,HCRP12.1,100127,132,Screening for RH Incompatibility First Pregnancy Visit 24 - 48 Weeks Gestation
+Test 661,,,0,99201,REX,,133,TRUE,WC2.2,100128,133,Vision Screening
+Test 662,,,1,99202,REX,,133,TRUE,WC2.2,100128,133,Vision Screening
+Test 663,,,2,99203,REX,,133,TRUE,WC2.2,100128,133,Vision Screening
+Test 664,,,4,99204,REX,,133,TRUE,WC2.2,100128,133,Vision Screening
+Test 665,,,5,99205,REX,,133,TRUE,WC2.2,100128,133,Vision Screening
+Test 666,,,0,90759,COP,,134,TRUE,HCRP14.1,100129,134,Immunizations
+Test 667,,,1,G0008,COP,,134,TRUE,HCRP14.1,100129,134,Immunizations
+Test 668,,,49,G0009,COP,,134,TRUE,HCRP14.1,100129,134,Immunizations
+Test 669,,,98,G0010,COP,,134,TRUE,HCRP14.1,100129,134,Immunizations
+Test 670,,,99,J3530,COP,,134,TRUE,HCRP14.1,100129,134,Immunizations
+Test 671,,,12,M0224,COP,,135,TRUE,HCRP14.2,100152,135,Immunization
+Test 672,,,13,Q0224,COP,,135,TRUE,HCRP14.2,100152,135,Immunization
+Test 673,,,56,Q0224,COP,,135,TRUE,HCRP14.2,100152,135,Immunization
+Test 674,,,99,Q0224,COP,,135,TRUE,HCRP14.2,100152,135,Immunization
+Test 675,,,100,Q0224,COP,,135,TRUE,HCRP14.2,100152,135,Immunization
+Test 676,,,0,V5008,RTNROU,,136,TRUE,WC3.1,100130,136,Hearing Screening
+Test 677,,,1,92551,RTNROU,,136,TRUE,WC3.1,100130,136,Hearing Screening
+Test 678,,,2,92552,RTNROU,,136,TRUE,WC3.1,100130,136,Hearing Screening
+Test 679,,,4,92567,RTNROU,,136,TRUE,WC3.1,100130,136,Hearing Screening
+Test 680,,,5,92567,RTNROU,,136,TRUE,WC3.1,100130,136,Hearing Screening
+Test 681,,,0,83036,HCRZ43,,137,TRUE,HCRP15.1,100131,137,Screening for Gestational Diabetes Mellitus
+Test 682,,,1,82947,HCRZ43,,137,TRUE,HCRP15.1,100131,137,Screening for Gestational Diabetes Mellitus
+Test 683,,,49,82948,HCRZ43,,137,TRUE,HCRP15.1,100131,137,Screening for Gestational Diabetes Mellitus
+Test 684,,,98,82950,HCRZ43,,137,TRUE,HCRP15.1,100131,137,Screening for Gestational Diabetes Mellitus
+Test 685,,,99,82951,HCRZ43,,137,TRUE,HCRP15.1,100131,137,Screening for Gestational Diabetes Mellitus
+Test 686,,,0,99404,HCRZ45,,138,TRUE,BFHCRP.1,100132,138,Bright Futures HCR Additional Services
+Test 687,,,1,99401,HCRZ45,,138,TRUE,BFHCRP.1,100132,138,Bright Futures HCR Additional Services
+Test 688,,,49,99402,HCRZ45,,138,TRUE,BFHCRP.1,100132,138,Bright Futures HCR Additional Services
+Test 689,,,98,99403,HCRZ45,,138,TRUE,BFHCRP.1,100132,138,Bright Futures HCR Additional Services
+Test 690,,,99,99403,HCRZ45,,138,TRUE,BFHCRP.1,100132,138,Bright Futures HCR Additional Services
+Test 691,,,0,G0008,RTNROUZ1,,139,TRUE,WC4.1,100133,139,Immunization
+Test 692,,,1,G0009,RTNROUZ1,,139,TRUE,WC4.1,100133,139,Immunization
+Test 693,,,8,G0010,RTNROUZ1,,139,TRUE,WC4.1,100133,139,Immunization
+Test 694,,,16,J3530,RTNROUZ1,,139,TRUE,WC4.1,100133,139,Immunization
+Test 695,,,17,91300,RTNROUZ1,,139,TRUE,WC4.1,100133,139,Immunization
+Test 696,,,0,90692,RTNROU,,140,TRUE,WC4.2,100134,140,Immunization
+Test 697,,,1,90693,RTNROU,,140,TRUE,WC4.2,100134,140,Immunization
+Test 698,,,8,90725,RTNROU,,140,TRUE,WC4.2,100134,140,Immunization
+Test 699,,,16,90727,RTNROU,,140,TRUE,WC4.2,100134,140,Immunization
+Test 700,,,17,90735,RTNROU,,140,TRUE,WC4.2,100134,140,Immunization
+Test 701,,,0,M0201,RTNROUZ2,,141,TRUE,WC4.3,100135,141,Immunization
+Test 702,,,1,Q2034,RTNROUZ2,,141,TRUE,WC4.3,100135,141,Immunization
+Test 703,,,8,Q2035,RTNROUZ2,,141,TRUE,WC4.3,100135,141,Immunization
+Test 704,,,16,Q2036,RTNROUZ2,,141,TRUE,WC4.3,100135,141,Immunization
+Test 705,,,17,Q2037,RTNROUZ2,,141,TRUE,WC4.3,100135,141,Immunization
+Test 706,,,9,90649,RTNROUZ3,,142,TRUE,WC4.4,100136,142,Immunization
+Test 707,,,10,90650,RTNROUZ3,,142,TRUE,WC4.4,100136,142,Immunization
+Test 708,,,13,90651,RTNROUZ3,,142,TRUE,WC4.4,100136,142,Immunization
+Test 709,,,16,90651,RTNROUZ3,,142,TRUE,WC4.4,100136,142,Immunization
+Test 710,,,17,90651,RTNROUZ3,,142,TRUE,WC4.4,100136,142,Immunization
+Test 711,,,0,90471,RTNROUZ4,,143,TRUE,WC4.5,100137,143,Immunization
+Test 712,,,1,90472,RTNROUZ4,,143,TRUE,WC4.5,100137,143,Immunization
+Test 713,,,8,90473,RTNROUZ4,,143,TRUE,WC4.5,100137,143,Immunization
+Test 714,,,16,90474,RTNROUZ4,,143,TRUE,WC4.5,100137,143,Immunization
+Test 715,,,17,90581,RTNROUZ4,,143,TRUE,WC4.5,100137,143,Immunization
+Test 716,,,0,90675,RTNROUZ5,,144,TRUE,WC4.6,100138,144,Immunization
+Test 717,,,1,90676,RTNROUZ5,,144,TRUE,WC4.6,100138,144,Immunization
+Test 718,,,8,90676,RTNROUZ5,,144,TRUE,WC4.6,100138,144,Immunization
+Test 719,,,16,90676,RTNROUZ5,,144,TRUE,WC4.6,100138,144,Immunization
+Test 720,,,17,90676,RTNROUZ5,,144,TRUE,WC4.6,100138,144,Immunization
+Test 721,,,12,M0224,RTNROUZ2,,145,TRUE,WC4.7,100153,145,Immunization
+Test 722,,,13,Q0224,RTNROUZ2,,145,TRUE,WC4.7,100153,145,Immunization
+Test 723,,,56,Q0224,RTNROUZ2,,145,TRUE,WC4.7,100153,145,Immunization
+Test 724,,,99,Q0224,RTNROUZ2,,145,TRUE,WC4.7,100153,145,Immunization
+Test 725,,,100,Q0224,RTNROUZ2,,145,TRUE,WC4.7,100153,145,Immunization
+Test 726,,,0,NA,RTNROU,,146,TRUE,WC5a.1,100139,146,Well Child Care
+Test 727,,,1,NA,RTNROU,,146,TRUE,WC5a.1,100139,146,Well Child Care
+Test 728,,,2,NA,RTNROU,,146,TRUE,WC5a.1,100139,146,Well Child Care
+Test 729,,,4,NA,RTNROU,,146,TRUE,WC5a.1,100139,146,Well Child Care
+Test 730,,,5,NA,RTNROU,,146,TRUE,WC5a.1,100139,146,Well Child Care
+Test 731,,,6,84480,RTN,,147,TRUE,OPT.1,100140,147,Thyroid Screening
+Test 732,,,7,84436,RTN,,147,TRUE,OPT.1,100140,147,Thyroid Screening
+Test 733,,,52,84439,RTN,,147,TRUE,OPT.1,100140,147,Thyroid Screening
+Test 734,,,98,84443,RTN,,147,TRUE,OPT.1,100140,147,Thyroid Screening
+Test 735,,,99,84479,RTN,,147,TRUE,OPT.1,100140,147,Thyroid Screening
+Test 736,,,6,85048,RTN,,148,TRUE,OPT.2,100141,148,Hemoglobin (CBC)
+Test 737,,,7,85004,RTN,,148,TRUE,OPT.2,100141,148,Hemoglobin (CBC)
+Test 738,,,52,85007,RTN,,148,TRUE,OPT.2,100141,148,Hemoglobin (CBC)
+Test 739,,,98,85008,RTN,,148,TRUE,OPT.2,100141,148,Hemoglobin (CBC)
+Test 740,,,99,85013,RTN,,148,TRUE,OPT.2,100141,148,Hemoglobin (CBC)
+Test 741,,,6,81020,RTN,,149,TRUE,OPT.3,100142,149,Urinalysis
+Test 742,,,7,81000,RTN,,149,TRUE,OPT.3,100142,149,Urinalysis
+Test 743,,,52,81001,RTN,,149,TRUE,OPT.3,100142,149,Urinalysis
+Test 744,,,98,81002,RTN,,149,TRUE,OPT.3,100142,149,Urinalysis
+Test 745,,,99,81003,RTN,,149,TRUE,OPT.3,100142,149,Urinalysis
+Test 746,,,18,90477,RTNZ23,,150,TRUE,OPT.4,100143,150,Non-Standard Immunization
+Test 747,,,19,90627,RTNZ23,,150,TRUE,OPT.4,100143,150,Non-Standard Immunization
+Test 748,,,58,90738,RTNZ23,,150,TRUE,OPT.4,100143,150,Non-Standard Immunization
+Test 749,,,98,90476,RTNZ23,,150,TRUE,OPT.4,100143,150,Non-Standard Immunization
+Test 750,,,99,90585,RTNZ23,,150,TRUE,OPT.4,100143,150,Non-Standard Immunization
+Test 751,,,0,90581,RTNZ12,,151,TRUE,OPT.5,100144,151,Non-Standard Immunization
+Test 752,,,1,90581,RTNZ12,,151,TRUE,OPT.5,100144,151,Non-Standard Immunization
+Test 753,,,50,90581,RTNZ12,,151,TRUE,OPT.5,100144,151,Non-Standard Immunization
+Test 754,,,99,90581,RTNZ12,,151,TRUE,OPT.5,100144,151,Non-Standard Immunization
+Test 755,,,100,90581,RTNZ12,,151,TRUE,OPT.5,100144,151,Non-Standard Immunization
+Test 756,,,0,90676,RTNZ16,,152,TRUE,OPT.6,100145,152,Non-Standard Immunization
+Test 757,,,1,90675,RTNZ16,,152,TRUE,OPT.6,100145,152,Non-Standard Immunization
+Test 758,,,50,90675,RTNZ16,,152,TRUE,OPT.6,100145,152,Non-Standard Immunization
+Test 759,,,99,90675,RTNZ16,,152,TRUE,OPT.6,100145,152,Non-Standard Immunization
+Test 760,,,100,90675,RTNZ16,,152,TRUE,OPT.6,100145,152,Non-Standard Immunization
+Test 761,,,0,90480,Covid,,153,TRUE,Coupe.1,100146,153,Covid-19 Immunization
+Test 762,,,1,91320,Covid,,153,TRUE,Coupe.1,100146,153,Covid-19 Immunization
+Test 763,,,50,91320,Covid,,153,TRUE,Coupe.1,100146,153,Covid-19 Immunization
+Test 764,,,99,91320,Covid,,153,TRUE,Coupe.1,100146,153,Covid-19 Immunization
+Test 765,,,100,91320,Covid,,153,TRUE,Coupe.1,100146,153,Covid-19 Immunization
+Test 766,,,0,NA,COP,,154,TRUE,Coupe.2,100147,154,Prenatal Care
+Test 767,,,1,NA,COP,,154,TRUE,Coupe.2,100147,154,Prenatal Care
+Test 768,,,50,NA,COP,,154,TRUE,Coupe.2,100147,154,Prenatal Care
+Test 769,,,99,NA,COP,,154,TRUE,Coupe.2,100147,154,Prenatal Care
+Test 770,,,100,NA,COP,,154,TRUE,Coupe.2,100147,154,Prenatal Care
