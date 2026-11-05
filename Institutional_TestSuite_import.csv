@@ -1,0 +1,926 @@
+﻿name,group,,BillType,RevenueCode,CPT_HCPCS,TaxonomySpecialty,DRGCode,SpecialtyID,EmployerID,PlaceOfService,Diagnosiscode,,rowId,defaultOutputData,BenefitCode,ServiceLine,RuleNumber,RuleRank
+Test 1,,,111,0170,,,795,,,,,,1,TRUE,25,Newborn Services,717,3
+Test 2,,,112,0171,,,794,,,,,,1,TRUE,25,Newborn Services,717,3
+Test 3,,,411,170,,,794,,,,,,1,TRUE,25,Newborn Services,717,3
+Test 4,,,858,170,,,794,,,,,,1,TRUE,25,Newborn Services,717,3
+Test 5,,,859,171,,,793,,,,,,1,TRUE,25,Newborn Services,717,3
+Test 6,,,131,,AllergyInjections,,,,,,,,2,TRUE,28,Allergy/Immunology - Allergy Injections,858,4
+Test 7,,,132,,AllergyInjections,,,,,,,,2,TRUE,28,Allergy/Immunology - Allergy Injections,858,4
+Test 8,,,831,,AllergyInjections,,,,,,,,2,TRUE,28,Allergy/Immunology - Allergy Injections,858,4
+Test 9,,,858,,AllergyInjections,,,,,,,,2,TRUE,28,Allergy/Immunology - Allergy Injections,858,4
+Test 10,,,859,,AllergyInjections,,,,,,,,2,TRUE,28,Allergy/Immunology - Allergy Injections,858,4
+Test 11,,,131,,Critical/Emergency,SurgeryCenter,,,,,,,3,TRUE,7,Hospital - Emergency,450,5
+Test 12,,,132,,Critical/Emergency,Hospital,,,,,,,3,TRUE,7,Hospital - Emergency,450,5
+Test 13,,,831,,Critical/Emergency,Hospital,,,,,,,3,TRUE,7,Hospital - Emergency,450,5
+Test 14,,,859,,Critical/Emergency,Hospital,,,,,,,3,TRUE,7,Hospital - Emergency,450,5
+Test 15,,,781,,Critical/Emergency,HospitalER,,,,,,,3,TRUE,7,Hospital - Emergency,450,5
+Test 16,,,,,,,,,,,,,4,TRUE,7,Hospital - Emergency (Non-Emergency Service),370,6
+Test 17,,,,,,,,,,,,,4,TRUE,7,Hospital - Emergency (Non-Emergency Service),370,6
+Test 18,,,,,,,,,,,,,4,TRUE,7,Hospital - Emergency (Non-Emergency Service),370,6
+Test 19,,,,,,,,,,,,,4,TRUE,7,Hospital - Emergency (Non-Emergency Service),370,6
+Test 20,,,,,,,,,,,,,4,TRUE,7,Hospital - Emergency (Non-Emergency Service),370,6
+Test 21,,,131,450,,,,,,,,,5,TRUE,7,Hospital - Emergency,67,7
+Test 22,,,132,451,,,,,,,,,5,TRUE,7,Hospital - Emergency,67,7
+Test 23,,,831,452,,,,,,,,,5,TRUE,7,Hospital - Emergency,67,7
+Test 24,,,858,459,,,,,,,,,5,TRUE,7,Hospital - Emergency,67,7
+Test 25,,,859,540,,,,,,,,,5,TRUE,7,Hospital - Emergency,67,7
+Test 26,,,131,456,,,,,,,,,6,TRUE,18,Physician Service at Urgent Care Facility,699,8
+Test 27,,,132,516,,,,,,,,,6,TRUE,18,Physician Service at Urgent Care Facility,699,8
+Test 28,,,831,516,,,,,,,,,6,TRUE,18,Physician Service at Urgent Care Facility,699,8
+Test 29,,,858,516,,,,,,,,,6,TRUE,18,Physician Service at Urgent Care Facility,699,8
+Test 30,,,859,526,,,,,,,,,6,TRUE,18,Physician Service at Urgent Care Facility,699,8
+Test 31,,,131,511,,,,,,11,,,7,TRUE,3,Specialist Visit at Facility,905,11
+Test 32,,,132,512,,,,,,17,,,7,TRUE,3,Specialist Visit at Facility,905,11
+Test 33,,,135,518,,,,,,17,,,7,TRUE,3,Specialist Visit at Facility,905,11
+Test 34,,,138,942,,,,,,11,,,7,TRUE,3,Specialist Visit at Facility,905,11
+Test 35,,,139,983,,,,,,17,,,7,TRUE,3,Specialist Visit at Facility,905,11
+Test 36,,,891,456,,,,,,,,,8,TRUE,22,Urgent Care Center - Urgent Care,897,12
+Test 37,,,891,516,,,,,,,,,8,TRUE,22,Urgent Care Center - Urgent Care,897,12
+Test 38,,,891,516,,,,,,,,,8,TRUE,22,Urgent Care Center - Urgent Care,897,12
+Test 39,,,891,516,,,,,,,,,8,TRUE,22,Urgent Care Center - Urgent Care,897,12
+Test 40,,,891,526,,,,,,,,,8,TRUE,22,Urgent Care Center - Urgent Care,897,12
+Test 41,,,131,,,,,,,,Maternity,,9,TRUE,31,Maternity - Prenatal Care,860,13
+Test 42,,,132,,,,,,,,Maternity,,9,TRUE,31,Maternity - Prenatal Care,860,13
+Test 43,,,224,,,,,,,,Maternity,,9,TRUE,31,Maternity - Prenatal Care,860,13
+Test 44,,,858,,,,,,,,Maternity,,9,TRUE,31,Maternity - Prenatal Care,860,13
+Test 45,,,859,,,,,,,,Maternity,,9,TRUE,31,Maternity - Prenatal Care,860,13
+Test 46,,,131,510,,,,,,11,,,10,TRUE,1,Office Visit at Facility,876,15
+Test 47,,,132,515,,,,,,17,,,10,TRUE,1,Office Visit at Facility,876,15
+Test 48,,,135,515,,,,,,17,,,10,TRUE,1,Office Visit at Facility,876,15
+Test 49,,,138,515,,,,,,11,,,10,TRUE,1,Office Visit at Facility,876,15
+Test 50,,,139,517,,,,,,17,,,10,TRUE,1,Office Visit at Facility,876,15
+Test 51,,,131,,AbdominalSurgery,SurgeryCenter,,,,,,,11,TRUE,6,Abdominal Surgery - Outpatient,371,16
+Test 52,,,132,,AbdominalSurgery,Hospital,,,,,,,11,TRUE,6,Abdominal Surgery - Outpatient,371,16
+Test 53,,,224,,AbdominalSurgery,Hospital,,,,,,,11,TRUE,6,Abdominal Surgery - Outpatient,371,16
+Test 54,,,858,,AbdominalSurgery,SurgeryCenter,,,,,,,11,TRUE,6,Abdominal Surgery - Outpatient,371,16
+Test 55,,,859,,AbdominalSurgery,Hospital,,,,,,,11,TRUE,6,Abdominal Surgery - Outpatient,371,16
+Test 56,,,131,,CardiacProcedures,SurgeryCenter,,,,,,,12,TRUE,6,Cardiology - Outpatient,373,18
+Test 57,,,132,,CardiacProcedures,Hospital,,,,,,,12,TRUE,6,Cardiology - Outpatient,373,18
+Test 58,,,224,,CardiacProcedures,Hospital,,,,,,,12,TRUE,6,Cardiology - Outpatient,373,18
+Test 59,,,858,,CardiacProcedures,SurgeryCenter,,,,,,,12,TRUE,6,Cardiology - Outpatient,373,18
+Test 60,,,859,,CardiacProcedures,Hospital,,,,,,,12,TRUE,6,Cardiology - Outpatient,373,18
+Test 61,,,131,,CardiothoracicSurgery,SurgeryCenter,,,,,,,13,TRUE,6,Cardiothoracic Surgery - Outpatient,374,19
+Test 62,,,132,,CardiothoracicSurgery,Hospital,,,,,,,13,TRUE,6,Cardiothoracic Surgery - Outpatient,374,19
+Test 63,,,831,,CardiothoracicSurgery,Hospital,,,,,,,13,TRUE,6,Cardiothoracic Surgery - Outpatient,374,19
+Test 64,,,858,,CardiothoracicSurgery,SurgeryCenter,,,,,,,13,TRUE,6,Cardiothoracic Surgery - Outpatient,374,19
+Test 65,,,859,,CardiothoracicSurgery,Hospital,,,,,,,13,TRUE,6,Cardiothoracic Surgery - Outpatient,374,19
+Test 66,,,131,,Colorectal,SurgeryCenter,,,,,,,14,TRUE,6,Colorectal - Outpatient,375,20
+Test 67,,,132,,Colorectal,Hospital,,,,,,,14,TRUE,6,Colorectal - Outpatient,375,20
+Test 68,,,831,,Colorectal,Hospital,,,,,,,14,TRUE,6,Colorectal - Outpatient,375,20
+Test 69,,,858,,Colorectal,SurgeryCenter,,,,,,,14,TRUE,6,Colorectal - Outpatient,375,20
+Test 70,,,859,,Colorectal,Hospital,,,,,,,14,TRUE,6,Colorectal - Outpatient,375,20
+Test 71,,,131,,GeneralSurgery,SurgeryCenter,,,,,,,15,TRUE,6,General Surgery - Outpatient,378,21
+Test 72,,,132,,GeneralSurgery,Hospital,,,,,,,15,TRUE,6,General Surgery - Outpatient,378,21
+Test 73,,,831,,GeneralSurgery,Hospital,,,,,,,15,TRUE,6,General Surgery - Outpatient,378,21
+Test 74,,,858,,GeneralSurgery,SurgeryCenter,,,,,,,15,TRUE,6,General Surgery - Outpatient,378,21
+Test 75,,,859,,GeneralSurgery,Hospital,,,,,,,15,TRUE,6,General Surgery - Outpatient,378,21
+Test 76,,,131,,HandSurgery,SurgeryCenter,,,,,,,16,TRUE,6,Hand Surgery - Outpatient,379,22
+Test 77,,,132,,HandSurgery,Hospital,,,,,,,16,TRUE,6,Hand Surgery - Outpatient,379,22
+Test 78,,,831,,HandSurgery,Hospital,,,,,,,16,TRUE,6,Hand Surgery - Outpatient,379,22
+Test 79,,,858,,HandSurgery,SurgeryCenter,,,,,,,16,TRUE,6,Hand Surgery - Outpatient,379,22
+Test 80,,,859,,HandSurgery,Hospital,,,,,,,16,TRUE,6,Hand Surgery - Outpatient,379,22
+Test 81,,,131,,OB/GYN,SurgeryCenter,,,,,,,17,TRUE,6,OB/GYN - Outpatient,381,23
+Test 82,,,132,,OB/GYN,Hospital,,,,,,,17,TRUE,6,OB/GYN - Outpatient,381,23
+Test 83,,,831,,OB/GYN,Hospital,,,,,,,17,TRUE,6,OB/GYN - Outpatient,381,23
+Test 84,,,858,,OB/GYN,SurgeryCenter,,,,,,,17,TRUE,6,OB/GYN - Outpatient,381,23
+Test 85,,,859,,OB/GYN,Hospital,,,,,,,17,TRUE,6,OB/GYN - Outpatient,381,23
+Test 86,,,131,,Ophthalmology,SurgeryCenter,,,,,,,18,TRUE,6,Ophthalmology - Outpatient,383,24
+Test 87,,,132,,Ophthalmology,Hospital,,,,,,,18,TRUE,6,Ophthalmology - Outpatient,383,24
+Test 88,,,831,,Ophthalmology,Hospital,,,,,,,18,TRUE,6,Ophthalmology - Outpatient,383,24
+Test 89,,,858,,Ophthalmology,SurgeryCenter,,,,,,,18,TRUE,6,Ophthalmology - Outpatient,383,24
+Test 90,,,859,,Ophthalmology,Hospital,,,,,,,18,TRUE,6,Ophthalmology - Outpatient,383,24
+Test 91,,,131,,PlasticSurgery,SurgeryCenter,,,,,,,19,TRUE,6,Plastic Surgery - Outpatient,384,25
+Test 92,,,132,,PlasticSurgery,Hospital,,,,,,,19,TRUE,6,Plastic Surgery - Outpatient,384,25
+Test 93,,,831,,PlasticSurgery,Hospital,,,,,,,19,TRUE,6,Plastic Surgery - Outpatient,384,25
+Test 94,,,858,,PlasticSurgery,SurgeryCenter,,,,,,,19,TRUE,6,Plastic Surgery - Outpatient,384,25
+Test 95,,,859,,PlasticSurgery,Hospital,,,,,,,19,TRUE,6,Plastic Surgery - Outpatient,384,25
+Test 96,,,131,,Podiatry,SurgeryCenter,,,,,,,20,TRUE,6,Podiatry - Outpatient,385,26
+Test 97,,,132,,Podiatry,Hospital,,,,,,,20,TRUE,6,Podiatry - Outpatient,385,26
+Test 98,,,831,,Podiatry,Hospital,,,,,,,20,TRUE,6,Podiatry - Outpatient,385,26
+Test 99,,,858,,Podiatry,SurgeryCenter,,,,,,,20,TRUE,6,Podiatry - Outpatient,385,26
+Test 100,,,859,,Podiatry,Hospital,,,,,,,20,TRUE,6,Podiatry - Outpatient,385,26
+Test 101,,,131,,Pulmonology,SurgeryCenter,,,,,,,21,TRUE,6,Pulmonology - Outpatient,386,27
+Test 102,,,132,,Pulmonology,Hospital,,,,,,,21,TRUE,6,Pulmonology - Outpatient,386,27
+Test 103,,,831,,Pulmonology,Hospital,,,,,,,21,TRUE,6,Pulmonology - Outpatient,386,27
+Test 104,,,858,,Pulmonology,SurgeryCenter,,,,,,,21,TRUE,6,Pulmonology - Outpatient,386,27
+Test 105,,,859,,Pulmonology,Hospital,,,,,,,21,TRUE,6,Pulmonology - Outpatient,386,27
+Test 106,,,131,,SpineSurgery,SurgeryCenter,,,,,,,22,TRUE,6,Spine Surgery - Outpatient,388,28
+Test 107,,,132,,SpineSurgery,Hospital,,,,,,,22,TRUE,6,Spine Surgery - Outpatient,388,28
+Test 108,,,831,,SpineSurgery,Hospital,,,,,,,22,TRUE,6,Spine Surgery - Outpatient,388,28
+Test 109,,,858,,SpineSurgery,SurgeryCenter,,,,,,,22,TRUE,6,Spine Surgery - Outpatient,388,28
+Test 110,,,859,,SpineSurgery,Hospital,,,,,,,22,TRUE,6,Spine Surgery - Outpatient,388,28
+Test 111,,,131,,Urology,SurgeryCenter,,,,,,,23,TRUE,6,Urology - Outpatient,389,29
+Test 112,,,132,,Urology,Hospital,,,,,,,23,TRUE,6,Urology - Outpatient,389,29
+Test 113,,,831,,Urology,Hospital,,,,,,,23,TRUE,6,Urology - Outpatient,389,29
+Test 114,,,858,,Urology,SurgeryCenter,,,,,,,23,TRUE,6,Urology - Outpatient,389,29
+Test 115,,,859,,Urology,Hospital,,,,,,,23,TRUE,6,Urology - Outpatient,389,29
+Test 116,,,131,,SleepCenter,SurgeryCenter,,,,,,,24,TRUE,6,Sleep Center - Outpatient,391,30
+Test 117,,,132,,SleepCenter,Hospital,,,,,,,24,TRUE,6,Sleep Center - Outpatient,391,30
+Test 118,,,831,,SleepCenter,Hospital,,,,,,,24,TRUE,6,Sleep Center - Outpatient,391,30
+Test 119,,,858,,SleepCenter,SurgeryCenter,,,,,,,24,TRUE,6,Sleep Center - Outpatient,391,30
+Test 120,,,859,,SleepCenter,Hospital,,,,,,,24,TRUE,6,Sleep Center - Outpatient,391,30
+Test 121,,,131,,,SurgeryCenter,,,,,,,25,TRUE,6,Lithotripsy/Ablation - Outpatient,393,31
+Test 122,,,132,,,Hospital,,,,,,,25,TRUE,6,Lithotripsy/Ablation - Outpatient,393,31
+Test 123,,,831,,,Hospital,,,,,,,25,TRUE,6,Lithotripsy/Ablation - Outpatient,393,31
+Test 124,,,858,,,SurgeryCenter,,,,,,,25,TRUE,6,Lithotripsy/Ablation - Outpatient,393,31
+Test 125,,,859,,,Hospital,,,,,,,25,TRUE,6,Lithotripsy/Ablation - Outpatient,393,31
+Test 126,,,131,,CardiacTests,,,,,,,,26,TRUE,3,Cardiopulmonary Rehabilitation - Specialist Visit,23,32
+Test 127,,,132,,CardiacTests,,,,,,,,26,TRUE,3,Cardiopulmonary Rehabilitation - Specialist Visit,23,32
+Test 128,,,746,,CardiacTests,,,,,,,,26,TRUE,3,Cardiopulmonary Rehabilitation - Specialist Visit,23,32
+Test 129,,,858,,CardiacTests,,,,,,,,26,TRUE,3,Cardiopulmonary Rehabilitation - Specialist Visit,23,32
+Test 130,,,859,,CardiacTests,,,,,,,,26,TRUE,3,Cardiopulmonary Rehabilitation - Specialist Visit,23,32
+Test 131,,,131,905,,,,,10516,,,,27,TRUE,1,Mental Health Day Treatment,887,33
+Test 132,,,132,906,,,,,10516,,,,27,TRUE,1,Mental Health Day Treatment,887,33
+Test 133,,,751,907,,,,,10516,,,,27,TRUE,1,Mental Health Day Treatment,887,33
+Test 134,,,858,912,,,,,10516,,,,27,TRUE,1,Mental Health Day Treatment,887,33
+Test 135,,,859,917,,,,,10516,,,,27,TRUE,1,Mental Health Day Treatment,887,33
+Test 136,,,131,,,,,357,,,,,28,TRUE,27,Cardiac Rehabilitation Therapy - Therapy,25,36
+Test 137,,,132,,,,,357,,,,,28,TRUE,27,Cardiac Rehabilitation Therapy - Therapy,25,36
+Test 138,,,746,,,,,357,,,,,28,TRUE,27,Cardiac Rehabilitation Therapy - Therapy,25,36
+Test 139,,,858,,,,,357,,,,,28,TRUE,27,Cardiac Rehabilitation Therapy - Therapy,25,36
+Test 140,,,859,,,,,357,,,,,28,TRUE,27,Cardiac Rehabilitation Therapy - Therapy,25,36
+Test 141,,,131,,,,,3023,,,,,29,TRUE,16,Cognitive Rehabilitation Therapy - Mental Health Specialist Visit,42,37
+Test 142,,,132,,,,,11286,,,,,29,TRUE,16,Cognitive Rehabilitation Therapy - Mental Health Specialist Visit,42,37
+Test 143,,,746,,,,,11286,,,,,29,TRUE,16,Cognitive Rehabilitation Therapy - Mental Health Specialist Visit,42,37
+Test 144,,,858,,,,,3023,,,,,29,TRUE,16,Cognitive Rehabilitation Therapy - Mental Health Specialist Visit,42,37
+Test 145,,,859,,,,,11286,,,,,29,TRUE,16,Cognitive Rehabilitation Therapy - Mental Health Specialist Visit,42,37
+Test 146,,,131,916,,,,,10516,,,,30,TRUE,25,Mental Health Therapy and Observation,886,38
+Test 147,,,132,762,,,,,10516,,,,30,TRUE,25,Mental Health Therapy and Observation,886,38
+Test 148,,,751,762,,,,,10516,,,,30,TRUE,25,Mental Health Therapy and Observation,886,38
+Test 149,,,858,916,,,,,10516,,,,30,TRUE,25,Mental Health Therapy and Observation,886,38
+Test 150,,,859,762,,,,,10516,,,,30,TRUE,25,Mental Health Therapy and Observation,886,38
+Test 151,,,131,900,,,,10019,,,,,31,TRUE,16,Behavioral Health - Mental Health Specialist Vist,873,39
+Test 152,,,132,914,,,,11286,,,,,31,TRUE,16,Behavioral Health - Mental Health Specialist Vist,873,39
+Test 153,,,751,914,,,,11286,,,,,31,TRUE,16,Behavioral Health - Mental Health Specialist Vist,873,39
+Test 154,,,858,900,,,,10019,,,,,31,TRUE,16,Behavioral Health - Mental Health Specialist Vist,873,39
+Test 155,,,859,914,,,,11286,,,,,31,TRUE,16,Behavioral Health - Mental Health Specialist Vist,873,39
+Test 156,,,131,,,,,10019,,,,,32,TRUE,17,Behavioral Health - Mental Health Outpatient,253,40
+Test 157,,,132,,,,,11285,,,,,32,TRUE,17,Behavioral Health - Mental Health Outpatient,253,40
+Test 158,,,746,,,,,11285,,,,,32,TRUE,17,Behavioral Health - Mental Health Outpatient,253,40
+Test 159,,,858,,,,,11285,,,,,32,TRUE,17,Behavioral Health - Mental Health Outpatient,253,40
+Test 160,,,859,,,,,11062,,,,,32,TRUE,17,Behavioral Health - Mental Health Outpatient,253,40
+Test 161,,,131,,,,,322,,,,,33,TRUE,27,Physical Therapy - Therapy,323,41
+Test 162,,,132,,,,,10011,,,,,33,TRUE,27,Physical Therapy - Therapy,323,41
+Test 163,,,747,,,,,10011,,,,,33,TRUE,27,Physical Therapy - Therapy,323,41
+Test 164,,,858,,,,,322,,,,,33,TRUE,27,Physical Therapy - Therapy,323,41
+Test 165,,,859,,,,,10011,,,,,33,TRUE,27,Physical Therapy - Therapy,323,41
+Test 166,,,131,,,,,10064,,,,,34,TRUE,27,Outpatient Rehabilitation Therapy - Therapy,350,42
+Test 167,,,132,,,,,10064,,,,,34,TRUE,27,Outpatient Rehabilitation Therapy - Therapy,350,42
+Test 168,,,747,,,,,10064,,,,,34,TRUE,27,Outpatient Rehabilitation Therapy - Therapy,350,42
+Test 169,,,858,,,,,10064,,,,,34,TRUE,27,Outpatient Rehabilitation Therapy - Therapy,350,42
+Test 170,,,859,,,,,10064,,,,,34,TRUE,27,Outpatient Rehabilitation Therapy - Therapy,350,42
+Test 171,,,131,,,,,202,,,,,35,TRUE,27,Speech Therapy - Therapy,360,43
+Test 172,,,132,,,,,11319,,,,,35,TRUE,27,Speech Therapy - Therapy,360,43
+Test 173,,,747,,,,,11319,,,,,35,TRUE,27,Speech Therapy - Therapy,360,43
+Test 174,,,858,,,,,11319,,,,,35,TRUE,27,Speech Therapy - Therapy,360,43
+Test 175,,,859,,,,,11320,,,,,35,TRUE,27,Speech Therapy - Therapy,360,43
+Test 176,,,131,,BreastSurgery,SurgeryCenter,,,,,,,36,TRUE,6,Breast Surgery - Outpatient,21,44
+Test 177,,,132,,BreastSurgery,Hospital,,,,,,,36,TRUE,6,Breast Surgery - Outpatient,21,44
+Test 178,,,224,,BreastSurgery,Hospital,,,,,,,36,TRUE,6,Breast Surgery - Outpatient,21,44
+Test 179,,,858,,BreastSurgery,SurgeryCenter,,,,,,,36,TRUE,6,Breast Surgery - Outpatient,21,44
+Test 180,,,859,,BreastSurgery,Hospital,,,,,,,36,TRUE,6,Breast Surgery - Outpatient,21,44
+Test 181,,,131,,CardiacProcedures,SurgeryCenter,,,,,,,37,TRUE,6,Cardiac Procedures - Outpatient,24,45
+Test 182,,,132,,CardiacProcedures,Hospital,,,,,,,37,TRUE,6,Cardiac Procedures - Outpatient,24,45
+Test 183,,,224,,CardiacProcedures,Hospital,,,,,,,37,TRUE,6,Cardiac Procedures - Outpatient,24,45
+Test 184,,,858,,CardiacProcedures,SurgeryCenter,,,,,,,37,TRUE,6,Cardiac Procedures - Outpatient,24,45
+Test 185,,,859,,CardiacProcedures,Hospital,,,,,,,37,TRUE,6,Cardiac Procedures - Outpatient,24,45
+Test 186,,,131,,CardiacTests,SurgeryCenter,,,,,,,38,TRUE,6,Cardiac Tests - Outpatient,26,46
+Test 187,,,132,,CardiacTests,Hospital,,,,,,,38,TRUE,6,Cardiac Tests - Outpatient,26,46
+Test 188,,,224,,CardiacTests,Hospital,,,,,,,38,TRUE,6,Cardiac Tests - Outpatient,26,46
+Test 189,,,858,,CardiacTests,SurgeryCenter,,,,,,,38,TRUE,6,Cardiac Tests - Outpatient,26,46
+Test 190,,,859,,CardiacTests,Hospital,,,,,,,38,TRUE,6,Cardiac Tests - Outpatient,26,46
+Test 191,,,131,,EndocrineSurgery,SurgeryCenter,,,,,,,39,TRUE,6,Endocrine Surgery - Outpatient,70,47
+Test 192,,,132,,EndocrineSurgery,Hospital,,,,,,,39,TRUE,6,Endocrine Surgery - Outpatient,70,47
+Test 193,,,224,,EndocrineSurgery,Hospital,,,,,,,39,TRUE,6,Endocrine Surgery - Outpatient,70,47
+Test 194,,,858,,EndocrineSurgery,SurgeryCenter,,,,,,,39,TRUE,6,Endocrine Surgery - Outpatient,70,47
+Test 195,,,859,,EndocrineSurgery,Hospital,,,,,,,39,TRUE,6,Endocrine Surgery - Outpatient,70,47
+Test 196,,,111,,Labor&Delivery,,,,,,,,40,TRUE,32,Maternity - Delivery & Postnatal,193,48
+Test 197,,,112,,Labor&Delivery,,,,,,,,40,TRUE,32,Maternity - Delivery & Postnatal,193,48
+Test 198,,,224,,Labor&Delivery,,,,,,,,40,TRUE,32,Maternity - Delivery & Postnatal,193,48
+Test 199,,,832,,Labor&Delivery,,,,,,,,40,TRUE,32,Maternity - Delivery & Postnatal,193,48
+Test 200,,,117,,Labor&Delivery,,,,,,,,40,TRUE,32,Maternity - Delivery & Postnatal,193,48
+Test 201,,,131,,Nephrology,SurgeryCenter,,,,,,,41,TRUE,6,Nephrology - Outpatient,221,50
+Test 202,,,132,,Nephrology,Hospital,,,,,,,41,TRUE,6,Nephrology - Outpatient,221,50
+Test 203,,,224,,Nephrology,Hospital,,,,,,,41,TRUE,6,Nephrology - Outpatient,221,50
+Test 204,,,858,,Nephrology,SurgeryCenter,,,,,,,41,TRUE,6,Nephrology - Outpatient,221,50
+Test 205,,,859,,Nephrology,Hospital,,,,,,,41,TRUE,6,Nephrology - Outpatient,221,50
+Test 206,,,131,,Neurology,SurgeryCenter,,,,,,,42,TRUE,6,Neurology - Outpatient,223,51
+Test 207,,,132,,Neurology,Hospital,,,,,,,42,TRUE,6,Neurology - Outpatient,223,51
+Test 208,,,224,,Neurology,Hospital,,,,,,,42,TRUE,6,Neurology - Outpatient,223,51
+Test 209,,,858,,Neurology,SurgeryCenter,,,,,,,42,TRUE,6,Neurology - Outpatient,223,51
+Test 210,,,859,,Neurology,Hospital,,,,,,,42,TRUE,6,Neurology - Outpatient,223,51
+Test 211,,,131,,NuclearImaging,SurgeryCenter,,,,,,,43,TRUE,6,Nuclear Imaging - Outpatient,233,52
+Test 212,,,132,,NuclearImaging,Hospital,,,,,,,43,TRUE,6,Nuclear Imaging - Outpatient,233,52
+Test 213,,,224,,NuclearImaging,Hospital,,,,,,,43,TRUE,6,Nuclear Imaging - Outpatient,233,52
+Test 214,,,858,,NuclearImaging,SurgeryCenter,,,,,,,43,TRUE,6,Nuclear Imaging - Outpatient,233,52
+Test 215,,,859,,NuclearImaging,Hospital,,,,,,,43,TRUE,6,Nuclear Imaging - Outpatient,233,52
+Test 216,,,131,,ScopeProcedures(DX),SurgeryCenter,,,,,,,44,TRUE,6,Scope Procedures (DX) - Outpatient,158,53
+Test 217,,,132,,ScopeProcedures(DX),Hospital,,,,,,,44,TRUE,6,Scope Procedures (DX) - Outpatient,158,53
+Test 218,,,224,,ScopeProcedures(DX),Hospital,,,,,,,44,TRUE,6,Scope Procedures (DX) - Outpatient,158,53
+Test 219,,,858,,ScopeProcedures(DX),SurgeryCenter,,,,,,,44,TRUE,6,Scope Procedures (DX) - Outpatient,158,53
+Test 220,,,859,,ScopeProcedures(DX),Hospital,,,,,,,44,TRUE,6,Scope Procedures (DX) - Outpatient,158,53
+Test 221,,,131,,ReproductiveEndocrinology,SurgeryCenter,,,,,,,45,TRUE,6,Reproductive Endocrinology - Outpatient,159,54
+Test 222,,,132,,ReproductiveEndocrinology,Hospital,,,,,,,45,TRUE,6,Reproductive Endocrinology - Outpatient,159,54
+Test 223,,,224,,ReproductiveEndocrinology,Hospital,,,,,,,45,TRUE,6,Reproductive Endocrinology - Outpatient,159,54
+Test 224,,,858,,ReproductiveEndocrinology,SurgeryCenter,,,,,,,45,TRUE,6,Reproductive Endocrinology - Outpatient,159,54
+Test 225,,,859,,ReproductiveEndocrinology,Hospital,,,,,,,45,TRUE,6,Reproductive Endocrinology - Outpatient,159,54
+Test 226,,,131,,Dental,SurgeryCenter,,,,,,,46,TRUE,6,Dental - Outpatient,160,55
+Test 227,,,132,,Dental,Hospital,,,,,,,46,TRUE,6,Dental - Outpatient,160,55
+Test 228,,,225,,Dental,Hospital,,,,,,,46,TRUE,6,Dental - Outpatient,160,55
+Test 229,,,859,,Dental,SurgeryCenter,,,,,,,46,TRUE,6,Dental - Outpatient,160,55
+Test 230,,,999,,Dental,Hospital,,,,,,,46,TRUE,6,Dental - Outpatient,160,55
+Test 231,,,131,,OtherDiagnosticProcedures,SurgeryCenter,,,,,,,47,TRUE,6,Other Diagnostic Procedures - Outpatient,161,56
+Test 232,,,132,,OtherDiagnosticProcedures,Hospital,,,,,,,47,TRUE,6,Other Diagnostic Procedures - Outpatient,161,56
+Test 233,,,224,,OtherDiagnosticProcedures,Hospital,,,,,,,47,TRUE,6,Other Diagnostic Procedures - Outpatient,161,56
+Test 234,,,858,,OtherDiagnosticProcedures,SurgeryCenter,,,,,,,47,TRUE,6,Other Diagnostic Procedures - Outpatient,161,56
+Test 235,,,859,,OtherDiagnosticProcedures,Hospital,,,,,,,47,TRUE,6,Other Diagnostic Procedures - Outpatient,161,56
+Test 236,,,131,,Oncology,SurgeryCenter,,,,,,,48,TRUE,6,Oncology - Outpatient,163,57
+Test 237,,,132,,Oncology,Hospital,,,,,,,48,TRUE,6,Oncology - Outpatient,163,57
+Test 238,,,224,,Oncology,Hospital,,,,,,,48,TRUE,6,Oncology - Outpatient,163,57
+Test 239,,,858,,Oncology,SurgeryCenter,,,,,,,48,TRUE,6,Oncology - Outpatient,163,57
+Test 240,,,859,,Oncology,Hospital,,,,,,,48,TRUE,6,Oncology - Outpatient,163,57
+Test 241,,,131,,RadiationTherapy,SurgeryCenter,,,,,,,49,TRUE,6,Radiation Therapy - Outpatient,164,58
+Test 242,,,132,,RadiationTherapy,Hospital,,,,,,,49,TRUE,6,Radiation Therapy - Outpatient,164,58
+Test 243,,,224,,RadiationTherapy,Hospital,,,,,,,49,TRUE,6,Radiation Therapy - Outpatient,164,58
+Test 244,,,858,,RadiationTherapy,SurgeryCenter,,,,,,,49,TRUE,6,Radiation Therapy - Outpatient,164,58
+Test 245,,,859,,RadiationTherapy,Hospital,,,,,,,49,TRUE,6,Radiation Therapy - Outpatient,164,58
+Test 246,,,131,,OralandMaxillofacialSurgery,SurgeryCenter,,,,,,,50,TRUE,6,Oral and Maxillofacial Surgery - Outpatient,165,59
+Test 247,,,132,,OralandMaxillofacialSurgery,Hospital,,,,,,,50,TRUE,6,Oral and Maxillofacial Surgery - Outpatient,165,59
+Test 248,,,224,,OralandMaxillofacialSurgery,Hospital,,,,,,,50,TRUE,6,Oral and Maxillofacial Surgery - Outpatient,165,59
+Test 249,,,858,,OralandMaxillofacialSurgery,SurgeryCenter,,,,,,,50,TRUE,6,Oral and Maxillofacial Surgery - Outpatient,165,59
+Test 250,,,859,,OralandMaxillofacialSurgery,Hospital,,,,,,,50,TRUE,6,Oral and Maxillofacial Surgery - Outpatient,165,59
+Test 251,,,131,,Vision,SurgeryCenter,,,,,,,51,TRUE,6,Vision - Outpatient,166,60
+Test 252,,,132,,Vision,Hospital,,,,,,,51,TRUE,6,Vision - Outpatient,166,60
+Test 253,,,224,,Vision,Hospital,,,,,,,51,TRUE,6,Vision - Outpatient,166,60
+Test 254,,,858,,Vision,SurgeryCenter,,,,,,,51,TRUE,6,Vision - Outpatient,166,60
+Test 255,,,859,,Vision,Hospital,,,,,,,51,TRUE,6,Vision - Outpatient,166,60
+Test 256,,,131,914,,Non-residentialSubstanceAbuseTreatmentFacility,,10063,,,,,52,TRUE,16,Non-residential Substance Abuse Treatment Facility - Mental Health Specialist Vist,874,61
+Test 257,,,132,914,,Non-residentialSubstanceAbuseTreatmentFacility,,11286,,,,,52,TRUE,16,Non-residential Substance Abuse Treatment Facility - Mental Health Specialist Vist,874,61
+Test 258,,,835,914,,Non-residentialSubstanceAbuseTreatmentFacility,,11286,,,,,52,TRUE,16,Non-residential Substance Abuse Treatment Facility - Mental Health Specialist Vist,874,61
+Test 259,,,768,914,,Non-residentialSubstanceAbuseTreatmentFacility,,10063,,,,,52,TRUE,16,Non-residential Substance Abuse Treatment Facility - Mental Health Specialist Vist,874,61
+Test 260,,,769,914,,Non-residentialSubstanceAbuseTreatmentFacility,,11286,,,,,52,TRUE,16,Non-residential Substance Abuse Treatment Facility - Mental Health Specialist Vist,874,61
+Test 261,,,131,,,Non-residentialSubstanceAbuseTreatmentFacility,,10063,,,,,53,TRUE,17,Non-residential Substance Abuse Treatment Facility - Mental Health Outpatient,231,62
+Test 262,,,132,,,Non-residentialSubstanceAbuseTreatmentFacility,,10063,,,,,53,TRUE,17,Non-residential Substance Abuse Treatment Facility - Mental Health Outpatient,231,62
+Test 263,,,831,,,Non-residentialSubstanceAbuseTreatmentFacility,,10063,,,,,53,TRUE,17,Non-residential Substance Abuse Treatment Facility - Mental Health Outpatient,231,62
+Test 264,,,768,,,Non-residentialSubstanceAbuseTreatmentFacility,,10063,,,,,53,TRUE,17,Non-residential Substance Abuse Treatment Facility - Mental Health Outpatient,231,62
+Test 265,,,769,,,Non-residentialSubstanceAbuseTreatmentFacility,,10063,,,,,53,TRUE,17,Non-residential Substance Abuse Treatment Facility - Mental Health Outpatient,231,62
+Test 266,,,131,,BariatricSurgery,SurgeryCenter,,,,,,,54,TRUE,6,Bariatric Surgery - Outpatient,433,63
+Test 267,,,132,,BariatricSurgery,Hospital,,,,,,,54,TRUE,6,Bariatric Surgery - Outpatient,433,63
+Test 268,,,224,,BariatricSurgery,Hospital,,,,,,,54,TRUE,6,Bariatric Surgery - Outpatient,433,63
+Test 269,,,858,,BariatricSurgery,SurgeryCenter,,,,,,,54,TRUE,6,Bariatric Surgery - Outpatient,433,63
+Test 270,,,859,,BariatricSurgery,Hospital,,,,,,,54,TRUE,6,Bariatric Surgery - Outpatient,433,63
+Test 271,,,131,,Colon,SurgeryCenter,,,,,,,55,TRUE,6,Colon - Outpatient,434,64
+Test 272,,,132,,Colon,Hospital,,,,,,,55,TRUE,6,Colon - Outpatient,434,64
+Test 273,,,224,,Colon,Hospital,,,,,,,55,TRUE,6,Colon - Outpatient,434,64
+Test 274,,,858,,Colon,Hospital,,,,,,,55,TRUE,6,Colon - Outpatient,434,64
+Test 275,,,859,,Colon,CapsuleEndoscopy,,,,,,,55,TRUE,6,Colon - Outpatient,434,64
+Test 276,,,131,,Dermatology,SurgeryCenter,,,,,,,56,TRUE,6,Dermatology - Outpatient,435,65
+Test 277,,,132,,Dermatology,Hospital,,,,,,,56,TRUE,6,Dermatology - Outpatient,435,65
+Test 278,,,224,,Dermatology,Hospital,,,,,,,56,TRUE,6,Dermatology - Outpatient,435,65
+Test 279,,,858,,Dermatology,SurgeryCenter,,,,,,,56,TRUE,6,Dermatology - Outpatient,435,65
+Test 280,,,859,,Dermatology,Hospital,,,,,,,56,TRUE,6,Dermatology - Outpatient,435,65
+Test 281,,,131,,ENT,SurgeryCenter,,,,,,,57,TRUE,6,ENT - Outpatient,436,66
+Test 282,,,132,,ENT,Hospital,,,,,,,57,TRUE,6,ENT - Outpatient,436,66
+Test 283,,,224,,ENT,Hospital,,,,,,,57,TRUE,6,ENT - Outpatient,436,66
+Test 284,,,858,,ENT,SurgeryCenter,,,,,,,57,TRUE,6,ENT - Outpatient,436,66
+Test 285,,,859,,ENT,Hospital,,,,,,,57,TRUE,6,ENT - Outpatient,436,66
+Test 286,,,131,,GeneralHospital,SurgeryCenter,,,,,,,58,TRUE,6,General Hospital - Outpatient,437,67
+Test 287,,,132,,GeneralHospital,Hospital,,,,,,,58,TRUE,6,General Hospital - Outpatient,437,67
+Test 288,,,224,,GeneralHospital,Hospital,,,,,,,58,TRUE,6,General Hospital - Outpatient,437,67
+Test 289,,,858,,GeneralHospital,SurgeryCenter,,,,,,,58,TRUE,6,General Hospital - Outpatient,437,67
+Test 290,,,859,,GeneralHospital,Hospital,,,,,,,58,TRUE,6,General Hospital - Outpatient,437,67
+Test 291,,,131,,NuclearMedicine,SurgeryCenter,,,,,,,59,TRUE,6,Nuclear Medicine - Outpatient,438,68
+Test 292,,,132,,NuclearMedicine,Hospital,,,,,,,59,TRUE,6,Nuclear Medicine - Outpatient,438,68
+Test 293,,,224,,NuclearMedicine,Hospital,,,,,,,59,TRUE,6,Nuclear Medicine - Outpatient,438,68
+Test 294,,,858,,NuclearMedicine,SurgeryCenter,,,,,,,59,TRUE,6,Nuclear Medicine - Outpatient,438,68
+Test 295,,,859,,NuclearMedicine,Hospital,,,,,,,59,TRUE,6,Nuclear Medicine - Outpatient,438,68
+Test 296,,,131,,OrthopedicSurgery,SurgeryCenter,,,,,,,60,TRUE,6,Orthopedic Surgery - Outpatient,440,69
+Test 297,,,132,,OrthopedicSurgery,Hospital,,,,,,,60,TRUE,6,Orthopedic Surgery - Outpatient,440,69
+Test 298,,,224,,OrthopedicSurgery,Hospital,,,,,,,60,TRUE,6,Orthopedic Surgery - Outpatient,440,69
+Test 299,,,858,,OrthopedicSurgery,SurgeryCenter,,,,,,,60,TRUE,6,Orthopedic Surgery - Outpatient,440,69
+Test 300,,,859,,OrthopedicSurgery,Hospital,,,,,,,60,TRUE,6,Orthopedic Surgery - Outpatient,440,69
+Test 301,,,131,,OrthopedicSurgery-JointReplacement,SurgeryCenter,,,,,,,61,TRUE,6,Orthopedic Surgery - Joint Replacement - Outpatient,441,70
+Test 302,,,132,,OrthopedicSurgery-JointReplacement,Hospital,,,,,,,61,TRUE,6,Orthopedic Surgery - Joint Replacement - Outpatient,441,70
+Test 303,,,224,,OrthopedicSurgery-JointReplacement,Hospital,,,,,,,61,TRUE,6,Orthopedic Surgery - Joint Replacement - Outpatient,441,70
+Test 304,,,858,,OrthopedicSurgery-JointReplacement,SurgeryCenter,,,,,,,61,TRUE,6,Orthopedic Surgery - Joint Replacement - Outpatient,441,70
+Test 305,,,859,,OrthopedicSurgery-JointReplacement,Hospital,,,,,,,61,TRUE,6,Orthopedic Surgery - Joint Replacement - Outpatient,441,70
+Test 306,,,131,,VascularSurgery,SurgeryCenter,,,,,,,62,TRUE,6,Vascular Surgery - Outpatient,442,71
+Test 307,,,132,,VascularSurgery,Hospital,,,,,,,62,TRUE,6,Vascular Surgery - Outpatient,442,71
+Test 308,,,224,,VascularSurgery,Hospital,,,,,,,62,TRUE,6,Vascular Surgery - Outpatient,442,71
+Test 309,,,858,,VascularSurgery,SurgeryCenter,,,,,,,62,TRUE,6,Vascular Surgery - Outpatient,442,71
+Test 310,,,859,,VascularSurgery,Hospital,,,,,,,62,TRUE,6,Vascular Surgery - Outpatient,442,71
+Test 311,,,131,,MaleProcedures,SurgeryCenter,,,,,,,63,TRUE,6,Male Procedures - Outpatient,443,72
+Test 312,,,132,,MaleProcedures,Hospital,,,,,,,63,TRUE,6,Male Procedures - Outpatient,443,72
+Test 313,,,224,,MaleProcedures,Hospital,,,,,,,63,TRUE,6,Male Procedures - Outpatient,443,72
+Test 314,,,858,,MaleProcedures,SurgeryCenter,,,,,,,63,TRUE,6,Male Procedures - Outpatient,443,72
+Test 315,,,859,,MaleProcedures,Hospital,,,,,,,63,TRUE,6,Male Procedures - Outpatient,443,72
+Test 316,,,131,,Acupuncture,SurgeryCenter,,,,,,,64,TRUE,6,Acupuncture - Outpatient,444,73
+Test 317,,,132,,Acupuncture,Hospital,,,,,,,64,TRUE,6,Acupuncture - Outpatient,444,73
+Test 318,,,224,,Acupuncture,Hospital,,,,,,,64,TRUE,6,Acupuncture - Outpatient,444,73
+Test 319,,,858,,Acupuncture,SurgeryCenter,,,,,,,64,TRUE,6,Acupuncture - Outpatient,444,73
+Test 320,,,859,,Acupuncture,Hospital,,,,,,,64,TRUE,6,Acupuncture - Outpatient,444,73
+Test 321,,,131,,BrainSurgery,SurgeryCenter,,,,,,,65,TRUE,6,Brain Surgery - Outpatient,445,74
+Test 322,,,132,,BrainSurgery,Hospital,,,,,,,65,TRUE,6,Brain Surgery - Outpatient,445,74
+Test 323,,,224,,BrainSurgery,Hospital,,,,,,,65,TRUE,6,Brain Surgery - Outpatient,445,74
+Test 324,,,858,,BrainSurgery,SurgeryCenter,,,,,,,65,TRUE,6,Brain Surgery - Outpatient,445,74
+Test 325,,,859,,BrainSurgery,Hospital,,,,,,,65,TRUE,6,Brain Surgery - Outpatient,445,74
+Test 326,,,131,,Chiropractor,SurgeryCenter,,,,,,,66,TRUE,6,Chiropractor - Outpatient,449,75
+Test 327,,,132,,Chiropractor,Hospital,,,,,,,66,TRUE,6,Chiropractor - Outpatient,449,75
+Test 328,,,224,,Chiropractor,Hospital,,,,,,,66,TRUE,6,Chiropractor - Outpatient,449,75
+Test 329,,,858,,Chiropractor,SurgeryCenter,,,,,,,66,TRUE,6,Chiropractor - Outpatient,449,75
+Test 330,,,859,,Chiropractor,Hospital,,,,,,,66,TRUE,6,Chiropractor - Outpatient,449,75
+Test 331,,,131,,FemaleProcedures,SurgeryCenter,,,,,,,67,TRUE,6,Female Procedures - Outpatient,452,76
+Test 332,,,132,,FemaleProcedures,Hospital,,,,,,,67,TRUE,6,Female Procedures - Outpatient,452,76
+Test 333,,,224,,FemaleProcedures,Hospital,,,,,,,67,TRUE,6,Female Procedures - Outpatient,452,76
+Test 334,,,858,,FemaleProcedures,SurgeryCenter,,,,,,,67,TRUE,6,Female Procedures - Outpatient,452,76
+Test 335,,,859,,FemaleProcedures,Hospital,,,,,,,67,TRUE,6,Female Procedures - Outpatient,452,76
+Test 336,,,131,,Hepatology,SurgeryCenter,,,,,,,68,TRUE,6,Hepatology - Outpatient,453,77
+Test 337,,,132,,Hepatology,Hospital,,,,,,,68,TRUE,6,Hepatology - Outpatient,453,77
+Test 338,,,224,,Hepatology,Hospital,,,,,,,68,TRUE,6,Hepatology - Outpatient,453,77
+Test 339,,,858,,Hepatology,SurgeryCenter,,,,,,,68,TRUE,6,Hepatology - Outpatient,453,77
+Test 340,,,859,,Hepatology,Hospital,,,,,,,68,TRUE,6,Hepatology - Outpatient,453,77
+Test 341,,,131,,InfectiousDiseases,SurgeryCenter,,,,,,,69,TRUE,6,Infectious Diseases - Outpatient,454,78
+Test 342,,,132,,InfectiousDiseases,Hospital,,,,,,,69,TRUE,6,Infectious Diseases - Outpatient,454,78
+Test 343,,,224,,InfectiousDiseases,Hospital,,,,,,,69,TRUE,6,Infectious Diseases - Outpatient,454,78
+Test 344,,,858,,InfectiousDiseases,SurgeryCenter,,,,,,,69,TRUE,6,Infectious Diseases - Outpatient,454,78
+Test 345,,,859,,InfectiousDiseases,Hospital,,,,,,,69,TRUE,6,Infectious Diseases - Outpatient,454,78
+Test 346,,,131,,KidneyTransplant,SurgeryCenter,,,,,,,70,TRUE,6,Kidney Transplant - Outpatient,455,79
+Test 347,,,132,,KidneyTransplant,Hospital,,,,,,,70,TRUE,6,Kidney Transplant - Outpatient,455,79
+Test 348,,,224,,KidneyTransplant,Hospital,,,,,,,70,TRUE,6,Kidney Transplant - Outpatient,455,79
+Test 349,,,858,,KidneyTransplant,SurgeryCenter,,,,,,,70,TRUE,6,Kidney Transplant - Outpatient,455,79
+Test 350,,,859,,KidneyTransplant,Hospital,,,,,,,70,TRUE,6,Kidney Transplant - Outpatient,455,79
+Test 351,,,131,,LiverTransplant,SurgeryCenter,,,,,,,71,TRUE,6,Liver Transplant - Outpatient,456,80
+Test 352,,,132,,LiverTransplant,Hospital,,,,,,,71,TRUE,6,Liver Transplant - Outpatient,456,80
+Test 353,,,224,,LiverTransplant,Hospital,,,,,,,71,TRUE,6,Liver Transplant - Outpatient,456,80
+Test 354,,,858,,LiverTransplant,SurgeryCenter,,,,,,,71,TRUE,6,Liver Transplant - Outpatient,456,80
+Test 355,,,859,,LiverTransplant,Hospital,,,,,,,71,TRUE,6,Liver Transplant - Outpatient,456,80
+Test 356,,,131,,Neurosurgery,SurgeryCenter,,,,,,,72,TRUE,6,Neurosurgery - Outpatient,457,81
+Test 357,,,132,,Neurosurgery,Hospital,,,,,,,72,TRUE,6,Neurosurgery - Outpatient,457,81
+Test 358,,,224,,Neurosurgery,Hospital,,,,,,,72,TRUE,6,Neurosurgery - Outpatient,457,81
+Test 359,,,858,,Neurosurgery,SurgeryCenter,,,,,,,72,TRUE,6,Neurosurgery - Outpatient,457,81
+Test 360,,,859,,Neurosurgery,Hospital,,,,,,,72,TRUE,6,Neurosurgery - Outpatient,457,81
+Test 361,,,131,,Nutrition,SurgeryCenter,,,,,,,73,TRUE,6,Nutrition - Outpatient,458,82
+Test 362,,,132,,Nutrition,Hospital,,,,,,,73,TRUE,6,Nutrition - Outpatient,458,82
+Test 363,,,224,,Nutrition,Hospital,,,,,,,73,TRUE,6,Nutrition - Outpatient,458,82
+Test 364,,,858,,Nutrition,SurgeryCenter,,,,,,,73,TRUE,6,Nutrition - Outpatient,458,82
+Test 365,,,859,,Nutrition,Hospital,,,,,,,73,TRUE,6,Nutrition - Outpatient,458,82
+Test 366,,,131,,PainManagement,SurgeryCenter,,,,,,,74,TRUE,6,Pain Management - Outpatient,460,83
+Test 367,,,132,,PainManagement,Hospital,,,,,,,74,TRUE,6,Pain Management - Outpatient,460,83
+Test 368,,,224,,PainManagement,Hospital,,,,,,,74,TRUE,6,Pain Management - Outpatient,460,83
+Test 369,,,858,,PainManagement,SurgeryCenter,,,,,,,74,TRUE,6,Pain Management - Outpatient,460,83
+Test 370,,,859,,PainManagement,Hospital,,,,,,,74,TRUE,6,Pain Management - Outpatient,460,83
+Test 371,,,131,,PancreasTransplant,SurgeryCenter,,,,,,,75,TRUE,6,Pancreas Transplant - Outpatient,461,84
+Test 372,,,132,,PancreasTransplant,Hospital,,,,,,,75,TRUE,6,Pancreas Transplant - Outpatient,461,84
+Test 373,,,224,,PancreasTransplant,Hospital,,,,,,,75,TRUE,6,Pancreas Transplant - Outpatient,461,84
+Test 374,,,858,,PancreasTransplant,SurgeryCenter,,,,,,,75,TRUE,6,Pancreas Transplant - Outpatient,461,84
+Test 375,,,859,,PancreasTransplant,Hospital,,,,,,,75,TRUE,6,Pancreas Transplant - Outpatient,461,84
+Test 376,,,131,,PhysicalMedicine&Rehab,SurgeryCenter,,,,,,,76,TRUE,6,Physical Medicine & Rehab - Outpatient,462,85
+Test 377,,,132,,PhysicalMedicine&Rehab,Hospital,,,,,,,76,TRUE,6,Physical Medicine & Rehab - Outpatient,462,85
+Test 378,,,224,,PhysicalMedicine&Rehab,Hospital,,,,,,,76,TRUE,6,Physical Medicine & Rehab - Outpatient,462,85
+Test 379,,,858,,PhysicalMedicine&Rehab,SurgeryCenter,,,,,,,76,TRUE,6,Physical Medicine & Rehab - Outpatient,462,85
+Test 380,,,859,,PhysicalMedicine&Rehab,Hospital,,,,,,,76,TRUE,6,Physical Medicine & Rehab - Outpatient,462,85
+Test 381,,,131,,Rheumatology,SurgeryCenter,,,,,,,77,TRUE,6,Rheumatology - Outpatient,464,86
+Test 382,,,132,,Rheumatology,Hospital,,,,,,,77,TRUE,6,Rheumatology - Outpatient,464,86
+Test 383,,,224,,Rheumatology,Hospital,,,,,,,77,TRUE,6,Rheumatology - Outpatient,464,86
+Test 384,,,858,,Rheumatology,SurgeryCenter,,,,,,,77,TRUE,6,Rheumatology - Outpatient,464,86
+Test 385,,,859,,Rheumatology,Hospital,,,,,,,77,TRUE,6,Rheumatology - Outpatient,464,86
+Test 386,,,131,,SLP,SurgeryCenter,,,,,,,78,TRUE,27,Speech Language Pathology (Outpatient Facility) - Therapy,465,87
+Test 387,,,132,,SLP,Hospital,,,,,,,78,TRUE,27,Speech Language Pathology (Outpatient Facility) - Therapy,465,87
+Test 388,,,224,,SLP,Hospital,,,,,,,78,TRUE,27,Speech Language Pathology (Outpatient Facility) - Therapy,465,87
+Test 389,,,858,,SLP,SurgeryCenter,,,,,,,78,TRUE,27,Speech Language Pathology (Outpatient Facility) - Therapy,465,87
+Test 390,,,859,,SLP,Hospital,,,,,,,78,TRUE,27,Speech Language Pathology (Outpatient Facility) - Therapy,465,87
+Test 391,,,131,,SportsMedicine,SurgeryCenter,,,,,,,79,TRUE,6,Sports Medicine - Outpatient,466,88
+Test 392,,,132,,SportsMedicine,Hospital,,,,,,,79,TRUE,6,Sports Medicine - Outpatient,466,88
+Test 393,,,224,,SportsMedicine,Hospital,,,,,,,79,TRUE,6,Sports Medicine - Outpatient,466,88
+Test 394,,,858,,SportsMedicine,SurgeryCenter,,,,,,,79,TRUE,6,Sports Medicine - Outpatient,466,88
+Test 395,,,859,,SportsMedicine,Hospital,,,,,,,79,TRUE,6,Sports Medicine - Outpatient,466,88
+Test 396,,,131,,Podiatry,SurgeryCenter,,,,,,,80,TRUE,6,Sports Medicine - Outpatient,879,89
+Test 397,,,132,,Podiatry,Hospital,,,,,,,80,TRUE,6,Sports Medicine - Outpatient,879,89
+Test 398,,,224,,Podiatry,Hospital,,,,,,,80,TRUE,6,Sports Medicine - Outpatient,879,89
+Test 399,,,858,,Podiatry,SurgeryCenter,,,,,,,80,TRUE,6,Sports Medicine - Outpatient,879,89
+Test 400,,,859,,Podiatry,Hospital,,,,,,,80,TRUE,6,Sports Medicine - Outpatient,879,89
+Test 401,,,131,762,,SurgeryCenter,,,,,,,81,TRUE,6,Observation - Outpatient,896,90
+Test 402,,,132,762,,Hospital,,,,,,,81,TRUE,6,Observation - Outpatient,896,90
+Test 403,,,224,762,,Hospital,,,,,,,81,TRUE,6,Observation - Outpatient,896,90
+Test 404,,,858,762,,SurgeryCenter,,,,,,,81,TRUE,6,Observation - Outpatient,896,90
+Test 405,,,859,762,,Hospital,,,,,,,81,TRUE,6,Observation - Outpatient,896,90
+Test 406,,,131,,PhysicalTherapy,,,,,,,,82,TRUE,27,Physical Therapy - Therapy,571,91
+Test 407,,,132,,OccupationalTherapy,,,,,,,,82,TRUE,27,Physical Therapy - Therapy,571,91
+Test 408,,,746,,OccupationalTherapy,,,,,,,,82,TRUE,27,Physical Therapy - Therapy,571,91
+Test 409,,,858,,PhysicalTherapy,,,,,,,,82,TRUE,27,Physical Therapy - Therapy,571,91
+Test 410,,,859,,OccupationalTherapy,,,,,,,,82,TRUE,27,Physical Therapy - Therapy,571,91
+Test 411,,,131,,SLP,,,,,,,,83,TRUE,27,Speech Therapy - Therapy,878,92
+Test 412,,,132,,SLP,,,,,,,,83,TRUE,27,Speech Therapy - Therapy,878,92
+Test 413,,,747,,SLP,,,,,,,,83,TRUE,27,Speech Therapy - Therapy,878,92
+Test 414,,,858,,SLP,,,,,,,,83,TRUE,27,Speech Therapy - Therapy,878,92
+Test 415,,,859,,SLP,,,,,,,,83,TRUE,27,Speech Therapy - Therapy,878,92
+Test 416,,,131,,AdvancedLaboratoryServices,,,,,,,,84,TRUE,11,Hospital - Advanced Lab,701,93
+Test 417,,,132,,AdvancedLaboratoryServices,,,,,,,,84,TRUE,11,Hospital - Advanced Lab,701,93
+Test 418,,,224,,AdvancedLaboratoryServices,,,,,,,,84,TRUE,11,Hospital - Advanced Lab,701,93
+Test 419,,,858,,AdvancedLaboratoryServices,,,,,,,,84,TRUE,11,Hospital - Advanced Lab,701,93
+Test 420,,,859,,AdvancedLaboratoryServices,,,,,,,,84,TRUE,11,Hospital - Advanced Lab,701,93
+Test 421,,,131,,,ImagingCenter(Radiology),,,,,,,85,TRUE,15,Imaging Center (Radiology) - Routine Imaging,169,94
+Test 422,,,132,,,Hospital,,,,,,,85,TRUE,15,Imaging Center (Radiology) - Routine Imaging,169,94
+Test 423,,,224,,,Hospital,,,,,,,85,TRUE,15,Imaging Center (Radiology) - Routine Imaging,169,94
+Test 424,,,858,,,ImagingCenter(Radiology),,,,,,,85,TRUE,15,Imaging Center (Radiology) - Routine Imaging,169,94
+Test 425,,,859,,,Hospital,,,,,,,85,TRUE,15,Imaging Center (Radiology) - Routine Imaging,169,94
+Test 426,,,131,,CTScan,ImagingCenter(Radiology),,,,,,,86,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,170,95
+Test 427,,,132,,CTScan,Hospital,,,,,,,86,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,170,95
+Test 428,,,224,,CTScan,Hospital,,,,,,,86,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,170,95
+Test 429,,,858,,CTScan,ImagingCenter(Radiology),,,,,,,86,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,170,95
+Test 430,,,859,,CTScan,Hospital,,,,,,,86,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,170,95
+Test 431,,,131,,CTA,ImagingCenter(Radiology),,,,,,,87,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,171,96
+Test 432,,,132,,CTA,Hospital,,,,,,,87,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,171,96
+Test 433,,,224,,CTA,Hospital,,,,,,,87,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,171,96
+Test 434,,,858,,CTA,ImagingCenter(Radiology),,,,,,,87,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,171,96
+Test 435,,,859,,CTA,Hospital,,,,,,,87,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,171,96
+Test 436,,,131,,DexaScan,ImagingCenter(Radiology),,,,,,,88,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,172,97
+Test 437,,,132,,DexaScan,Hospital,,,,,,,88,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,172,97
+Test 438,,,224,,DexaScan,Hospital,,,,,,,88,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,172,97
+Test 439,,,858,,DexaScan,ImagingCenter(Radiology),,,,,,,88,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,172,97
+Test 440,,,859,,DexaScan,Hospital,,,,,,,88,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,172,97
+Test 441,,,131,,Mammogram,ImagingCenter(Radiology),,,,,,,89,TRUE,15,Imaging Center (Radiology) - Routine Imaging,173,98
+Test 442,,,132,,Mammogram,Hospital,,,,,,,89,TRUE,15,Imaging Center (Radiology) - Routine Imaging,173,98
+Test 443,,,224,,Mammogram,Hospital,,,,,,,89,TRUE,15,Imaging Center (Radiology) - Routine Imaging,173,98
+Test 444,,,858,,Mammogram,ImagingCenter(Radiology),,,,,,,89,TRUE,15,Imaging Center (Radiology) - Routine Imaging,173,98
+Test 445,,,859,,Mammogram,Hospital,,,,,,,89,TRUE,15,Imaging Center (Radiology) - Routine Imaging,173,98
+Test 446,,,131,,MRA,ImagingCenter(Radiology),,,,,,,90,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,174,99
+Test 447,,,132,,MRA,Hospital,,,,,,,90,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,174,99
+Test 448,,,224,,MRA,Hospital,,,,,,,90,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,174,99
+Test 449,,,858,,MRA,ImagingCenter(Radiology),,,,,,,90,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,174,99
+Test 450,,,859,,MRA,Hospital,,,,,,,90,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,174,99
+Test 451,,,131,,NuclearImaging,ImagingCenter(Radiology),,,,,,,91,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,175,100
+Test 452,,,132,,NuclearImaging,Hospital,,,,,,,91,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,175,100
+Test 453,,,224,,NuclearImaging,Hospital,,,,,,,91,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,175,100
+Test 454,,,858,,NuclearImaging,ImagingCenter(Radiology),,,,,,,91,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,175,100
+Test 455,,,859,,NuclearImaging,Hospital,,,,,,,91,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,175,100
+Test 456,,,131,,PETScan,ImagingCenter(Radiology),,,,,,,92,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,176,101
+Test 457,,,132,,PETScan,Hospital,,,,,,,92,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,176,101
+Test 458,,,224,,PETScan,Hospital,,,,,,,92,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,176,101
+Test 459,,,858,,PETScan,ImagingCenter(Radiology),,,,,,,92,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,176,101
+Test 460,,,859,,PETScan,Hospital,,,,,,,92,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,176,101
+Test 461,,,131,,Ultrasound,ImagingCenter(Radiology),,,,,,,93,TRUE,15,Imaging Center (Radiology) - Routine Imaging,177,102
+Test 462,,,132,,Ultrasound,Hospital,,,,,,,93,TRUE,15,Imaging Center (Radiology) - Routine Imaging,177,102
+Test 463,,,224,,Ultrasound,Hospital,,,,,,,93,TRUE,15,Imaging Center (Radiology) - Routine Imaging,177,102
+Test 464,,,858,,Ultrasound,ImagingCenter(Radiology),,,,,,,93,TRUE,15,Imaging Center (Radiology) - Routine Imaging,177,102
+Test 465,,,859,,Ultrasound,Hospital,,,,,,,93,TRUE,15,Imaging Center (Radiology) - Routine Imaging,177,102
+Test 466,,,131,,X-ray,ImagingCenter(Radiology),,,,,,,94,TRUE,15,Imaging Center (Radiology) - Routine Imaging,178,103
+Test 467,,,132,,RoutineRadiologyImaging,Hospital,,,,,,,94,TRUE,15,Imaging Center (Radiology) - Routine Imaging,178,103
+Test 468,,,224,,RoutineRadiologyImaging,Hospital,,,,,,,94,TRUE,15,Imaging Center (Radiology) - Routine Imaging,178,103
+Test 469,,,858,,X-ray,ImagingCenter(Radiology),,,,,,,94,TRUE,15,Imaging Center (Radiology) - Routine Imaging,178,103
+Test 470,,,859,,RoutineRadiologyImaging,Hospital,,,,,,,94,TRUE,15,Imaging Center (Radiology) - Routine Imaging,178,103
+Test 471,,,131,,MRI,ImagingCenter(Radiology),,,,,,,95,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,179,104
+Test 472,,,132,,MRI,Hospital,,,,,,,95,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,179,104
+Test 473,,,224,,MRI,Hospital,,,,,,,95,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,179,104
+Test 474,,,858,,MRI,ImagingCenter(Radiology),,,,,,,95,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,179,104
+Test 475,,,859,,MRI,Hospital,,,,,,,95,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,179,104
+Test 476,,,,,Mammogram,,,,,,,,96,TRUE,18,Routine Testing,180,105
+Test 477,,,,,Ultrasound,,,,,,,,96,TRUE,18,Routine Testing,180,105
+Test 478,,,,,X-ray,,,,,,,,96,TRUE,18,Routine Testing,180,105
+Test 479,,,,,X-ray,,,,,,,,96,TRUE,18,Routine Testing,180,105
+Test 480,,,,,RoutineRadiologyImaging,,,,,,,,96,TRUE,18,Routine Testing,180,105
+Test 481,,,111,,AbdominalSurgery,Hospital,,,,,,,97,TRUE,5,Abdominal Surgery - Inpatient,126,106
+Test 482,,,112,,AbdominalSurgery,Hospital,,,,,,,97,TRUE,5,Abdominal Surgery - Inpatient,126,106
+Test 483,,,115,,AbdominalSurgery,Hospital,,,,,,,97,TRUE,5,Abdominal Surgery - Inpatient,126,106
+Test 484,,,118,,AbdominalSurgery,Hospital,,,,,,,97,TRUE,5,Abdominal Surgery - Inpatient,126,106
+Test 485,,,119,,AbdominalSurgery,Hospital,,,,,,,97,TRUE,5,Abdominal Surgery - Inpatient,126,106
+Test 486,,,111,,BariatricSurgery,Hospital,,,,,,,98,TRUE,5,Bariatric Surgery - Inpatient,127,107
+Test 487,,,112,,BariatricSurgery,Hospital,,,,,,,98,TRUE,5,Bariatric Surgery - Inpatient,127,107
+Test 488,,,115,,BariatricSurgery,Hospital,,,,,,,98,TRUE,5,Bariatric Surgery - Inpatient,127,107
+Test 489,,,118,,BariatricSurgery,Hospital,,,,,,,98,TRUE,5,Bariatric Surgery - Inpatient,127,107
+Test 490,,,119,,BariatricSurgery,Hospital,,,,,,,98,TRUE,5,Bariatric Surgery - Inpatient,127,107
+Test 491,,,111,,,,579,,,,,,99,TRUE,5,Breast Surgery - Inpatient,128,108
+Test 492,,,112,,,,580,,,,,,99,TRUE,5,Breast Surgery - Inpatient,128,108
+Test 493,,,411,,,,598,,,,,,99,TRUE,5,Breast Surgery - Inpatient,128,108
+Test 494,,,858,,,,604,,,,,,99,TRUE,5,Breast Surgery - Inpatient,128,108
+Test 495,,,859,,,,605,,,,,,99,TRUE,5,Breast Surgery - Inpatient,128,108
+Test 496,,,111,,CardiacProcedures,Hospital,,,,,,,100,TRUE,5,Cardiac Procedures - Inpatient,129,109
+Test 497,,,112,,CardiacProcedures,Hospital,,,,,,,100,TRUE,5,Cardiac Procedures - Inpatient,129,109
+Test 498,,,115,,CardiacProcedures,Hospital,,,,,,,100,TRUE,5,Cardiac Procedures - Inpatient,129,109
+Test 499,,,118,,CardiacProcedures,Hospital,,,,,,,100,TRUE,5,Cardiac Procedures - Inpatient,129,109
+Test 500,,,119,,CardiacProcedures,Hospital,,,,,,,100,TRUE,5,Cardiac Procedures - Inpatient,129,109
+Test 501,,,111,,CardiacTests,Hospital,,,,,,,101,TRUE,5,Cardiac Tests - Inpatient,130,110
+Test 502,,,112,,CardiacTests,Hospital,,,,,,,101,TRUE,5,Cardiac Tests - Inpatient,130,110
+Test 503,,,115,,CardiacTests,Hospital,,,,,,,101,TRUE,5,Cardiac Tests - Inpatient,130,110
+Test 504,,,118,,CardiacTests,Hospital,,,,,,,101,TRUE,5,Cardiac Tests - Inpatient,130,110
+Test 505,,,119,,CardiacTests,Hospital,,,,,,,101,TRUE,5,Cardiac Tests - Inpatient,130,110
+Test 506,,,111,,CardiothoracicSurgery,Hospital,,,,,,,102,TRUE,5,Cardiothoracic Surgery - Inpatient,131,111
+Test 507,,,112,,CardiothoracicSurgery,Hospital,,,,,,,102,TRUE,5,Cardiothoracic Surgery - Inpatient,131,111
+Test 508,,,115,,CardiothoracicSurgery,Hospital,,,,,,,102,TRUE,5,Cardiothoracic Surgery - Inpatient,131,111
+Test 509,,,118,,CardiothoracicSurgery,Hospital,,,,,,,102,TRUE,5,Cardiothoracic Surgery - Inpatient,131,111
+Test 510,,,119,,CardiothoracicSurgery,Hospital,,,,,,,102,TRUE,5,Cardiothoracic Surgery - Inpatient,131,111
+Test 511,,,111,,Colon,Hospital,,,,,,,103,TRUE,5,Colon - Inpatient,132,112
+Test 512,,,112,,Colon,Hospital,,,,,,,103,TRUE,5,Colon - Inpatient,132,112
+Test 513,,,115,,Colon,Hospital,,,,,,,103,TRUE,5,Colon - Inpatient,132,112
+Test 514,,,118,,Colon,Hospital,,,,,,,103,TRUE,5,Colon - Inpatient,132,112
+Test 515,,,119,,Colon,Hospital,,,,,,,103,TRUE,5,Colon - Inpatient,132,112
+Test 516,,,111,,,,327,,,,,,104,TRUE,5,Colorectal - Inpatient,133,113
+Test 517,,,112,,,,328,,,,,,104,TRUE,5,Colorectal - Inpatient,133,113
+Test 518,,,411,,,,358,,,,,,104,TRUE,5,Colorectal - Inpatient,133,113
+Test 519,,,858,,,,390,,,,,,104,TRUE,5,Colorectal - Inpatient,133,113
+Test 520,,,859,,,,391,,,,,,104,TRUE,5,Colorectal - Inpatient,133,113
+Test 521,,,111,,Dermatology,Hospital,,,,,,,105,TRUE,5,Dermatology - Inpatient,134,114
+Test 522,,,112,,Dermatology,Hospital,,,,,,,105,TRUE,5,Dermatology - Inpatient,134,114
+Test 523,,,115,,Dermatology,Hospital,,,,,,,105,TRUE,5,Dermatology - Inpatient,134,114
+Test 524,,,118,,Dermatology,Hospital,,,,,,,105,TRUE,5,Dermatology - Inpatient,134,114
+Test 525,,,119,,Dermatology,Hospital,,,,,,,105,TRUE,5,Dermatology - Inpatient,134,114
+Test 526,,,111,,,,614,,,,,,106,TRUE,5,Endocrine Surgery - Inpatient,135,115
+Test 527,,,112,,,,615,,,,,,106,TRUE,5,Endocrine Surgery - Inpatient,135,115
+Test 528,,,411,,,,630,,,,,,106,TRUE,5,Endocrine Surgery - Inpatient,135,115
+Test 529,,,858,,,,644,,,,,,106,TRUE,5,Endocrine Surgery - Inpatient,135,115
+Test 530,,,859,,,,645,,,,,,106,TRUE,5,Endocrine Surgery - Inpatient,135,115
+Test 531,,,111,,ENT,Hospital,,,,,,,107,TRUE,5,ENT - Inpatient,136,116
+Test 532,,,112,,ENT,Hospital,,,,,,,107,TRUE,5,ENT - Inpatient,136,116
+Test 533,,,115,,ENT,Hospital,,,,,,,107,TRUE,5,ENT - Inpatient,136,116
+Test 534,,,118,,ENT,Hospital,,,,,,,107,TRUE,5,ENT - Inpatient,136,116
+Test 535,,,119,,ENT,Hospital,,,,,,,107,TRUE,5,ENT - Inpatient,136,116
+Test 536,,,111,,,,619,,,,,,108,TRUE,5,General Surgery - Inpatient,138,117
+Test 537,,,112,,,,620,,,,,,108,TRUE,5,General Surgery - Inpatient,138,117
+Test 538,,,411,,,,661,,,,,,108,TRUE,5,General Surgery - Inpatient,138,117
+Test 539,,,858,,,,927,,,,,,108,TRUE,5,General Surgery - Inpatient,138,117
+Test 540,,,859,,,,928,,,,,,108,TRUE,5,General Surgery - Inpatient,138,117
+Test 541,,,111,,,,783,,,,,,109,TRUE,32,Maternity - Delivery & Postnatal,139,118
+Test 542,,,112,,,,784,,,,,,109,TRUE,32,Maternity - Delivery & Postnatal,139,118
+Test 543,,,411,,,,807,,,,,,109,TRUE,32,Maternity - Delivery & Postnatal,139,118
+Test 544,,,858,,,,776,,,,,,109,TRUE,32,Maternity - Delivery & Postnatal,139,118
+Test 545,,,859,,,,779,,,,,,109,TRUE,32,Maternity - Delivery & Postnatal,139,118
+Test 546,,,111,,Nephrology,Hospital,,,,,,,110,TRUE,5,Nephrology - Inpatient,140,119
+Test 547,,,112,,Nephrology,Hospital,,,,,,,110,TRUE,5,Nephrology - Inpatient,140,119
+Test 548,,,115,,Nephrology,Hospital,,,,,,,110,TRUE,5,Nephrology - Inpatient,140,119
+Test 549,,,118,,Nephrology,Hospital,,,,,,,110,TRUE,5,Nephrology - Inpatient,140,119
+Test 550,,,119,,Nephrology,Hospital,,,,,,,110,TRUE,5,Nephrology - Inpatient,140,119
+Test 551,,,111,,,,69,,,,,,111,TRUE,5,Neurology - Inpatient,141,120
+Test 552,,,112,,,,73,,,,,,111,TRUE,5,Neurology - Inpatient,141,120
+Test 553,,,411,,,,88,,,,,,111,TRUE,5,Neurology - Inpatient,141,120
+Test 554,,,858,,,,102,,,,,,111,TRUE,5,Neurology - Inpatient,141,120
+Test 555,,,859,,,,103,,,,,,111,TRUE,5,Neurology - Inpatient,141,120
+Test 556,,,111,,NuclearMedicine,Hospital,,,,,,,112,TRUE,5,Nuclear Medicine - Inpatient,142,121
+Test 557,,,112,,NuclearMedicine,Hospital,,,,,,,112,TRUE,5,Nuclear Medicine - Inpatient,142,121
+Test 558,,,115,,NuclearMedicine,Hospital,,,,,,,112,TRUE,5,Nuclear Medicine - Inpatient,142,121
+Test 559,,,118,,NuclearMedicine,Hospital,,,,,,,112,TRUE,5,Nuclear Medicine - Inpatient,142,121
+Test 560,,,119,,NuclearMedicine,Hospital,,,,,,,112,TRUE,5,Nuclear Medicine - Inpatient,142,121
+Test 561,,,111,,,,734,,,,,,113,TRUE,5,OB/GYN - Inpatient,143,122
+Test 562,,,112,,,,735,,,,,,113,TRUE,5,OB/GYN - Inpatient,143,122
+Test 563,,,411,,,,760,,,,,,113,TRUE,5,OB/GYN - Inpatient,143,122
+Test 564,,,858,,,,793,,,,,,113,TRUE,5,OB/GYN - Inpatient,143,122
+Test 565,,,859,,,,794,,,,,,113,TRUE,5,OB/GYN - Inpatient,143,122
+Test 566,,,111,,,,799,,,,,,114,TRUE,5,Oncology - Inpatient,144,123
+Test 567,,,112,,,,800,,,,,,114,TRUE,5,Oncology - Inpatient,144,123
+Test 568,,,411,,,,825,,,,,,114,TRUE,5,Oncology - Inpatient,144,123
+Test 569,,,858,,,,848,,,,,,114,TRUE,5,Oncology - Inpatient,144,123
+Test 570,,,859,,,,849,,,,,,114,TRUE,5,Oncology - Inpatient,144,123
+Test 571,,,111,,,,113,,,,,,115,TRUE,5,Ophthalmology - Inpatient,145,124
+Test 572,,,112,,,,114,,,,,,115,TRUE,5,Ophthalmology - Inpatient,145,124
+Test 573,,,411,,,,121,,,,,,115,TRUE,5,Ophthalmology - Inpatient,145,124
+Test 574,,,858,,,,124,,,,,,115,TRUE,5,Ophthalmology - Inpatient,145,124
+Test 575,,,859,,,,125,,,,,,115,TRUE,5,Ophthalmology - Inpatient,145,124
+Test 576,,,111,,,,453,,,,,,116,TRUE,5,Orthopedic Surgery - Inpatient,146,125
+Test 577,,,112,,,,454,,,,,,116,TRUE,5,Orthopedic Surgery - Inpatient,146,125
+Test 578,,,411,,,,478,,,,,,116,TRUE,5,Orthopedic Surgery - Inpatient,146,125
+Test 579,,,858,,,,502,,,,,,116,TRUE,5,Orthopedic Surgery - Inpatient,146,125
+Test 580,,,859,,,,503,,,,,,116,TRUE,5,Orthopedic Surgery - Inpatient,146,125
+Test 581,,,111,,OrthopedicSurgery-JointReplacement,Hospital,,,,,,,117,TRUE,5,Orthopedic Surgery - Joint Replacement - Inpatient,147,126
+Test 582,,,112,,OrthopedicSurgery-JointReplacement,Hospital,,,,,,,117,TRUE,5,Orthopedic Surgery - Joint Replacement - Inpatient,147,126
+Test 583,,,115,,OrthopedicSurgery-JointReplacement,Hospital,,,,,,,117,TRUE,5,Orthopedic Surgery - Joint Replacement - Inpatient,147,126
+Test 584,,,118,,OrthopedicSurgery-JointReplacement,Hospital,,,,,,,117,TRUE,5,Orthopedic Surgery - Joint Replacement - Inpatient,147,126
+Test 585,,,119,,OrthopedicSurgery-JointReplacement,Hospital,,,,,,,117,TRUE,5,Orthopedic Surgery - Joint Replacement - Inpatient,147,126
+Test 586,,,111,,PlasticSurgery,Hospital,,,,,,,118,TRUE,5,Plastic Surgery - Inpatient,148,127
+Test 587,,,112,,PlasticSurgery,Hospital,,,,,,,118,TRUE,5,Plastic Surgery - Inpatient,148,127
+Test 588,,,115,,PlasticSurgery,Hospital,,,,,,,118,TRUE,5,Plastic Surgery - Inpatient,148,127
+Test 589,,,118,,PlasticSurgery,Hospital,,,,,,,118,TRUE,5,Plastic Surgery - Inpatient,148,127
+Test 590,,,119,,PlasticSurgery,Hospital,,,,,,,118,TRUE,5,Plastic Surgery - Inpatient,148,127
+Test 591,,,111,,Podiatry,Hospital,,,,,,,119,TRUE,5,Podiatry - Inpatient,149,128
+Test 592,,,112,,Podiatry,Hospital,,,,,,,119,TRUE,5,Podiatry - Inpatient,149,128
+Test 593,,,115,,Podiatry,Hospital,,,,,,,119,TRUE,5,Podiatry - Inpatient,149,128
+Test 594,,,118,,Podiatry,Hospital,,,,,,,119,TRUE,5,Podiatry - Inpatient,149,128
+Test 595,,,119,,Podiatry,Hospital,,,,,,,119,TRUE,5,Podiatry - Inpatient,149,128
+Test 596,,,111,,,,166,,,,,,120,TRUE,5,Pulmonology - Inpatient,150,129
+Test 597,,,112,,,,167,,,,,,120,TRUE,5,Pulmonology - Inpatient,150,129
+Test 598,,,411,,,,190,,,,,,120,TRUE,5,Pulmonology - Inpatient,150,129
+Test 599,,,858,,,,207,,,,,,120,TRUE,5,Pulmonology - Inpatient,150,129
+Test 600,,,859,,,,208,,,,,,120,TRUE,5,Pulmonology - Inpatient,150,129
+Test 601,,,111,,SleepCenter,Hospital,,,,,,,121,TRUE,5,Sleep Center - Inpatient,151,130
+Test 602,,,112,,SleepCenter,Hospital,,,,,,,121,TRUE,5,Sleep Center - Inpatient,151,130
+Test 603,,,115,,SleepCenter,Hospital,,,,,,,121,TRUE,5,Sleep Center - Inpatient,151,130
+Test 604,,,118,,SleepCenter,Hospital,,,,,,,121,TRUE,5,Sleep Center - Inpatient,151,130
+Test 605,,,119,,SleepCenter,Hospital,,,,,,,121,TRUE,5,Sleep Center - Inpatient,151,130
+Test 606,,,111,,SpineSurgery,Hospital,,,,,,,122,TRUE,5,Spine Surgery - Inpatient,152,131
+Test 607,,,112,,SpineSurgery,Hospital,,,,,,,122,TRUE,5,Spine Surgery - Inpatient,152,131
+Test 608,,,115,,SpineSurgery,Hospital,,,,,,,122,TRUE,5,Spine Surgery - Inpatient,152,131
+Test 609,,,118,,SpineSurgery,Hospital,,,,,,,122,TRUE,5,Spine Surgery - Inpatient,152,131
+Test 610,,,119,,SpineSurgery,Hospital,,,,,,,122,TRUE,5,Spine Surgery - Inpatient,152,131
+Test 611,,,111,,,,665,,,,,,123,TRUE,5,Urology - Inpatient,153,132
+Test 612,,,112,,,,666,,,,,,123,TRUE,5,Urology - Inpatient,153,132
+Test 613,,,411,,,,691,,,,,,123,TRUE,5,Urology - Inpatient,153,132
+Test 614,,,858,,,,729,,,,,,123,TRUE,5,Urology - Inpatient,153,132
+Test 615,,,859,,,,730,,,,,,123,TRUE,5,Urology - Inpatient,153,132
+Test 616,,,111,,,,70,,,,,,124,TRUE,5,Vascular Surgery - Inpatient,154,133
+Test 617,,,112,,,,71,,,,,,124,TRUE,5,Vascular Surgery - Inpatient,154,133
+Test 618,,,411,,,,71,,,,,,124,TRUE,5,Vascular Surgery - Inpatient,154,133
+Test 619,,,858,,,,71,,,,,,124,TRUE,5,Vascular Surgery - Inpatient,154,133
+Test 620,,,859,,,,72,,,,,,124,TRUE,5,Vascular Surgery - Inpatient,154,133
+Test 621,,,131,,MedicalEquipment/Supplies-ProstheticAppliances,Hospital,,,,,,,125,TRUE,4,Medical Equipment/Supplies - DME,901,134
+Test 622,,,132,,MedicalEquipment/Supplies-ProstheticAppliances,MedicalEquipmentSupplier,,,,,,,125,TRUE,4,Medical Equipment/Supplies - DME,901,134
+Test 623,,,224,,MedicalEquipment/Supplies-ProstheticAppliances,MedicalEquipmentSupplier,,,,,,,125,TRUE,4,Medical Equipment/Supplies - DME,901,134
+Test 624,,,858,,MedicalEquipment/Supplies-ProstheticAppliances,Hospital,,,,,,,125,TRUE,4,Medical Equipment/Supplies - DME,901,134
+Test 625,,,859,,MedicalEquipment/Supplies-ProstheticAppliances,MedicalEquipmentSupplier,,,,,,,125,TRUE,4,Medical Equipment/Supplies - DME,901,134
+Test 626,,,111,,OtherSpecialtyBucket,Hospital,,,,,,,126,TRUE,5,Other SpecialtyBucket - Inpatient,155,135
+Test 627,,,112,,OtherSpecialtyBucket,Hospital,,,,,,,126,TRUE,5,Other SpecialtyBucket - Inpatient,155,135
+Test 628,,,115,,OtherSpecialtyBucket,Hospital,,,,,,,126,TRUE,5,Other SpecialtyBucket - Inpatient,155,135
+Test 629,,,118,,OtherSpecialtyBucket,Hospital,,,,,,,126,TRUE,5,Other SpecialtyBucket - Inpatient,155,135
+Test 630,,,119,,OtherSpecialtyBucket,Hospital,,,,,,,126,TRUE,5,Other SpecialtyBucket - Inpatient,155,135
+Test 631,,,841,724,,BirthingCenter,,253,,,,,127,TRUE,5,Birthing Center - Inpatient,19,269
+Test 632,,,841,724,,MidWife,,10046,,,,,127,TRUE,5,Birthing Center - Inpatient,19,269
+Test 633,,,841,724,,MidWife,,10046,,,,,127,TRUE,5,Birthing Center - Inpatient,19,269
+Test 634,,,841,724,,BirthingCenter,,253,,,,,127,TRUE,5,Birthing Center - Inpatient,19,269
+Test 635,,,841,724,,MidWife,,10046,,,,,127,TRUE,5,Birthing Center - Inpatient,19,269
+Test 636,,,761,914,,,,,,,,,128,TRUE,16,Behavioral Health Center - Mental Health Specialist Visit,875,270
+Test 637,,,762,945,,,,,,,,,128,TRUE,16,Behavioral Health Center - Mental Health Specialist Visit,875,270
+Test 638,,,762,945,,,,,,,,,128,TRUE,16,Behavioral Health Center - Mental Health Specialist Visit,875,270
+Test 639,,,762,914,,,,,,,,,128,TRUE,16,Behavioral Health Center - Mental Health Specialist Visit,875,270
+Test 640,,,791,945,,,,,,,,,128,TRUE,16,Behavioral Health Center - Mental Health Specialist Visit,875,270
+Test 641,,,711,,,,,,,,,,129,TRUE,16,Behavioral Health Center - Mental Health Outpatient,46,271
+Test 642,,,761,,,,,,,,,,129,TRUE,16,Behavioral Health Center - Mental Health Outpatient,46,271
+Test 643,,,762,,,,,,,,,,129,TRUE,16,Behavioral Health Center - Mental Health Outpatient,46,271
+Test 644,,,762,,,,,,,,,,129,TRUE,16,Behavioral Health Center - Mental Health Outpatient,46,271
+Test 645,,,791,,,,,,,,,,129,TRUE,16,Behavioral Health Center - Mental Health Outpatient,46,271
+Test 646,,,131,,,BehavioralHealthCenter,,331,,,,,130,TRUE,17,Behavioral Health Center - Mental Health Outpatient,17,272
+Test 647,,,761,,,CommunityMentalHealthCenter,,10019,,,,,130,TRUE,17,Behavioral Health Center - Mental Health Outpatient,17,272
+Test 648,,,763,,,CommunityMentalHealthCenter,,10019,,,,,130,TRUE,17,Behavioral Health Center - Mental Health Outpatient,17,272
+Test 649,,,764,,,CommunityMentalHealthCenter,,10019,,,,,130,TRUE,17,Behavioral Health Center - Mental Health Outpatient,17,272
+Test 650,,,767,,,Psychiatry,,11062,,,,,130,TRUE,17,Behavioral Health Center - Mental Health Outpatient,17,272
+Test 651,,,761,,,PediatricBehavioralHealthCenter,,10061,,,,,131,TRUE,17,Pediatric Behavioral Health Center - Mental Health Outpatient,288,273
+Test 652,,,762,,,PediatricBehavioralHealthCenter,,10061,,,,,131,TRUE,17,Pediatric Behavioral Health Center - Mental Health Outpatient,288,273
+Test 653,,,762,,,PediatricBehavioralHealthCenter,,10061,,,,,131,TRUE,17,Pediatric Behavioral Health Center - Mental Health Outpatient,288,273
+Test 654,,,761,,,PediatricBehavioralHealthCenter,,10061,,,,,131,TRUE,17,Pediatric Behavioral Health Center - Mental Health Outpatient,288,273
+Test 655,,,762,,,PediatricBehavioralHealthCenter,,10061,,,,,131,TRUE,17,Pediatric Behavioral Health Center - Mental Health Outpatient,288,273
+Test 656,,,111,,,RehabilitationHospital,,10065,,,,,132,TRUE,5,Rehabilitation - Inpatient,47,274
+Test 657,,,112,,,PediatricRehabilitationHospital,,10075,,,,,132,TRUE,5,Rehabilitation - Inpatient,47,274
+Test 658,,,115,,,PediatricRehabilitationHospital,,323,,,,,132,TRUE,5,Rehabilitation - Inpatient,47,274
+Test 659,,,118,,,PediatricRehabilitationHospital,,10011,,,,,132,TRUE,5,Rehabilitation - Inpatient,47,274
+Test 660,,,119,,,PhysicalTherapy/RehabFacility,,10064,,,,,132,TRUE,5,Rehabilitation - Inpatient,47,274
+Test 661,,,721,,,DialysisCenter,,,,,,,133,TRUE,6,End-Stage Renal Disease Treatment Facility - Outpatient,72,275
+Test 662,,,722,,,End-StageRenalDiseaseCenter,,,,,,,133,TRUE,6,End-Stage Renal Disease Treatment Facility - Outpatient,72,275
+Test 663,,,725,,,Nephrology,,,,,,,133,TRUE,6,End-Stage Renal Disease Treatment Facility - Outpatient,72,275
+Test 664,,,728,,,InternalMedicine,,,,,,,133,TRUE,6,End-Stage Renal Disease Treatment Facility - Outpatient,72,275
+Test 665,,,729,,,GroupPractice,,,,,,,133,TRUE,6,End-Stage Renal Disease Treatment Facility - Outpatient,72,275
+Test 666,,,,,,,,,,50,,,134,TRUE,3,Federally Qualified Health Center - Specialist Visit,86,276
+Test 667,,,,,,,,,,50,,,134,TRUE,3,Federally Qualified Health Center - Specialist Visit,86,276
+Test 668,,,,,,,,,,50,,,134,TRUE,3,Federally Qualified Health Center - Specialist Visit,86,276
+Test 669,,,,,,,,,,50,,,134,TRUE,3,Federally Qualified Health Center - Specialist Visit,86,276
+Test 670,,,,,,,,,,50,,,134,TRUE,3,Federally Qualified Health Center - Specialist Visit,86,276
+Test 671,,,312,,,,,,,,,,135,TRUE,26,Home Health Services - Home Health Care,122,278
+Test 672,,,321,,,,,,,,,,135,TRUE,26,Home Health Services - Home Health Care,122,278
+Test 673,,,327,,,,,,,,,,135,TRUE,26,Home Health Services - Home Health Care,122,278
+Test 674,,,343,,,,,,,,,,135,TRUE,26,Home Health Services - Home Health Care,122,278
+Test 675,,,344,,,,,,,,,,135,TRUE,26,Home Health Services - Home Health Care,122,278
+Test 676,,,811,,,,,,,,,,136,TRUE,9,Hospice - Hospice,125,280
+Test 677,,,812,,,,,,,,,,136,TRUE,9,Hospice - Hospice,125,280
+Test 678,,,818,,,,,,,,,,136,TRUE,9,Hospice - Hospice,125,280
+Test 679,,,824,,,,,,,,,,136,TRUE,9,Hospice - Hospice,125,280
+Test 680,,,827,,,,,,,,,,136,TRUE,9,Hospice - Hospice,125,280
+Test 681,,,,,,,,,,49,,,137,TRUE,3,Independent Clinic - Specialist Visit,182,281
+Test 682,,,,,,,,,,49,,,137,TRUE,3,Independent Clinic - Specialist Visit,182,281
+Test 683,,,,,,,,,,49,,,137,TRUE,3,Independent Clinic - Specialist Visit,182,281
+Test 684,,,,,,,,,,49,,,137,TRUE,3,Independent Clinic - Specialist Visit,182,281
+Test 685,,,,,,,,,,49,,,137,TRUE,3,Independent Clinic - Specialist Visit,182,281
+Test 686,,,,,,,,,,26,,,138,TRUE,6,Military Treatment Facility - Outpatient,216,286
+Test 687,,,,,,,,,,26,,,138,TRUE,6,Military Treatment Facility - Outpatient,216,286
+Test 688,,,,,,,,,,26,,,138,TRUE,6,Military Treatment Facility - Outpatient,216,286
+Test 689,,,,,,,,,,26,,,138,TRUE,6,Military Treatment Facility - Outpatient,216,286
+Test 690,,,,,,,,,,26,,,138,TRUE,6,Military Treatment Facility - Outpatient,216,286
+Test 691,,,211,,,,,,,,,,139,TRUE,8,Skilled Nursing Facility - SNF,236,290
+Test 692,,,212,,,,,,,,,,139,TRUE,8,Skilled Nursing Facility - SNF,236,290
+Test 693,,,218,,,,,,,,,,139,TRUE,8,Skilled Nursing Facility - SNF,236,290
+Test 694,,,183,,,,,,,,,,139,TRUE,8,Skilled Nursing Facility - SNF,236,290
+Test 695,,,184,,,,,,,,,,139,TRUE,8,Skilled Nursing Facility - SNF,236,290
+Test 696,,,221,,,SkilledNursingFacility,,10014,,,,,140,TRUE,6,Nursing Facility - Outpatient,237,291
+Test 697,,,222,,,SkilledNursingFacility,,10014,,,,,140,TRUE,6,Nursing Facility - Outpatient,237,291
+Test 698,,,225,,,SkilledNursingFacility,,10014,,,,,140,TRUE,6,Nursing Facility - Outpatient,237,291
+Test 699,,,231,,,SkilledNursingFacility,,10014,,,,,140,TRUE,6,Nursing Facility - Outpatient,237,291
+Test 700,,,232,,,SkilledNursingFacility,,10014,,,,,140,TRUE,6,Nursing Facility - Outpatient,237,291
+Test 701,,,221,,,SkilledNursingFacility,,10014,,,,,141,TRUE,8,Skilled Nursing Facility - SNF,357,295
+Test 702,,,222,,,SkilledNursingFacility,,10014,,,,,141,TRUE,8,Skilled Nursing Facility - SNF,357,295
+Test 703,,,225,,,SkilledNursingFacility,,10014,,,,,141,TRUE,8,Skilled Nursing Facility - SNF,357,295
+Test 704,,,231,,,SkilledNursingFacility,,10014,,,,,141,TRUE,8,Skilled Nursing Facility - SNF,357,295
+Test 705,,,232,,,SkilledNursingFacility,,10014,,,,,141,TRUE,8,Skilled Nursing Facility - SNF,357,295
+Test 706,,,711,,,,,,,72,,,142,TRUE,1,Rural Health Clinic - PCP Visit,353,297
+Test 707,,,711,,,,,,,72,,,142,TRUE,1,Rural Health Clinic - PCP Visit,353,297
+Test 708,,,711,,,,,,,72,,,142,TRUE,1,Rural Health Clinic - PCP Visit,353,297
+Test 709,,,711,,,,,,,72,,,142,TRUE,1,Rural Health Clinic - PCP Visit,353,297
+Test 710,,,711,,,,,,,72,,,142,TRUE,1,Rural Health Clinic - PCP Visit,353,297
+Test 711,,,111,,,RehabilitationHospital,,10064,,,,,143,TRUE,5,Rehabilitation - Inpatient,349,298
+Test 712,,,112,,,RehabilitationHospital,,10064,,,,,143,TRUE,5,Rehabilitation - Inpatient,349,298
+Test 713,,,115,,,RehabilitationHospital,,10064,,,,,143,TRUE,5,Rehabilitation - Inpatient,349,298
+Test 714,,,118,,,RehabilitationHospital,,10064,,,,,143,TRUE,5,Rehabilitation - Inpatient,349,298
+Test 715,,,119,,,RehabilitationHospital,,10064,,,,,143,TRUE,5,Rehabilitation - Inpatient,349,298
+Test 716,,,111,,,,876,,,,,,144,TRUE,33,Behavioral/Mental Health - Mental Health Inpatient,339,300
+Test 717,,,112,,,,880,,,,,,144,TRUE,33,Behavioral/Mental Health - Mental Health Inpatient,339,300
+Test 718,,,411,,,,885,,,,,,144,TRUE,33,Behavioral/Mental Health - Mental Health Inpatient,339,300
+Test 719,,,858,,,,896,,,,,,144,TRUE,33,Behavioral/Mental Health - Mental Health Inpatient,339,300
+Test 720,,,859,,,,897,,,,,,144,TRUE,33,Behavioral/Mental Health - Mental Health Inpatient,339,300
+Test 721,,,,,,VisionRetailer,,10069,,,,,145,TRUE,4,Vision Retailer - DME,413,304
+Test 722,,,,,,VisionRetailer,,10069,,,,,145,TRUE,4,Vision Retailer - DME,413,304
+Test 723,,,,,,VisionRetailer,,10069,,,,,145,TRUE,4,Vision Retailer - DME,413,304
+Test 724,,,,,,VisionRetailer,,10069,,,,,145,TRUE,4,Vision Retailer - DME,413,304
+Test 725,,,,,,VisionRetailer,,10069,,,,,145,TRUE,4,Vision Retailer - DME,413,304
+Test 726,,,111,,Acupuncture,Hospital,,,,,,,146,TRUE,5,Acupuncture - Inpatient,467,322
+Test 727,,,112,,Acupuncture,Hospital,,,,,,,146,TRUE,5,Acupuncture - Inpatient,467,322
+Test 728,,,115,,Acupuncture,Hospital,,,,,,,146,TRUE,5,Acupuncture - Inpatient,467,322
+Test 729,,,118,,Acupuncture,Hospital,,,,,,,146,TRUE,5,Acupuncture - Inpatient,467,322
+Test 730,,,119,,Acupuncture,Hospital,,,,,,,146,TRUE,5,Acupuncture - Inpatient,467,322
+Test 731,,,111,,,,326,,,,,,147,TRUE,5,General Abdomen Surgery - Inpatient,468,323
+Test 732,,,112,,,,405,,,,,,147,TRUE,5,General Abdomen Surgery - Inpatient,468,323
+Test 733,,,411,,,,419,,,,,,147,TRUE,5,General Abdomen Surgery - Inpatient,468,323
+Test 734,,,858,,,,439,,,,,,147,TRUE,5,General Abdomen Surgery - Inpatient,468,323
+Test 735,,,859,,,,440,,,,,,147,TRUE,5,General Abdomen Surgery - Inpatient,468,323
+Test 736,,,111,,Chiropractor,Hospital,,,,,,,148,TRUE,5,Chiropractor - Inpatient,472,324
+Test 737,,,112,,Chiropractor,Hospital,,,,,,,148,TRUE,5,Chiropractor - Inpatient,472,324
+Test 738,,,115,,Chiropractor,Hospital,,,,,,,148,TRUE,5,Chiropractor - Inpatient,472,324
+Test 739,,,118,,Chiropractor,Hospital,,,,,,,148,TRUE,5,Chiropractor - Inpatient,472,324
+Test 740,,,119,,Chiropractor,Hospital,,,,,,,148,TRUE,5,Chiropractor - Inpatient,472,324
+Test 741,,,131,,Critical/Emergency,,,,,,,,149,TRUE,7,Hospital - Emergency,473,325
+Test 742,,,132,,Critical/Emergency,,,,,,,,149,TRUE,7,Hospital - Emergency,473,325
+Test 743,,,225,,Critical/Emergency,,,,,,,,149,TRUE,7,Hospital - Emergency,473,325
+Test 744,,,859,,Critical/Emergency,,,,,,,,149,TRUE,7,Hospital - Emergency,473,325
+Test 745,,,781,,Critical/Emergency,,,,,,,,149,TRUE,7,Hospital - Emergency,473,325
+Test 746,,,111,,FemaleProcedures,Hospital,,,,,,,150,TRUE,5,Female Procedures - Inpatient,475,326
+Test 747,,,112,,FemaleProcedures,Hospital,,,,,,,150,TRUE,5,Female Procedures - Inpatient,475,326
+Test 748,,,115,,FemaleProcedures,Hospital,,,,,,,150,TRUE,5,Female Procedures - Inpatient,475,326
+Test 749,,,118,,FemaleProcedures,Hospital,,,,,,,150,TRUE,5,Female Procedures - Inpatient,475,326
+Test 750,,,119,,FemaleProcedures,Hospital,,,,,,,150,TRUE,5,Female Procedures - Inpatient,475,326
+Test 751,,,111,,Hepatology,Hospital,,,,,,,151,TRUE,5,Hepatology - Inpatient,476,327
+Test 752,,,112,,Hepatology,Hospital,,,,,,,151,TRUE,5,Hepatology - Inpatient,476,327
+Test 753,,,115,,Hepatology,Hospital,,,,,,,151,TRUE,5,Hepatology - Inpatient,476,327
+Test 754,,,118,,Hepatology,Hospital,,,,,,,151,TRUE,5,Hepatology - Inpatient,476,327
+Test 755,,,119,,Hepatology,Hospital,,,,,,,151,TRUE,5,Hepatology - Inpatient,476,327
+Test 756,,,111,,InfectiousDiseases,Hospital,,,,,,,152,TRUE,5,Infectious Diseases - Inpatient,477,328
+Test 757,,,112,,InfectiousDiseases,Hospital,,,,,,,152,TRUE,5,Infectious Diseases - Inpatient,477,328
+Test 758,,,115,,InfectiousDiseases,Hospital,,,,,,,152,TRUE,5,Infectious Diseases - Inpatient,477,328
+Test 759,,,118,,InfectiousDiseases,Hospital,,,,,,,152,TRUE,5,Infectious Diseases - Inpatient,477,328
+Test 760,,,119,,InfectiousDiseases,Hospital,,,,,,,152,TRUE,5,Infectious Diseases - Inpatient,477,328
+Test 761,,,111,,KidneyTransplant,Hospital,,,,,,,153,TRUE,29,Kidney Transplant - Transplant,478,329
+Test 762,,,112,,KidneyTransplant,Hospital,,,,,,,153,TRUE,29,Kidney Transplant - Transplant,478,329
+Test 763,,,115,,KidneyTransplant,Hospital,,,,,,,153,TRUE,29,Kidney Transplant - Transplant,478,329
+Test 764,,,118,,KidneyTransplant,Hospital,,,,,,,153,TRUE,29,Kidney Transplant - Transplant,478,329
+Test 765,,,119,,KidneyTransplant,Hospital,,,,,,,153,TRUE,29,Kidney Transplant - Transplant,478,329
+Test 766,,,111,,,,5,,,,,,154,TRUE,29,Liver Transplant - Transplant,479,330
+Test 767,,,112,,,,6,,,,,,154,TRUE,29,Liver Transplant - Transplant,479,330
+Test 768,,,411,,,,6,,,,,,154,TRUE,29,Liver Transplant - Transplant,479,330
+Test 769,,,858,,,,5,,,,,,154,TRUE,29,Liver Transplant - Transplant,479,330
+Test 770,,,859,,,,6,,,,,,154,TRUE,29,Liver Transplant - Transplant,479,330
+Test 771,,,111,,,,20,,,,,,155,TRUE,5,Neurosurgery - Inpatient,480,331
+Test 772,,,112,,,,21,,,,,,155,TRUE,5,Neurosurgery - Inpatient,480,331
+Test 773,,,411,,,,53,,,,,,155,TRUE,5,Neurosurgery - Inpatient,480,331
+Test 774,,,858,,,,67,,,,,,155,TRUE,5,Neurosurgery - Inpatient,480,331
+Test 775,,,859,,,,68,,,,,,155,TRUE,5,Neurosurgery - Inpatient,480,331
+Test 776,,,111,,Nutrition,Hospital,,,,,,,156,TRUE,5,Nutrition - Inpatient,481,332
+Test 777,,,112,,Nutrition,Hospital,,,,,,,156,TRUE,5,Nutrition - Inpatient,481,332
+Test 778,,,115,,Nutrition,Hospital,,,,,,,156,TRUE,5,Nutrition - Inpatient,481,332
+Test 779,,,118,,Nutrition,Hospital,,,,,,,156,TRUE,5,Nutrition - Inpatient,481,332
+Test 780,,,119,,Nutrition,Hospital,,,,,,,156,TRUE,5,Nutrition - Inpatient,481,332
+Test 781,,,111,,PainManagement,Hospital,,,,,,,157,TRUE,5,Pain Management - Inpatient,483,333
+Test 782,,,112,,PainManagement,Hospital,,,,,,,157,TRUE,5,Pain Management - Inpatient,483,333
+Test 783,,,115,,PainManagement,Hospital,,,,,,,157,TRUE,5,Pain Management - Inpatient,483,333
+Test 784,,,118,,PainManagement,Hospital,,,,,,,157,TRUE,5,Pain Management - Inpatient,483,333
+Test 785,,,119,,PainManagement,Hospital,,,,,,,157,TRUE,5,Pain Management - Inpatient,483,333
+Test 786,,,111,,,,8,,,,,,158,TRUE,29,Pancreas Transplant - Transplant,484,334
+Test 787,,,112,,,,10,,,,,,158,TRUE,29,Pancreas Transplant - Transplant,484,334
+Test 788,,,411,,,,10,,,,,,158,TRUE,29,Pancreas Transplant - Transplant,484,334
+Test 789,,,858,,,,8,,,,,,158,TRUE,29,Pancreas Transplant - Transplant,484,334
+Test 790,,,859,,,,10,,,,,,158,TRUE,29,Pancreas Transplant - Transplant,484,334
+Test 791,,,111,,PhysicalMedicine&Rehab,Hospital,,,,,,,159,TRUE,5,Physical Medicine & Rehab - Inpatient,485,335
+Test 792,,,112,,PhysicalMedicine&Rehab,Hospital,,,,,,,159,TRUE,5,Physical Medicine & Rehab - Inpatient,485,335
+Test 793,,,115,,PhysicalMedicine&Rehab,Hospital,,,,,,,159,TRUE,5,Physical Medicine & Rehab - Inpatient,485,335
+Test 794,,,118,,PhysicalMedicine&Rehab,Hospital,,,,,,,159,TRUE,5,Physical Medicine & Rehab - Inpatient,485,335
+Test 795,,,119,,PhysicalMedicine&Rehab,Hospital,,,,,,,159,TRUE,5,Physical Medicine & Rehab - Inpatient,485,335
+Test 796,,,111,,,,1,,,,,,160,TRUE,29,Transplant - Transplant,862,336
+Test 797,,,112,,,,2,,,,,,160,TRUE,29,Transplant - Transplant,862,336
+Test 798,,,411,,,,14,,,,,,160,TRUE,29,Transplant - Transplant,862,336
+Test 799,,,858,,,,651,,,,,,160,TRUE,29,Transplant - Transplant,862,336
+Test 800,,,859,,,,652,,,,,,160,TRUE,29,Transplant - Transplant,862,336
+Test 801,,,111,,ReproductiveEndocrinology,Hospital,,,,,,,161,TRUE,5,Reproductive Endocrinology - Inpatient,486,337
+Test 802,,,112,,ReproductiveEndocrinology,Hospital,,,,,,,161,TRUE,5,Reproductive Endocrinology - Inpatient,486,337
+Test 803,,,115,,ReproductiveEndocrinology,Hospital,,,,,,,161,TRUE,5,Reproductive Endocrinology - Inpatient,486,337
+Test 804,,,118,,ReproductiveEndocrinology,Hospital,,,,,,,161,TRUE,5,Reproductive Endocrinology - Inpatient,486,337
+Test 805,,,119,,ReproductiveEndocrinology,Hospital,,,,,,,161,TRUE,5,Reproductive Endocrinology - Inpatient,486,337
+Test 806,,,111,,Rheumatology,Hospital,,,,,,,162,TRUE,5,Rheumatology - Inpatient,487,338
+Test 807,,,112,,Rheumatology,Hospital,,,,,,,162,TRUE,5,Rheumatology - Inpatient,487,338
+Test 808,,,115,,Rheumatology,Hospital,,,,,,,162,TRUE,5,Rheumatology - Inpatient,487,338
+Test 809,,,118,,Rheumatology,Hospital,,,,,,,162,TRUE,5,Rheumatology - Inpatient,487,338
+Test 810,,,119,,Rheumatology,Hospital,,,,,,,162,TRUE,5,Rheumatology - Inpatient,487,338
+Test 811,,,111,,SLP,Hospital,,,,,,,163,TRUE,5,SLP - Inpatient,488,339
+Test 812,,,112,,SLP,Hospital,,,,,,,163,TRUE,5,SLP - Inpatient,488,339
+Test 813,,,115,,SLP,Hospital,,,,,,,163,TRUE,5,SLP - Inpatient,488,339
+Test 814,,,118,,SLP,Hospital,,,,,,,163,TRUE,5,SLP - Inpatient,488,339
+Test 815,,,119,,SLP,Hospital,,,,,,,163,TRUE,5,SLP - Inpatient,488,339
+Test 816,,,111,,SportsMedicine,Hospital,,,,,,,164,TRUE,5,Sports Medicine - Inpatient,489,340
+Test 817,,,112,,SportsMedicine,Hospital,,,,,,,164,TRUE,5,Sports Medicine - Inpatient,489,340
+Test 818,,,115,,SportsMedicine,Hospital,,,,,,,164,TRUE,5,Sports Medicine - Inpatient,489,340
+Test 819,,,118,,SportsMedicine,Hospital,,,,,,,164,TRUE,5,Sports Medicine - Inpatient,489,340
+Test 820,,,119,,SportsMedicine,Hospital,,,,,,,164,TRUE,5,Sports Medicine - Inpatient,489,340
+Test 821,,,111,,MaleProcedures,Hospital,,,,,,,165,TRUE,5,Male Procedures - Inpatient,490,341
+Test 822,,,112,,MaleProcedures,Hospital,,,,,,,165,TRUE,5,Male Procedures - Inpatient,490,341
+Test 823,,,115,,MaleProcedures,Hospital,,,,,,,165,TRUE,5,Male Procedures - Inpatient,490,341
+Test 824,,,118,,MaleProcedures,Hospital,,,,,,,165,TRUE,5,Male Procedures - Inpatient,490,341
+Test 825,,,119,,MaleProcedures,Hospital,,,,,,,165,TRUE,5,Male Procedures - Inpatient,490,341
+Test 826,,,111,,,Hospital,,,,,,,166,TRUE,5,Inpatient,881,342
+Test 827,,,112,,,Hospital,,,,,,,166,TRUE,5,Inpatient,881,342
+Test 828,,,115,,,Hospital,,,,,,,166,TRUE,5,Inpatient,881,342
+Test 829,,,118,,,Hospital,,,,,,,166,TRUE,5,Inpatient,881,342
+Test 830,,,119,,,Hospital,,,,,,,166,TRUE,5,Inpatient,881,342
+Test 831,,,,,OfficeVisit,,,,,25,,,167,TRUE,3,Birthing Center - Specialist Visit,710,552
+Test 832,,,,,OfficeVisit,,,,,25,,,167,TRUE,3,Birthing Center - Specialist Visit,710,552
+Test 833,,,,,OfficeVisit,,,,,25,,,167,TRUE,3,Birthing Center - Specialist Visit,710,552
+Test 834,,,,,OfficeVisit,,,,,25,,,167,TRUE,3,Birthing Center - Specialist Visit,710,552
+Test 835,,,,,OfficeVisit,,,,,25,,,167,TRUE,3,Birthing Center - Specialist Visit,710,552
+Test 836,,,,,OfficeVisit,,,,,22,,,168,TRUE,3,Specialiist Visit at Hospital,902,553
+Test 837,,,,,OfficeVisit,,,,,22,,,168,TRUE,3,Specialiist Visit at Hospital,902,553
+Test 838,,,,,OfficeVisit,,,,,22,,,168,TRUE,3,Specialiist Visit at Hospital,902,553
+Test 839,,,,,OfficeVisit,,,,,22,,,168,TRUE,3,Specialiist Visit at Hospital,902,553
+Test 840,,,,,OfficeVisit,,,,,22,,,168,TRUE,3,Specialiist Visit at Hospital,902,553
+Test 841,,,,,,,,,,25,,,169,TRUE,18,Birthing Center Physician Services,711,554
+Test 842,,,,,,,,,,25,,,169,TRUE,18,Birthing Center Physician Services,711,554
+Test 843,,,,,,,,,,25,,,169,TRUE,18,Birthing Center Physician Services,711,554
+Test 844,,,,,,,,,,25,,,169,TRUE,18,Birthing Center Physician Services,711,554
+Test 845,,,,,,,,,,25,,,169,TRUE,18,Birthing Center Physician Services,711,554
+Test 846,,,,,,,,,,19,,,170,TRUE,3,Off Campus-Outpatient Hospital - Specialist Visit,713,556
+Test 847,,,,,,,,,,19,,,170,TRUE,3,Off Campus-Outpatient Hospital - Specialist Visit,713,556
+Test 848,,,,,,,,,,19,,,170,TRUE,3,Off Campus-Outpatient Hospital - Specialist Visit,713,556
+Test 849,,,,,,,,,,19,,,170,TRUE,3,Off Campus-Outpatient Hospital - Specialist Visit,713,556
+Test 850,,,,,,,,,,19,,,170,TRUE,3,Off Campus-Outpatient Hospital - Specialist Visit,713,556
+Test 851,,,131,,,SurgeryCenter,,,8480,,,,171,TRUE,18,Physician Service at Facility,863,562
+Test 852,,,132,,,Hospital,,,8633,,,,171,TRUE,18,Physician Service at Facility,863,562
+Test 853,,,224,,,Hospital,,,10490,,,,171,TRUE,18,Physician Service at Facility,863,562
+Test 854,,,858,,,SurgeryCenter,,,10496,,,,171,TRUE,18,Physician Service at Facility,863,562
+Test 855,,,859,,,Hospital,,,10497,,,,171,TRUE,18,Physician Service at Facility,863,562
+Test 856,,,,,CTScan,,,,,,,,172,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,181,563
+Test 857,,,,,CTA,,,,,,,,172,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,181,563
+Test 858,,,,,MRA,,,,,,,,172,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,181,563
+Test 859,,,,,PETScan,,,,,,,,172,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,181,563
+Test 860,,,,,MRI,,,,,,,,172,TRUE,13,Imaging Center (Radiology) - Advanced Imaging,181,563
+Test 861,,,130,,RoutineLabandPathologyServices,,,,,,,,173,TRUE,12,Hospital - Routine Lab,702,564
+Test 862,,,131,,RoutineLabandPathologyServices,,,,,,,,173,TRUE,12,Hospital - Routine Lab,702,564
+Test 863,,,223,,RoutineLabandPathologyServices,,,,,,,,173,TRUE,12,Hospital - Routine Lab,702,564
+Test 864,,,859,,RoutineLabandPathologyServices,,,,,,,,173,TRUE,12,Hospital - Routine Lab,702,564
+Test 865,,,871,,RoutineLabandPathologyServices,,,,,,,,173,TRUE,12,Hospital - Routine Lab,702,564
+Test 866,,,,510,,,,,,,,,174,TRUE,1,Office Visit at Facility,870,565
+Test 867,,,,511,,,,,,,,,174,TRUE,1,Office Visit at Facility,870,565
+Test 868,,,,517,,,,,,,,,174,TRUE,1,Office Visit at Facility,870,565
+Test 869,,,,952,,,,,,,,,174,TRUE,1,Office Visit at Facility,870,565
+Test 870,,,,983,,,,,,,,,174,TRUE,1,Office Visit at Facility,870,565
+Test 871,,,,900,,,,,,,,,175,TRUE,16,Mental Health Specialist Visit,871,566
+Test 872,,,,914,,,,,,,,,175,TRUE,16,Mental Health Specialist Visit,871,566
+Test 873,,,,915,,,,,,,,,175,TRUE,16,Mental Health Specialist Visit,871,566
+Test 874,,,,915,,,,,,,,,175,TRUE,16,Mental Health Specialist Visit,871,566
+Test 875,,,,945,,,,,,,,,175,TRUE,16,Mental Health Specialist Visit,871,566
+Test 876,,,,440,,,,,,,,,176,TRUE,27,Speech Language Pathology (Outpatient Facility) - Specialist Visit,872,567
+Test 877,,,,441,,,,,,,,,176,TRUE,27,Speech Language Pathology (Outpatient Facility) - Specialist Visit,872,567
+Test 878,,,,423,,,,,,,,,176,TRUE,27,Speech Language Pathology (Outpatient Facility) - Specialist Visit,872,567
+Test 879,,,,424,,,,,,,,,176,TRUE,27,Speech Language Pathology (Outpatient Facility) - Specialist Visit,872,567
+Test 880,,,,429,,,,,,,,,176,TRUE,27,Speech Language Pathology (Outpatient Facility) - Specialist Visit,872,567
+Test 881,,,131,420,,,,,,,,,177,TRUE,27,Physical Therapy (Outpatient Facility) - Specialist Visit,906,568
+Test 882,,,132,421,,,,,,,,,177,TRUE,27,Physical Therapy (Outpatient Facility) - Specialist Visit,906,568
+Test 883,,,746,423,,,,,,,,,177,TRUE,27,Physical Therapy (Outpatient Facility) - Specialist Visit,906,568
+Test 884,,,858,424,,,,,,,,,177,TRUE,27,Physical Therapy (Outpatient Facility) - Specialist Visit,906,568
+Test 885,,,859,429,,,,,,,,,177,TRUE,27,Physical Therapy (Outpatient Facility) - Specialist Visit,906,568
+Test 886,,,131,430,,,,,,,,,178,TRUE,27,Occupational Therapy (Outpatient Facility) - Specialist Visit,908,569
+Test 887,,,132,431,,,,,,,,,178,TRUE,27,Occupational Therapy (Outpatient Facility) - Specialist Visit,908,569
+Test 888,,,746,433,,,,,,,,,178,TRUE,27,Occupational Therapy (Outpatient Facility) - Specialist Visit,908,569
+Test 889,,,858,434,,,,,,,,,178,TRUE,27,Occupational Therapy (Outpatient Facility) - Specialist Visit,908,569
+Test 890,,,859,439,,,,,,,,,178,TRUE,27,Occupational Therapy (Outpatient Facility) - Specialist Visit,908,569
+Test 891,,,111,,,,,,,21,,,179,TRUE,5,Hospital - Inpatient,301,570
+Test 892,,,112,,,,,,,21,,,179,TRUE,5,Hospital - Inpatient,301,570
+Test 893,,,861,,,,,,,21,,,179,TRUE,5,Hospital - Inpatient,301,570
+Test 894,,,868,,,,,,,21,,,179,TRUE,5,Hospital - Inpatient,301,570
+Test 895,,,869,,,,,,,21,,,179,TRUE,5,Hospital - Inpatient,301,570
+Test 896,,,131,,,SurgeryCenter,,10047,,,,,180,TRUE,6,"Surgery Center, Outpatient Hospital Stay - Outpatient",394,571
+Test 897,,,132,,,Hospital,,10033,,,,,180,TRUE,6,"Surgery Center, Outpatient Hospital Stay - Outpatient",394,571
+Test 898,,,224,,,Hospital,,10059,,,,,180,TRUE,6,"Surgery Center, Outpatient Hospital Stay - Outpatient",394,571
+Test 899,,,858,,,SurgeryCenter,,10057,,,,,180,TRUE,6,"Surgery Center, Outpatient Hospital Stay - Outpatient",394,571
+Test 900,,,859,,,Hospital,,10054,,,,,180,TRUE,6,"Surgery Center, Outpatient Hospital Stay - Outpatient",394,571
+Test 901,,,131,,,Hospital,,10033,,,,,181,TRUE,6,Hospital - Outpatient,313,572
+Test 902,,,132,,,Hospital,,10033,,,,,181,TRUE,6,Hospital - Outpatient,313,572
+Test 903,,,224,,,Hospital,,10033,,,,,181,TRUE,6,Hospital - Outpatient,313,572
+Test 904,,,858,,,Hospital,,10033,,,,,181,TRUE,6,Hospital - Outpatient,313,572
+Test 905,,,859,,,Hospital,,10033,,,,,181,TRUE,6,Hospital - Outpatient,313,572
+Test 906,,,230,,,,,,,,,,182,TRUE,6,Skilled Nursing facility - Outpatient,891,573
+Test 907,,,231,,,,,,,,,,182,TRUE,6,Skilled Nursing facility - Outpatient,891,573
+Test 908,,,235,,,,,,,,,,182,TRUE,6,Skilled Nursing facility - Outpatient,891,573
+Test 909,,,238,,,,,,,,,,182,TRUE,6,Skilled Nursing facility - Outpatient,891,573
+Test 910,,,239,,,,,,,,,,182,TRUE,6,Skilled Nursing facility - Outpatient,891,573
+Test 911,,,130,,,,,,,,,,183,TRUE,6,Hospital - Outpatient,412,574
+Test 912,,,131,,,,,,,,,,183,TRUE,6,Hospital - Outpatient,412,574
+Test 913,,,832,,,,,,,,,,183,TRUE,6,Hospital - Outpatient,412,574
+Test 914,,,898,,,,,,,,,,183,TRUE,6,Hospital - Outpatient,412,574
+Test 915,,,899,,,,,,,,,,183,TRUE,6,Hospital - Outpatient,412,574
+Test 916,,,221,,,,,,,,,,184,TRUE,3,Free Standing Facility - Specialist Visit,853,713
+Test 917,,,222,,,,,,,,,,184,TRUE,3,Free Standing Facility - Specialist Visit,853,713
+Test 918,,,732,,,,,,,,,,184,TRUE,3,Free Standing Facility - Specialist Visit,853,713
+Test 919,,,739,,,,,,,,,,184,TRUE,3,Free Standing Facility - Specialist Visit,853,713
+Test 920,,,781,,,,,,,,,,184,TRUE,3,Free Standing Facility - Specialist Visit,853,713
+Test 921,,,,906,,,,,,22,,,185,TRUE,16,Mental Health Day Treatment,890,716
+Test 922,,,,906,,,,,,22,,,185,TRUE,16,Mental Health Day Treatment,890,716
+Test 923,,,,906,,,,,,22,,,185,TRUE,16,Mental Health Day Treatment,890,716
+Test 924,,,,906,,,,,,22,,,185,TRUE,16,Mental Health Day Treatment,890,716
+Test 925,,,,906,,,,,,22,,,185,TRUE,16,Mental Health Day Treatment,890,716
