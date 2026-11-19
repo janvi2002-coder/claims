@@ -1,0 +1,13 @@
+﻿name,group,,partnerName,financingType,copayModel,outcome,,rowId,defaultOutputData,integrationModel,consumePaidClaimsFile,postToAccumulatorAPI,claimsStandardization
+Test 1,,,bcbsal,financing,rating,complete,,1,TRUE,1,false,false,true
+Test 2,,,bcbsal,non-financed,rating,complete,,2,TRUE,3,true,false,true
+Test 3,,,meritain,financing,rating,complete,,3,TRUE,1,false,false,true
+Test 4,,,meritain,non-financed,rating,complete,,4,TRUE,1,false,false,true
+Test 5,,,meritain,non-financed,common,complete,,5,TRUE,3,true,false,true
+Test 6,,,ameriben,financing,rating,complete,,6,TRUE,2,true,false,true
+Test 7,,,ameriben,non-financed,rating,complete,,7,TRUE,2,true,false,true
+Test 8,,,luminare,financing,rating,complete,,8,TRUE,2,true,false,true
+Test 9,,,luminare,non-financed,rating,complete,,9,TRUE,2,true,false,true
+Test 10,,,national alliance,non-financed,rating,complete,,10,TRUE,2,true,true,true
+Test 11,,,ibx,non-financed,rating,complete,,11,TRUE,2,true,false,true
+Test 12,,,wgs,non-financed,rating,complete,,12,TRUE,3,true,false,false
