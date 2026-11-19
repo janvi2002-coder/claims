@@ -1,0 +1,8 @@
+status,string({{.customInput.partnerName}}),string({{.customInput.planType}}),string({{.customInput.outcome}}),,string(integrationModel),boolean(preventiveRuleProcessing),boolean(performClaimsProcessing),boolean(calculateBenefitRate),string(accumulatorMaster),boolean(createReversal),boolean(claimsStandardization),boolean(postToAccumulatorAPI),boolean(consumePaidClaimsFile),string(healthLakePersistMode)
+true,"""bcbsal""","""F""","""queued""",,"""1""",true,true,true,"""COUPE""",true,true,true,false,"""ADJUDICATED_EOB"""
+true,"""meritain""","in [""F"",""NF""]","""queued""",,"""1""",false,true,true,"""COUPE""",true,true,true,false,"""ADJUDICATED_EOB"""
+true,"""ameriben""","in [""F"",""NF""]","""queued""",,"""2""",true,true,true,"""TPA""",true,true,false,true,"""ADJUDICATED_EOB AND TPA_FINALIZED"""
+true,"""luminare""","""F""","""queued""",,"""2""",false,true,true,"""TPA""",true,true,false,true,"""ADJUDICATED_EOB AND TPA_FINALIZED"""
+true,"""luminare""","""NF""","""queued""",,"""2""",false,true,true,"""TPA""",true,true,false,true,"""ADJUDICATED_EOB AND TPA_FINALIZED"""
+true,"""national alliance""","""NF""","""queued""",,"""2""",false,true,true,"""TPA""",true,true,false,true,"""ADJUDICATED_EOB AND TPA_FINALIZED"""
+true,"""ibx""","""NF""","""queued""",,"""2""",false,true,true,"""TPA""",true,true,false,true,"""ADJUDICATED_EOB AND TPA_FINALIZED"""
