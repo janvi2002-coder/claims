@@ -1,0 +1,10 @@
+﻿name,group,,partnerName,outcome,financingType,copayModel,,rowId,defaultOutputData,integrationModel,preventiveRuleProcessing,performClaimsProcessing,calculateBenefitRate,accumulatorMaster,createReversal,claimsStandardization,postToAccumulatorAPI,consumePaidClaimsFile,healthLakePersistMode
+Test 1,,,bcbsal,queued,financing,rating,,1,TRUE,1,true,true,true,COUPE,true,true,true,false,ADJUDICATED_EOB
+Test 2,,,meritain,queued,financing,rating,,2,TRUE,1,false,true,true,COUPE,true,true,true,false,ADJUDICATED_EOB
+Test 3,,,meritain,queued,non-financed,rating,,3,TRUE,1,false,true,true,COUPE,true,true,true,false,ADJUDICATED_EOB
+Test 4,,,ameriben,queued,financing,rating,,4,TRUE,2,true,true,true,TPA,true,true,false,true,ADJUDICATED_EOB AND TPA_FINALIZED
+Test 5,,,ameriben,queued,non-financed,rating,,5,TRUE,2,true,true,true,TPA,true,true,false,true,ADJUDICATED_EOB AND TPA_FINALIZED
+Test 6,,,luminare,queued,financing,rating,,6,TRUE,2,false,true,true,TPA,true,true,false,true,ADJUDICATED_EOB AND TPA_FINALIZED
+Test 7,,,luminare,queued,non-financed,rating,,7,TRUE,2,false,true,true,TPA,true,true,false,true,ADJUDICATED_EOB AND TPA_FINALIZED
+Test 8,,,national alliance,queued,non-financed,rating,,8,TRUE,2,false,true,true,TPA,true,true,false,true,ADJUDICATED_EOB AND TPA_FINALIZED
+Test 9,,,ibx,queued,non-financed,rating,,9,TRUE,2,false,true,true,TPA,true,true,false,true,ADJUDICATED_EOB AND TPA_FINALIZED
