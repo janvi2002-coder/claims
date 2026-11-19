@@ -1,0 +1,22 @@
+﻿name,group,,partnerName,outcome,financingType,copayModel,,name,rowId,defaultOutputData,integrationModel,preventiveRuleProcessing,performClaimsProcessing,calculateBenefitRate,accumulatorMaster,createReversal,claimsStandardization,postToAccumulatorAPI,consumePaidClaimsFile,healthLakePersistMode
+Test 1,,,bcbsal,queued,financing,rating,,Claims_Processing_Gateway_Raw,1,TRUE,1,true,true,true,COUPE,true,true,true,false,ADJUDICATED_EOB
+Test 2,,,meritain,queued,financing,rating,,Claims_Processing_Gateway_Raw,2,TRUE,1,false,true,true,COUPE,true,true,true,false,ADJUDICATED_EOB
+Test 3,,,meritain,queued,non-financed,rating,,Claims_Processing_Gateway_Raw,3,TRUE,1,false,true,true,COUPE,true,true,true,false,ADJUDICATED_EOB
+Test 4,,,ameriben,queued,financing,rating,,Claims_Processing_Gateway_Raw,4,TRUE,2,true,true,true,TPA,true,true,false,true,ADJUDICATED_EOB AND TPA_FINALIZED
+Test 5,,,ameriben,queued,non-financed,rating,,Claims_Processing_Gateway_Raw,5,TRUE,2,true,true,true,TPA,true,true,false,true,ADJUDICATED_EOB AND TPA_FINALIZED
+Test 6,,,luminare,queued,financing,rating,,Claims_Processing_Gateway_Raw,6,TRUE,2,false,true,true,TPA,true,true,false,true,ADJUDICATED_EOB AND TPA_FINALIZED
+Test 7,,,luminare,queued,non-financed,rating,,Claims_Processing_Gateway_Raw,7,TRUE,2,false,true,true,TPA,true,true,false,true,ADJUDICATED_EOB AND TPA_FINALIZED
+Test 8,,,national alliance,queued,non-financed,rating,,Claims_Processing_Gateway_Raw,8,TRUE,2,false,true,true,TPA,true,true,false,true,ADJUDICATED_EOB AND TPA_FINALIZED
+Test 9,,,ibx,queued,non-financed,rating,,Claims_Processing_Gateway_Raw,9,TRUE,2,false,true,true,TPA,true,true,false,true,ADJUDICATED_EOB AND TPA_FINALIZED
+Test 10,,,bcbsal,complete,financing,rating,,Claims_Processing_Gateway_Finalized,1,TRUE,1,,,,,,true,false,false,
+Test 11,,,bcbsal,complete,non-financed,rating,,Claims_Processing_Gateway_Finalized,2,TRUE,3,,,,,,true,false,true,
+Test 12,,,meritain,complete,financing,rating,,Claims_Processing_Gateway_Finalized,3,TRUE,1,,,,,,true,false,false,
+Test 13,,,meritain,complete,non-financed,rating,,Claims_Processing_Gateway_Finalized,4,TRUE,1,,,,,,true,false,false,
+Test 14,,,meritain,complete,non-financed,common,,Claims_Processing_Gateway_Finalized,5,TRUE,3,,,,,,true,false,true,
+Test 15,,,ameriben,complete,financing,rating,,Claims_Processing_Gateway_Finalized,6,TRUE,2,,,,,,true,false,true,
+Test 16,,,ameriben,complete,non-financed,rating,,Claims_Processing_Gateway_Finalized,7,TRUE,2,,,,,,true,false,true,
+Test 17,,,luminare,complete,financing,rating,,Claims_Processing_Gateway_Finalized,8,TRUE,2,,,,,,true,false,true,
+Test 18,,,luminare,complete,non-financed,rating,,Claims_Processing_Gateway_Finalized,9,TRUE,2,,,,,,true,false,true,
+Test 19,,,national alliance,complete,non-financed,rating,,Claims_Processing_Gateway_Finalized,10,TRUE,2,,,,,,true,true,true,
+Test 20,,,ibx,complete,non-financed,rating,,Claims_Processing_Gateway_Finalized,11,TRUE,2,,,,,,true,false,true,
+Test 21,,,wgs,complete,non-financed,rating,,Claims_Processing_Gateway_Finalized,12,TRUE,3,,,,,,false,false,true,
