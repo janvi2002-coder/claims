@@ -1,0 +1,1207 @@
+{
+  "entity": "rule",
+  "version": "draft",
+  "rootId": "49490a3b-488d-405d-87c6-4feb6045d63e",
+  "ref": {
+    "49490a3b-488d-405d-87c6-4feb6045d63e": {
+      "entity": "rule",
+      "version": "draft",
+      "category": "decisionTable",
+      "name": "Claims_Processing_Gateway_Raw",
+      "dependencies": [
+        "fe87fe20-97b3-4b43-9183-58f09877c7b6",
+        "8e22eaa8-e09d-4670-a8b9-0fb363e715b8"
+      ],
+      "data": {
+        "name": "Claims_Processing_Gateway_Raw",
+        "customInput": {
+          "outcome": {
+            "name": "outcome",
+            "dataType": "string",
+            "executedValue": "queued",
+            "value": "",
+            "previous": "planType"
+          },
+          "planType": {
+            "name": "planType",
+            "dataType": "string",
+            "executedValue": "NF",
+            "value": "",
+            "next": "outcome",
+            "previous": "partnerName",
+            "schemaId": "fe87fe20-97b3-4b43-9183-58f09877c7b6"
+          },
+          "partnerName": {
+            "name": "partnerName",
+            "dataType": "string",
+            "executedValue": "ibx",
+            "value": "",
+            "next": "planType",
+            "schemaId": "8e22eaa8-e09d-4670-a8b9-0fb363e715b8"
+          }
+        },
+        "decisionTable": {
+          "rows": {
+            "group_5_0": {
+              "nextId": "group_6_0",
+              "prevId": "group_4_0",
+              "firstOutputData": "output_5_5",
+              "isEnabled": true
+            },
+            "group_6_0": {
+              "nextId": "group_7_0",
+              "prevId": "group_5_0",
+              "firstOutputData": "output_6_5",
+              "isEnabled": true
+            },
+            "group_7_0": {
+              "prevId": "group_6_0",
+              "firstOutputData": "output_7_5",
+              "isEnabled": true
+            },
+            "group_1_0": {
+              "nextId": "group_2_0",
+              "firstOutputData": "output_1_5",
+              "isEnabled": true
+            },
+            "group_2_0": {
+              "nextId": "group_3_0",
+              "prevId": "group_1_0",
+              "firstOutputData": "output_2_5",
+              "isEnabled": true
+            },
+            "group_3_0": {
+              "nextId": "group_4_0",
+              "prevId": "group_2_0",
+              "firstOutputData": "output_3_5",
+              "isEnabled": true
+            },
+            "group_4_0": {
+              "nextId": "group_5_0",
+              "prevId": "group_3_0",
+              "firstOutputData": "output_4_5",
+              "isEnabled": true
+            }
+          },
+          "properties": {
+            "props_0_1": {
+              "nextId": "props_0_2",
+              "type": "simpleCondition"
+            },
+            "props_0_2": {
+              "nextId": "props_0_3",
+              "prevId": "props_0_1",
+              "type": "simpleCondition"
+            },
+            "props_0_3": {
+              "prevId": "props_0_2",
+              "type": "simpleCondition"
+            }
+          },
+          "results": {
+            "res_0_6": {
+              "nextId": "res_0_7",
+              "prevId": "res_0_5",
+              "dataType": "boolean",
+              "keyName": "preventiveRuleProcessing"
+            },
+            "res_0_8": {
+              "nextId": "res_0_9",
+              "prevId": "res_0_7",
+              "dataType": "boolean",
+              "keyName": "calculateBenefitRate"
+            },
+            "res_0_9": {
+              "nextId": "res_0_10",
+              "prevId": "res_0_8",
+              "dataType": "string",
+              "keyName": "accumulatorMaster"
+            },
+            "res_0_10": {
+              "nextId": "res_0_11",
+              "prevId": "res_0_9",
+              "dataType": "boolean",
+              "keyName": "createReversal"
+            },
+            "res_0_11": {
+              "nextId": "res_0_12",
+              "prevId": "res_0_10",
+              "dataType": "boolean",
+              "keyName": "claimsStandardization"
+            },
+            "res_0_12": {
+              "nextId": "res_0_13",
+              "prevId": "res_0_11",
+              "dataType": "boolean",
+              "keyName": "postToAccumulatorAPI"
+            },
+            "res_0_13": {
+              "nextId": "res_0_14",
+              "prevId": "res_0_12",
+              "dataType": "boolean",
+              "keyName": "consumePaidClaimsFile"
+            },
+            "res_0_7": {
+              "nextId": "res_0_8",
+              "prevId": "res_0_6",
+              "dataType": "boolean",
+              "keyName": "performClaimsProcessing"
+            },
+            "res_0_14": {
+              "prevId": "res_0_13",
+              "dataType": "string",
+              "keyName": "healthLakePersistMode"
+            },
+            "res_0_5": {
+              "nextId": "res_0_6",
+              "dataType": "string",
+              "keyName": "integrationModel"
+            }
+          },
+          "firstRow": "group_1_0",
+          "firstProperty": "props_0_1",
+          "firstResult": "res_0_5"
+        },
+        "action": {
+          "then": {
+            "outputData": {
+              "output_5_13": {
+                "name": "consumePaidClaimsFile",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_5_14"
+              },
+              "output_4_6": {
+                "name": "preventiveRuleProcessing",
+                "dataType": "boolean",
+                "value": false,
+                "next": "output_4_7"
+              },
+              "output_5_8": {
+                "name": "calculateBenefitRate",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_5_9"
+              },
+              "output_5_9": {
+                "name": "accumulatorMaster",
+                "dataType": "string",
+                "value": "TPA",
+                "next": "output_5_10"
+              },
+              "output_3_12": {
+                "name": "postToAccumulatorAPI",
+                "dataType": "boolean",
+                "value": false,
+                "next": "output_3_13"
+              },
+              "output_4_13": {
+                "name": "consumePaidClaimsFile",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_4_14"
+              },
+              "output_1_7": {
+                "name": "performClaimsProcessing",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_1_8"
+              },
+              "output_7_6": {
+                "name": "preventiveRuleProcessing",
+                "dataType": "boolean",
+                "value": false,
+                "next": "output_7_7"
+              },
+              "output_1_11": {
+                "name": "claimsStandardization",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_1_12"
+              },
+              "output_7_11": {
+                "name": "claimsStandardization",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_7_12"
+              },
+              "output_1_6": {
+                "name": "preventiveRuleProcessing",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_1_7"
+              },
+              "output_3_6": {
+                "name": "preventiveRuleProcessing",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_3_7"
+              },
+              "output_5_6": {
+                "name": "preventiveRuleProcessing",
+                "dataType": "boolean",
+                "value": false,
+                "next": "output_5_7"
+              },
+              "output_6_5": {
+                "name": "integrationModel",
+                "dataType": "string",
+                "value": "2",
+                "next": "output_6_6"
+              },
+              "output_7_7": {
+                "name": "performClaimsProcessing",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_7_8"
+              },
+              "output_2_10": {
+                "name": "createReversal",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_2_11"
+              },
+              "output_2_13": {
+                "name": "consumePaidClaimsFile",
+                "dataType": "boolean",
+                "value": false,
+                "next": "output_2_14"
+              },
+              "output_3_13": {
+                "name": "consumePaidClaimsFile",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_3_14"
+              },
+              "output_5_14": {
+                "name": "healthLakePersistMode",
+                "dataType": "string",
+                "value": "ADJUDICATED_EOB AND TPA_FINALIZED"
+              },
+              "output_7_8": {
+                "name": "calculateBenefitRate",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_7_9"
+              },
+              "output_4_12": {
+                "name": "postToAccumulatorAPI",
+                "dataType": "boolean",
+                "value": false,
+                "next": "output_4_13"
+              },
+              "output_5_12": {
+                "name": "postToAccumulatorAPI",
+                "dataType": "boolean",
+                "value": false,
+                "next": "output_5_13"
+              },
+              "output_7_14": {
+                "name": "healthLakePersistMode",
+                "dataType": "string",
+                "value": "ADJUDICATED_EOB AND TPA_FINALIZED"
+              },
+              "output_1_12": {
+                "name": "postToAccumulatorAPI",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_1_13"
+              },
+              "output_3_10": {
+                "name": "createReversal",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_3_11"
+              },
+              "output_4_10": {
+                "name": "createReversal",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_4_11"
+              },
+              "output_6_14": {
+                "name": "healthLakePersistMode",
+                "dataType": "string",
+                "value": "ADJUDICATED_EOB AND TPA_FINALIZED"
+              },
+              "output_7_10": {
+                "name": "createReversal",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_7_11"
+              },
+              "output_7_5": {
+                "name": "integrationModel",
+                "dataType": "string",
+                "value": "2",
+                "next": "output_7_6"
+              },
+              "output_7_12": {
+                "name": "postToAccumulatorAPI",
+                "dataType": "boolean",
+                "value": false,
+                "next": "output_7_13"
+              },
+              "output_2_7": {
+                "name": "performClaimsProcessing",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_2_8"
+              },
+              "output_2_9": {
+                "name": "accumulatorMaster",
+                "dataType": "string",
+                "value": "COUPE",
+                "next": "output_2_10"
+              },
+              "output_4_5": {
+                "name": "integrationModel",
+                "dataType": "string",
+                "value": "2",
+                "next": "output_4_6"
+              },
+              "output_4_8": {
+                "name": "calculateBenefitRate",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_4_9"
+              },
+              "output_4_9": {
+                "name": "accumulatorMaster",
+                "dataType": "string",
+                "value": "TPA",
+                "next": "output_4_10"
+              },
+              "output_7_9": {
+                "name": "accumulatorMaster",
+                "dataType": "string",
+                "value": "TPA",
+                "next": "output_7_10"
+              },
+              "output_6_10": {
+                "name": "createReversal",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_6_11"
+              },
+              "output_1_9": {
+                "name": "accumulatorMaster",
+                "dataType": "string",
+                "value": "COUPE",
+                "next": "output_1_10"
+              },
+              "output_4_7": {
+                "name": "performClaimsProcessing",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_4_8"
+              },
+              "output_2_11": {
+                "name": "claimsStandardization",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_2_12"
+              },
+              "output_2_14": {
+                "name": "healthLakePersistMode",
+                "dataType": "string",
+                "value": "ADJUDICATED_EOB"
+              },
+              "output_5_10": {
+                "name": "createReversal",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_5_11"
+              },
+              "output_2_6": {
+                "name": "preventiveRuleProcessing",
+                "dataType": "boolean",
+                "value": false,
+                "next": "output_2_7"
+              },
+              "output_1_13": {
+                "name": "consumePaidClaimsFile",
+                "dataType": "boolean",
+                "value": false,
+                "next": "output_1_14"
+              },
+              "output_5_11": {
+                "name": "claimsStandardization",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_5_12"
+              },
+              "output_6_12": {
+                "name": "postToAccumulatorAPI",
+                "dataType": "boolean",
+                "value": false,
+                "next": "output_6_13"
+              },
+              "output_3_8": {
+                "name": "calculateBenefitRate",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_3_9"
+              },
+              "output_1_8": {
+                "name": "calculateBenefitRate",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_1_9"
+              },
+              "output_6_8": {
+                "name": "calculateBenefitRate",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_6_9"
+              },
+              "output_6_9": {
+                "name": "accumulatorMaster",
+                "dataType": "string",
+                "value": "TPA",
+                "next": "output_6_10"
+              },
+              "output_1_14": {
+                "name": "healthLakePersistMode",
+                "dataType": "string",
+                "value": "ADJUDICATED_EOB"
+              },
+              "output_4_14": {
+                "name": "healthLakePersistMode",
+                "dataType": "string",
+                "value": "ADJUDICATED_EOB AND TPA_FINALIZED"
+              },
+              "output_6_11": {
+                "name": "claimsStandardization",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_6_12"
+              },
+              "output_6_13": {
+                "name": "consumePaidClaimsFile",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_6_14"
+              },
+              "output_1_5": {
+                "name": "integrationModel",
+                "dataType": "string",
+                "value": "1",
+                "next": "output_1_6"
+              },
+              "output_5_5": {
+                "name": "integrationModel",
+                "dataType": "string",
+                "value": "2",
+                "next": "output_5_6"
+              },
+              "output_5_7": {
+                "name": "performClaimsProcessing",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_5_8"
+              },
+              "output_6_6": {
+                "name": "preventiveRuleProcessing",
+                "dataType": "boolean",
+                "value": false,
+                "next": "output_6_7"
+              },
+              "output_2_12": {
+                "name": "postToAccumulatorAPI",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_2_13"
+              },
+              "output_7_13": {
+                "name": "consumePaidClaimsFile",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_7_14"
+              },
+              "output_2_8": {
+                "name": "calculateBenefitRate",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_2_9"
+              },
+              "output_3_5": {
+                "name": "integrationModel",
+                "dataType": "string",
+                "value": "2",
+                "next": "output_3_6"
+              },
+              "output_3_9": {
+                "name": "accumulatorMaster",
+                "dataType": "string",
+                "value": "TPA",
+                "next": "output_3_10"
+              },
+              "output_6_7": {
+                "name": "performClaimsProcessing",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_6_8"
+              },
+              "output_1_10": {
+                "name": "createReversal",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_1_11"
+              },
+              "output_3_11": {
+                "name": "claimsStandardization",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_3_12"
+              },
+              "output_3_14": {
+                "name": "healthLakePersistMode",
+                "dataType": "string",
+                "value": "ADJUDICATED_EOB AND TPA_FINALIZED"
+              },
+              "output_4_11": {
+                "name": "claimsStandardization",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_4_12"
+              },
+              "output_2_5": {
+                "name": "integrationModel",
+                "dataType": "string",
+                "value": "1",
+                "next": "output_2_6"
+              },
+              "output_3_7": {
+                "name": "performClaimsProcessing",
+                "dataType": "boolean",
+                "value": true,
+                "next": "output_3_8"
+              }
+            }
+          },
+          "else": {}
+        },
+        "conditions": {
+          "nodes": {
+            "rhs_6_3": {
+              "value": "queued",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "cond_6_3",
+              "siblingIndex": 1
+            },
+            "cond_3_1": {
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_3_0",
+              "leftNode": [
+                "props_0_1"
+              ],
+              "rightNode": [
+                "rhs_3_1"
+              ],
+              "siblingIndex": 1
+            },
+            "cond_4_2": {
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_4_0",
+              "leftNode": [
+                "props_0_2"
+              ],
+              "rightNode": [
+                "rhs_4_2"
+              ],
+              "siblingIndex": 1
+            },
+            "cond_5_1": {
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_5_0",
+              "leftNode": [
+                "props_0_1"
+              ],
+              "rightNode": [
+                "rhs_5_1"
+              ],
+              "siblingIndex": 1
+            },
+            "cond_5_2": {
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_5_0",
+              "leftNode": [
+                "props_0_2"
+              ],
+              "rightNode": [
+                "rhs_5_2"
+              ],
+              "siblingIndex": 1
+            },
+            "rhs_2_2": {
+              "value": "[\"F\",\"NF\"]",
+              "dataType": "list",
+              "nodeType": "constant",
+              "parent": "cond_2_2",
+              "siblingIndex": 1
+            },
+            "rhs_6_2": {
+              "value": "NF",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "cond_6_2",
+              "siblingIndex": 1
+            },
+            "rhs_7_2": {
+              "value": "NF",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "cond_7_2",
+              "siblingIndex": 1
+            },
+            "cond_1_3": {
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_1_0",
+              "leftNode": [
+                "props_0_3"
+              ],
+              "rightNode": [
+                "rhs_1_3"
+              ],
+              "siblingIndex": 1
+            },
+            "cond_2_2": {
+              "operator": "in",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_2_0",
+              "leftNode": [
+                "props_0_2"
+              ],
+              "rightNode": [
+                "rhs_2_2"
+              ],
+              "siblingIndex": 1
+            },
+            "cond_7_3": {
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_7_0",
+              "leftNode": [
+                "props_0_3"
+              ],
+              "rightNode": [
+                "rhs_7_3"
+              ],
+              "siblingIndex": 1
+            },
+            "group_2_0": {
+              "operator": "and",
+              "nodeType": "group",
+              "children": [
+                "cond_2_1",
+                "cond_2_2",
+                "cond_2_3"
+              ],
+              "siblingIndex": 1
+            },
+            "group_3_0": {
+              "operator": "and",
+              "nodeType": "group",
+              "children": [
+                "cond_3_1",
+                "cond_3_2",
+                "cond_3_3"
+              ],
+              "siblingIndex": 1
+            },
+            "rhs_1_2": {
+              "value": "F",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "cond_1_2",
+              "siblingIndex": 1
+            },
+            "cond_2_3": {
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_2_0",
+              "leftNode": [
+                "props_0_3"
+              ],
+              "rightNode": [
+                "rhs_2_3"
+              ],
+              "siblingIndex": 1
+            },
+            "cond_4_1": {
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_4_0",
+              "leftNode": [
+                "props_0_1"
+              ],
+              "rightNode": [
+                "rhs_4_1"
+              ],
+              "siblingIndex": 1
+            },
+            "cond_7_1": {
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_7_0",
+              "leftNode": [
+                "props_0_1"
+              ],
+              "rightNode": [
+                "rhs_7_1"
+              ],
+              "siblingIndex": 1
+            },
+            "group_5_0": {
+              "operator": "and",
+              "nodeType": "group",
+              "children": [
+                "cond_5_1",
+                "cond_5_2",
+                "cond_5_3"
+              ],
+              "siblingIndex": 1
+            },
+            "group_6_0": {
+              "operator": "and",
+              "nodeType": "group",
+              "children": [
+                "cond_6_1",
+                "cond_6_2",
+                "cond_6_3"
+              ],
+              "siblingIndex": 1
+            },
+            "group_7_0": {
+              "operator": "and",
+              "nodeType": "group",
+              "children": [
+                "cond_7_1",
+                "cond_7_2",
+                "cond_7_3"
+              ],
+              "siblingIndex": 1
+            },
+            "props_0_1": {
+              "sourceType": "customInput",
+              "dataType": "string",
+              "nodeType": "params",
+              "attribute": "partnerName",
+              "siblingIndex": 1
+            },
+            "rhs_4_2": {
+              "value": "F",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "cond_4_2",
+              "siblingIndex": 1
+            },
+            "cond_2_1": {
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_2_0",
+              "leftNode": [
+                "props_0_1"
+              ],
+              "rightNode": [
+                "rhs_2_1"
+              ],
+              "siblingIndex": 1
+            },
+            "cond_3_2": {
+              "operator": "in",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_3_0",
+              "leftNode": [
+                "props_0_2"
+              ],
+              "rightNode": [
+                "rhs_3_2"
+              ],
+              "siblingIndex": 1
+            },
+            "cond_6_1": {
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_6_0",
+              "leftNode": [
+                "props_0_1"
+              ],
+              "rightNode": [
+                "rhs_6_1"
+              ],
+              "siblingIndex": 1
+            },
+            "group_1_0": {
+              "operator": "and",
+              "nodeType": "group",
+              "children": [
+                "cond_1_1",
+                "cond_1_2",
+                "cond_1_3"
+              ],
+              "siblingIndex": 1
+            },
+            "group_4_0": {
+              "operator": "and",
+              "nodeType": "group",
+              "children": [
+                "cond_4_1",
+                "cond_4_2",
+                "cond_4_3"
+              ],
+              "siblingIndex": 1
+            },
+            "props_0_2": {
+              "sourceType": "customInput",
+              "dataType": "string",
+              "nodeType": "params",
+              "attribute": "planType",
+              "siblingIndex": 1
+            },
+            "props_0_3": {
+              "sourceType": "customInput",
+              "dataType": "string",
+              "nodeType": "params",
+              "attribute": "outcome",
+              "siblingIndex": 1
+            },
+            "rhs_3_1": {
+              "value": "ameriben",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "cond_3_1",
+              "siblingIndex": 1
+            },
+            "rhs_5_1": {
+              "value": "luminare",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "cond_5_1",
+              "siblingIndex": 1
+            },
+            "cond_4_3": {
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_4_0",
+              "leftNode": [
+                "props_0_3"
+              ],
+              "rightNode": [
+                "rhs_4_3"
+              ],
+              "siblingIndex": 1
+            },
+            "cond_5_3": {
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_5_0",
+              "leftNode": [
+                "props_0_3"
+              ],
+              "rightNode": [
+                "rhs_5_3"
+              ],
+              "siblingIndex": 1
+            },
+            "cond_7_2": {
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_7_0",
+              "leftNode": [
+                "props_0_2"
+              ],
+              "rightNode": [
+                "rhs_7_2"
+              ],
+              "siblingIndex": 1
+            },
+            "rhs_1_3": {
+              "value": "queued",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "cond_1_3",
+              "siblingIndex": 1
+            },
+            "rhs_2_1": {
+              "value": "meritain",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "cond_2_1",
+              "siblingIndex": 1
+            },
+            "cond_1_1": {
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_1_0",
+              "leftNode": [
+                "props_0_1"
+              ],
+              "rightNode": [
+                "rhs_1_1"
+              ],
+              "siblingIndex": 1
+            },
+            "cond_6_2": {
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_6_0",
+              "leftNode": [
+                "props_0_2"
+              ],
+              "rightNode": [
+                "rhs_6_2"
+              ],
+              "siblingIndex": 1
+            },
+            "cond_6_3": {
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_6_0",
+              "leftNode": [
+                "props_0_3"
+              ],
+              "rightNode": [
+                "rhs_6_3"
+              ],
+              "siblingIndex": 1
+            },
+            "rhs_1_1": {
+              "value": "bcbsal",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "cond_1_1",
+              "siblingIndex": 1
+            },
+            "rhs_3_2": {
+              "value": "[\"F\",\"NF\"]",
+              "dataType": "list",
+              "nodeType": "constant",
+              "parent": "cond_3_2",
+              "siblingIndex": 1
+            },
+            "rhs_4_3": {
+              "value": "queued",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "cond_4_3",
+              "siblingIndex": 1
+            },
+            "cond_1_2": {
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_1_0",
+              "leftNode": [
+                "props_0_2"
+              ],
+              "rightNode": [
+                "rhs_1_2"
+              ],
+              "siblingIndex": 1
+            },
+            "rhs_3_3": {
+              "value": "queued",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "cond_3_3",
+              "siblingIndex": 1
+            },
+            "rhs_5_3": {
+              "value": "queued",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "cond_5_3",
+              "siblingIndex": 1
+            },
+            "rhs_6_1": {
+              "value": "national alliance",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "cond_6_1",
+              "siblingIndex": 1
+            },
+            "rhs_7_1": {
+              "value": "ibx",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "cond_7_1",
+              "siblingIndex": 1
+            },
+            "rhs_7_3": {
+              "value": "queued",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "cond_7_3",
+              "siblingIndex": 1
+            },
+            "cond_3_3": {
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_3_0",
+              "leftNode": [
+                "props_0_3"
+              ],
+              "rightNode": [
+                "rhs_3_3"
+              ],
+              "siblingIndex": 1
+            },
+            "rhs_5_2": {
+              "value": "NF",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "cond_5_2",
+              "siblingIndex": 1
+            },
+            "rhs_2_3": {
+              "value": "queued",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "cond_2_3",
+              "siblingIndex": 1
+            },
+            "rhs_4_1": {
+              "value": "luminare",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "cond_4_1",
+              "siblingIndex": 1
+            }
+          }
+        },
+        "firstCustomInput": "partnerName",
+        "description": "claims processing routing (Confluence: Nected - Decision Table & Business Rule Configurations #1)",
+        "policy": "first",
+        "type": "decisionTable",
+        "dataSetId": "",
+        "settings": {
+          "startAt": "0001-01-01T00:00:00Z",
+          "endAt": "0001-01-01T00:00:00Z",
+          "api": {
+            "isEnabled": true,
+            "isPrivate": true
+          },
+          "isEnabled": true,
+          "cachingInfo": {
+            "Enabled": false,
+            "Duration": {
+              "Value": 0,
+              "Unit": "d"
+            },
+            "CacheKeys": ""
+          },
+          "timezone": "Asia/Calcutta",
+          "dateFormat": "in"
+        },
+        "schemaVersion": "0.1.1"
+      }
+    },
+    "fe87fe20-97b3-4b43-9183-58f09877c7b6": {
+      "entity": "module_schema",
+      "version": "CoupeClaims",
+      "category": "string",
+      "name": "planType",
+      "dependencies": [
+        "be8728ce-c7fe-403f-8690-e050ef0014d2"
+      ],
+      "data": {
+        "WorkspaceID": 1,
+        "Name": "planType",
+        "moduleId": "be8728ce-c7fe-403f-8690-e050ef0014d2",
+        "dataType": "string",
+        "usageType": "optional",
+        "options": [
+          {
+            "value": "F"
+          },
+          {
+            "value": "NF"
+          },
+          {
+            "value": "NF_TIER"
+          },
+          {
+            "value": "NF_NON_TIER"
+          }
+        ]
+      }
+    },
+    "be8728ce-c7fe-403f-8690-e050ef0014d2": {
+      "entity": "module",
+      "name": "CoupeClaims",
+      "data": {
+        "WorkspaceID": 1,
+        "Name": "CoupeClaims",
+        "description": ""
+      }
+    },
+    "8e22eaa8-e09d-4670-a8b9-0fb363e715b8": {
+      "entity": "module_schema",
+      "version": "CoupeClaims",
+      "category": "string",
+      "name": "partnerName",
+      "dependencies": [
+        "be8728ce-c7fe-403f-8690-e050ef0014d2"
+      ],
+      "data": {
+        "WorkspaceID": 1,
+        "Name": "partnerName",
+        "moduleId": "be8728ce-c7fe-403f-8690-e050ef0014d2",
+        "dataType": "string",
+        "usageType": "optional",
+        "options": [
+          {
+            "value": "bcbsal"
+          },
+          {
+            "value": "meritain"
+          },
+          {
+            "value": "ameriben"
+          },
+          {
+            "value": "luminare"
+          },
+          {
+            "value": "national alliance"
+          },
+          {
+            "value": "ibx"
+          },
+          {
+            "value": "wgs"
+          }
+        ]
+      }
+    }
+  },
+  "timestamp": "2026-11-19T08:04:14.596607308Z"
+}
