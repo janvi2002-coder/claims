@@ -1,0 +1,12 @@
+status,string({{.customInput.partnerName}}),string({{.customInput.planType}}),string({{.customInput.outcome}}),,string(integrationModel),boolean(preventiveRuleProcessing),boolean(performClaimsProcessing),boolean(calculateBenefitRate),string(accumulatorMaster),boolean(createReversal),boolean(claimsStandardization),boolean(postToAccumulatorAPI),boolean(consumePaidClaimsFile),string(healthLakePersistMode)
+true,"""bcbsal""","""F""","""queued""",,"""1""",true,true,true,"""COUPE""",false,false,true,false,"""ADJUDICATED_EOB"""
+true,"""bcbsal""","in [""F"",""NF""]","""complete""",,"""3""",false,false,false,"""TPA""",false,false,false,true,"""PASSTHROUGH"""
+true,"""meritain""","in [""F"",""NF""]","""queued""",,"""1""",false,true,true,"""COUPE""",false,false,true,false,"""ADJUDICATED_EOB"""
+true,"""meritain""","""NF_TIER""","""queued""",,"""1""",false,true,true,"""COUPE""",false,false,true,false,"""ADJUDICATED_EOB"""
+true,"""meritain""","""NF_NON_TIER""","""complete""",,"""3""",false,false,false,"""TPA""",false,false,false,true,"""PASSTHROUGH"""
+true,"""ameriben""","""F""","""queued""",,"""2""",true,true,true,"""TPA""",false,false,false,true,"""ADJUDICATED_EOB AND TPA_FINALIZED"""
+true,"""luminare""","""F""","""queued""",,"""2""",false,true,true,"""TPA""",false,false,false,true,"""ADJUDICATED_EOB AND TPA_FINALIZED"""
+true,"""luminare""","""NF""","""queued""",,"""2""",false,true,true,"""TPA""",false,false,false,true,"""ADJUDICATED_EOB AND TPA_FINALIZED"""
+true,"""national alliance""","""NF""","""queued""",,"""2""",false,true,true,"""TPA""",false,false,false,true,"""ADJUDICATED_EOB AND TPA_FINALIZED"""
+true,"""ibx""","""NF""","""queued""",,"""2""",false,true,true,"""TPA""",false,false,false,true,"""ADJUDICATED_EOB AND TPA_FINALIZED"""
+true,"""wgs""","""NF""","""complete""",,"""3""",false,false,false,"""TPA""",false,false,false,true,"""PASSTHROUGH"""
