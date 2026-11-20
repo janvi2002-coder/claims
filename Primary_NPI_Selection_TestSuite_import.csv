@@ -1,0 +1,8 @@
+﻿name,group,,claimType,renderingProviderNPI,billingProviderNPI,,rowId,defaultOutputData,primaryNPIField,primaryNPISource,primaryNPISystem
+Test 1,,,p,1234567893,1987654321,,1,FALSE,renderingProviderNPI,Rendering,http://hl7.org/fhir/sid/us-npi
+Test 2,,,p,,1987654321,,2,FALSE,billingProviderNPI,Billing,http://hl7.org/fhir/sid/us-npi
+Test 3,,,p,,,,3,FALSE,,,
+Test 4,,,i,1234567893,1987654321,,4,FALSE,renderingProviderNPI,Rendering,http://hl7.org/fhir/sid/us-npi
+Test 5,,,i,,1987654321,,5,FALSE,billingProviderNPI,Billing,http://hl7.org/fhir/sid/us-npi
+Test 6,,,i,,,,6,FALSE,,,
+Test 7,,,x,1234567893,1987654321,,7,FALSE,renderingProviderNPI,,http://hl7.org/fhir/sid/us-npi

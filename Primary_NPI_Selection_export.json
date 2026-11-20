@@ -1,0 +1,738 @@
+{
+  "entity": "rule",
+  "version": "draft",
+  "rootId": "b5debe87-31da-4b43-980f-122a4f516910",
+  "timestamp": "2026-11-19T08:04:14.596607308Z",
+  "ref": {
+    "b5debe87-31da-4b43-980f-122a4f516910": {
+      "entity": "rule",
+      "version": "draft",
+      "category": "decisionTable",
+      "name": "Primary_NPI_Selection",
+      "dependencies": [],
+      "data": {
+        "name": "Primary_NPI_Selection",
+        "customInput": {
+          "claimType": {
+            "name": "claimType",
+            "dataType": "string",
+            "executedValue": "p",
+            "value": "",
+            "next": "renderingProviderNPI"
+          },
+          "renderingProviderNPI": {
+            "name": "renderingProviderNPI",
+            "dataType": "string",
+            "executedValue": "1234567890",
+            "value": "",
+            "next": "billingProviderNPI",
+            "previous": "claimType"
+          },
+          "billingProviderNPI": {
+            "name": "billingProviderNPI",
+            "dataType": "string",
+            "executedValue": "0987654321",
+            "value": "",
+            "previous": "renderingProviderNPI"
+          }
+        },
+        "decisionTable": {
+          "rows": {
+            "group_1_0": {
+              "nextId": "group_2_0",
+              "firstOutputData": "output_1_6",
+              "isEnabled": true
+            },
+            "group_2_0": {
+              "nextId": "group_3_0",
+              "prevId": "group_1_0",
+              "firstOutputData": "output_2_6",
+              "isEnabled": true
+            },
+            "group_3_0": {
+              "nextId": "group_4_0",
+              "prevId": "group_2_0",
+              "firstOutputData": "output_3_6",
+              "isEnabled": true
+            },
+            "group_4_0": {
+              "nextId": "group_5_0",
+              "prevId": "group_3_0",
+              "firstOutputData": "output_4_6",
+              "isEnabled": true
+            },
+            "group_5_0": {
+              "nextId": "group_6_0",
+              "prevId": "group_4_0",
+              "firstOutputData": "output_5_6",
+              "isEnabled": true
+            },
+            "group_6_0": {
+              "nextId": "group_7_0",
+              "prevId": "group_5_0",
+              "firstOutputData": "output_6_6",
+              "isEnabled": true
+            },
+            "group_7_0": {
+              "prevId": "group_6_0",
+              "firstOutputData": "output_7_6",
+              "isEnabled": true
+            }
+          },
+          "properties": {
+            "props_0_1": {
+              "nextId": "props_0_2",
+              "type": "simpleCondition"
+            },
+            "props_0_2": {
+              "nextId": "props_0_3",
+              "prevId": "props_0_1",
+              "type": "simpleCondition"
+            },
+            "props_0_3": {
+              "prevId": "props_0_2",
+              "type": "simpleCondition"
+            }
+          },
+          "results": {
+            "res_0_6": {
+              "dataType": "string",
+              "keyName": "primaryNPIField",
+              "nextId": "res_0_7"
+            },
+            "res_0_7": {
+              "dataType": "string",
+              "keyName": "primaryNPISource",
+              "nextId": "res_0_8",
+              "prevId": "res_0_6"
+            },
+            "res_0_8": {
+              "dataType": "string",
+              "keyName": "primaryNPISystem",
+              "prevId": "res_0_7"
+            }
+          },
+          "firstRow": "group_1_0",
+          "firstProperty": "props_0_1",
+          "firstResult": "res_0_6"
+        },
+        "action": {
+          "then": {
+            "outputData": {
+              "output_1_6": {
+                "name": "primaryNPIField",
+                "dataType": "string",
+                "value": "renderingProviderNPI",
+                "next": "output_1_7"
+              },
+              "output_1_7": {
+                "name": "primaryNPISource",
+                "dataType": "string",
+                "value": "Rendering",
+                "next": "output_1_8"
+              },
+              "output_1_8": {
+                "name": "primaryNPISystem",
+                "dataType": "string",
+                "value": "http://hl7.org/fhir/sid/us-npi"
+              },
+              "output_2_6": {
+                "name": "primaryNPIField",
+                "dataType": "string",
+                "value": "billingProviderNPI",
+                "next": "output_2_7"
+              },
+              "output_2_7": {
+                "name": "primaryNPISource",
+                "dataType": "string",
+                "value": "Billing",
+                "next": "output_2_8"
+              },
+              "output_2_8": {
+                "name": "primaryNPISystem",
+                "dataType": "string",
+                "value": "http://hl7.org/fhir/sid/us-npi"
+              },
+              "output_3_6": {
+                "name": "primaryNPIField",
+                "dataType": "string",
+                "value": "",
+                "next": "output_3_7"
+              },
+              "output_3_7": {
+                "name": "primaryNPISource",
+                "dataType": "string",
+                "value": "",
+                "next": "output_3_8"
+              },
+              "output_3_8": {
+                "name": "primaryNPISystem",
+                "dataType": "string",
+                "value": ""
+              },
+              "output_4_6": {
+                "name": "primaryNPIField",
+                "dataType": "string",
+                "value": "renderingProviderNPI",
+                "next": "output_4_7"
+              },
+              "output_4_7": {
+                "name": "primaryNPISource",
+                "dataType": "string",
+                "value": "Rendering",
+                "next": "output_4_8"
+              },
+              "output_4_8": {
+                "name": "primaryNPISystem",
+                "dataType": "string",
+                "value": "http://hl7.org/fhir/sid/us-npi"
+              },
+              "output_5_6": {
+                "name": "primaryNPIField",
+                "dataType": "string",
+                "value": "billingProviderNPI",
+                "next": "output_5_7"
+              },
+              "output_5_7": {
+                "name": "primaryNPISource",
+                "dataType": "string",
+                "value": "Billing",
+                "next": "output_5_8"
+              },
+              "output_5_8": {
+                "name": "primaryNPISystem",
+                "dataType": "string",
+                "value": "http://hl7.org/fhir/sid/us-npi"
+              },
+              "output_6_6": {
+                "name": "primaryNPIField",
+                "dataType": "string",
+                "value": "",
+                "next": "output_6_7"
+              },
+              "output_6_7": {
+                "name": "primaryNPISource",
+                "dataType": "string",
+                "value": "",
+                "next": "output_6_8"
+              },
+              "output_6_8": {
+                "name": "primaryNPISystem",
+                "dataType": "string",
+                "value": ""
+              },
+              "output_7_6": {
+                "name": "primaryNPIField",
+                "dataType": "string",
+                "value": "renderingProviderNPI",
+                "next": "output_7_7"
+              },
+              "output_7_7": {
+                "name": "primaryNPISource",
+                "dataType": "string",
+                "value": "",
+                "next": "output_7_8"
+              },
+              "output_7_8": {
+                "name": "primaryNPISystem",
+                "dataType": "string",
+                "value": "http://hl7.org/fhir/sid/us-npi"
+              }
+            }
+          },
+          "else": {}
+        },
+        "conditions": {
+          "nodes": {
+            "group_1_0": {
+              "operator": "and",
+              "nodeType": "group",
+              "children": [
+                "cond_1_1",
+                "cond_1_2",
+                "cond_1_3"
+              ],
+              "siblingIndex": 1
+            },
+            "rhs_1_1": {
+              "value": "p",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "cond_1_1",
+              "siblingIndex": 1
+            },
+            "cond_1_1": {
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_1_0",
+              "leftNode": [
+                "props_0_1"
+              ],
+              "siblingIndex": 1,
+              "rightNode": [
+                "rhs_1_1"
+              ]
+            },
+            "rhs_1_2": {
+              "value": "",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "cond_1_2",
+              "siblingIndex": 1
+            },
+            "cond_1_2": {
+              "operator": "neq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_1_0",
+              "leftNode": [
+                "props_0_2"
+              ],
+              "siblingIndex": 1,
+              "rightNode": [
+                "rhs_1_2"
+              ]
+            },
+            "cond_1_3": {
+              "operator": "any",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_1_0",
+              "leftNode": [
+                "props_0_3"
+              ],
+              "siblingIndex": 1
+            },
+            "group_2_0": {
+              "operator": "and",
+              "nodeType": "group",
+              "children": [
+                "cond_2_1",
+                "cond_2_2",
+                "cond_2_3"
+              ],
+              "siblingIndex": 1
+            },
+            "rhs_2_1": {
+              "value": "p",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "cond_2_1",
+              "siblingIndex": 1
+            },
+            "cond_2_1": {
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_2_0",
+              "leftNode": [
+                "props_0_1"
+              ],
+              "siblingIndex": 1,
+              "rightNode": [
+                "rhs_2_1"
+              ]
+            },
+            "rhs_2_2": {
+              "value": "",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "cond_2_2",
+              "siblingIndex": 1
+            },
+            "cond_2_2": {
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_2_0",
+              "leftNode": [
+                "props_0_2"
+              ],
+              "siblingIndex": 1,
+              "rightNode": [
+                "rhs_2_2"
+              ]
+            },
+            "rhs_2_3": {
+              "value": "",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "cond_2_3",
+              "siblingIndex": 1
+            },
+            "cond_2_3": {
+              "operator": "neq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_2_0",
+              "leftNode": [
+                "props_0_3"
+              ],
+              "siblingIndex": 1,
+              "rightNode": [
+                "rhs_2_3"
+              ]
+            },
+            "group_3_0": {
+              "operator": "and",
+              "nodeType": "group",
+              "children": [
+                "cond_3_1",
+                "cond_3_2",
+                "cond_3_3"
+              ],
+              "siblingIndex": 1
+            },
+            "rhs_3_1": {
+              "value": "p",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "cond_3_1",
+              "siblingIndex": 1
+            },
+            "cond_3_1": {
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_3_0",
+              "leftNode": [
+                "props_0_1"
+              ],
+              "siblingIndex": 1,
+              "rightNode": [
+                "rhs_3_1"
+              ]
+            },
+            "rhs_3_2": {
+              "value": "",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "cond_3_2",
+              "siblingIndex": 1
+            },
+            "cond_3_2": {
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_3_0",
+              "leftNode": [
+                "props_0_2"
+              ],
+              "siblingIndex": 1,
+              "rightNode": [
+                "rhs_3_2"
+              ]
+            },
+            "rhs_3_3": {
+              "value": "",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "cond_3_3",
+              "siblingIndex": 1
+            },
+            "cond_3_3": {
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_3_0",
+              "leftNode": [
+                "props_0_3"
+              ],
+              "siblingIndex": 1,
+              "rightNode": [
+                "rhs_3_3"
+              ]
+            },
+            "group_4_0": {
+              "operator": "and",
+              "nodeType": "group",
+              "children": [
+                "cond_4_1",
+                "cond_4_2",
+                "cond_4_3"
+              ],
+              "siblingIndex": 1
+            },
+            "rhs_4_1": {
+              "value": "i",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "cond_4_1",
+              "siblingIndex": 1
+            },
+            "cond_4_1": {
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_4_0",
+              "leftNode": [
+                "props_0_1"
+              ],
+              "siblingIndex": 1,
+              "rightNode": [
+                "rhs_4_1"
+              ]
+            },
+            "rhs_4_2": {
+              "value": "",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "cond_4_2",
+              "siblingIndex": 1
+            },
+            "cond_4_2": {
+              "operator": "neq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_4_0",
+              "leftNode": [
+                "props_0_2"
+              ],
+              "siblingIndex": 1,
+              "rightNode": [
+                "rhs_4_2"
+              ]
+            },
+            "cond_4_3": {
+              "operator": "any",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_4_0",
+              "leftNode": [
+                "props_0_3"
+              ],
+              "siblingIndex": 1
+            },
+            "group_5_0": {
+              "operator": "and",
+              "nodeType": "group",
+              "children": [
+                "cond_5_1",
+                "cond_5_2",
+                "cond_5_3"
+              ],
+              "siblingIndex": 1
+            },
+            "rhs_5_1": {
+              "value": "i",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "cond_5_1",
+              "siblingIndex": 1
+            },
+            "cond_5_1": {
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_5_0",
+              "leftNode": [
+                "props_0_1"
+              ],
+              "siblingIndex": 1,
+              "rightNode": [
+                "rhs_5_1"
+              ]
+            },
+            "rhs_5_2": {
+              "value": "",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "cond_5_2",
+              "siblingIndex": 1
+            },
+            "cond_5_2": {
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_5_0",
+              "leftNode": [
+                "props_0_2"
+              ],
+              "siblingIndex": 1,
+              "rightNode": [
+                "rhs_5_2"
+              ]
+            },
+            "rhs_5_3": {
+              "value": "",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "cond_5_3",
+              "siblingIndex": 1
+            },
+            "cond_5_3": {
+              "operator": "neq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_5_0",
+              "leftNode": [
+                "props_0_3"
+              ],
+              "siblingIndex": 1,
+              "rightNode": [
+                "rhs_5_3"
+              ]
+            },
+            "group_6_0": {
+              "operator": "and",
+              "nodeType": "group",
+              "children": [
+                "cond_6_1",
+                "cond_6_2",
+                "cond_6_3"
+              ],
+              "siblingIndex": 1
+            },
+            "rhs_6_1": {
+              "value": "i",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "cond_6_1",
+              "siblingIndex": 1
+            },
+            "cond_6_1": {
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_6_0",
+              "leftNode": [
+                "props_0_1"
+              ],
+              "siblingIndex": 1,
+              "rightNode": [
+                "rhs_6_1"
+              ]
+            },
+            "rhs_6_2": {
+              "value": "",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "cond_6_2",
+              "siblingIndex": 1
+            },
+            "cond_6_2": {
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_6_0",
+              "leftNode": [
+                "props_0_2"
+              ],
+              "siblingIndex": 1,
+              "rightNode": [
+                "rhs_6_2"
+              ]
+            },
+            "rhs_6_3": {
+              "value": "",
+              "dataType": "string",
+              "nodeType": "constant",
+              "parent": "cond_6_3",
+              "siblingIndex": 1
+            },
+            "cond_6_3": {
+              "operator": "eq",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_6_0",
+              "leftNode": [
+                "props_0_3"
+              ],
+              "siblingIndex": 1,
+              "rightNode": [
+                "rhs_6_3"
+              ]
+            },
+            "group_7_0": {
+              "operator": "and",
+              "nodeType": "group",
+              "children": [
+                "cond_7_1",
+                "cond_7_2",
+                "cond_7_3"
+              ],
+              "siblingIndex": 1
+            },
+            "cond_7_1": {
+              "operator": "any",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_7_0",
+              "leftNode": [
+                "props_0_1"
+              ],
+              "siblingIndex": 1
+            },
+            "cond_7_2": {
+              "operator": "any",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_7_0",
+              "leftNode": [
+                "props_0_2"
+              ],
+              "siblingIndex": 1
+            },
+            "cond_7_3": {
+              "operator": "any",
+              "dataType": "string",
+              "nodeType": "condition",
+              "parent": "group_7_0",
+              "leftNode": [
+                "props_0_3"
+              ],
+              "siblingIndex": 1
+            },
+            "props_0_1": {
+              "sourceType": "customInput",
+              "dataType": "string",
+              "nodeType": "params",
+              "attribute": "claimType",
+              "siblingIndex": 1
+            },
+            "props_0_2": {
+              "sourceType": "customInput",
+              "dataType": "string",
+              "nodeType": "params",
+              "attribute": "renderingProviderNPI",
+              "siblingIndex": 1
+            },
+            "props_0_3": {
+              "sourceType": "customInput",
+              "dataType": "string",
+              "nodeType": "params",
+              "attribute": "billingProviderNPI",
+              "siblingIndex": 1
+            }
+          }
+        },
+        "firstCustomInput": "claimType",
+        "description": "NPI Enrichment 4A: Primary NPI selection (Confluence: Nected - Decision Table & Business Rule Configurations #4 A)",
+        "policy": "first",
+        "type": "decisionTable",
+        "dataSetId": "",
+        "settings": {
+          "startAt": "0001-01-01T00:00:00Z",
+          "endAt": "0001-01-01T00:00:00Z",
+          "api": {
+            "isEnabled": true,
+            "isPrivate": true
+          },
+          "isEnabled": true,
+          "cachingInfo": {
+            "Enabled": false,
+            "Duration": {
+              "Value": 0,
+              "Unit": "d"
+            },
+            "CacheKeys": ""
+          },
+          "timezone": "Asia/Calcutta",
+          "dateFormat": "in"
+        },
+        "schemaVersion": "0.1.1"
+      }
+    }
+  }
+}
